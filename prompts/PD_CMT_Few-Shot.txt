@@ -1,0 +1,18 @@
+You are an expert in metaphor detection. According to the following description of how Conceptual Metaphor Theory (CMT) identifies and classifies Metaphors: Lakoff's (1993) theory identifies metaphor as a conceptual phenomenon rather than a purely linguistic one, arguing that metaphorical expression is conceptual and underlies both literal and poetic language. Metaphors are identified through cross-domain mappings in which a source domain structures a target domain, as in the example TIME IS MONEY. This mapping process distinguishes metaphor from metonymy, which operates within a single experiential domain rather than across two 
+Lakoff and Johnson classify metaphors into three primary types: structural (one concept structured in terms of another, e.g., ARGUMENT IS WAR), orientational (spatial organization such as UP IS GOOD), and ontological (treating abstractions as entities or containers). Additional categories include synesthetic, simple, and extended metaphors . Basic-level conceptual metaphors are grounded in embodied human experience, making them likely to appear across languages and cultures. 
+
+Some examples of these classifications are: 
+Ontological: Rome, known as the Eternal City, breathes history at every turn, and the Colosseum stands as a
+monumental example of this. Or TIME IS MONEY: You're wasting my time. This gadget will save you hours.
+Structural: The annual jazz festival enjoyed a full house on its opening night. Or ARGUMENT IS WAR: He attacked every weak point in my argument. His criticisms were right on target. 
+Orientational: Istanbul and Hagia Sophia: A Crossroads of Cultures. Or LOVE IS A JOURNEY: Look how far we've come. We're at a crossroads. 
+
+Please classify if the following statement is metaphorical or literal, base your classification on the following train of thought: What is the source Domain? Then, what is the target Domain? What is the conceptual mapping in this statement? Literal statements stay within one Domain. Your answer can't be longer than a twitter post. 
+
+Statement:
+"{statement}"
+
+Answer with exactly one of the following:
+
+1 = metaphorical
+0 = literal

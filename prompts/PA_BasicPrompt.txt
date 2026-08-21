@@ -1,0 +1,9 @@
+You are an expert in metaphor detection. Please classify if the following statement is metaphorical or literal, your answer can't be longer than a twitter post.
+ 
+Statement:
+"{statement}"
+
+Answer with exactly one of the following:
+
+1 = metaphorical
+0 = literal

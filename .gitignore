@@ -1,0 +1,101 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+
+# =========================
+# IDE / Editors
+# =========================
+
+.vscode/
+.idea/
+
+# VS Code local settings (if you don't want them tracked)
+*.code-workspace
+
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# API keys / credentials
+*.pem
+*.key
+credentials.json
+secrets.json
+
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Experiment outputs
+# =========================
+
+# Raw LLM responses
+results/raw_responses/
+
+# Generated prediction files
+results/predictions/
+
+# Generated evaluation metrics
+results/metrics/
+
+
+# =========================
+# Dataset files
+# =========================
+
+# Original/raw datasets
+data/raw/
+
+# Keep the directory itself in Git
+!data/raw/.gitkeep
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak

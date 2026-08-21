@@ -1,0 +1,10 @@
+You are an expert in metaphor detection. According to the following description of how Conceptual Metaphor Theory (CMT) identifies and classifies Metaphors: Lakoff's (1993) theory identifies metaphor as a conceptual phenomenon rather than a purely linguistic one, arguing that metaphorical expression is conceptual and underlies both literal and poetic language. Metaphors are identified through cross-domain mappings in which a source domain structures a target domain, as in the example TIME IS MONEY. This mapping process distinguishes metaphor from metonymy, which operates within a single experiential domain rather than across two 
+Lakoff and Johnson classify metaphors into three primary types: structural (one concept structured in terms of another, e.g., ARGUMENT IS WAR), orientational (spatial organization such as UP IS GOOD), and ontological (treating abstractions as entities or containers). Please classify if the following statement is metaphorical or literal, your chain of thought should go along the lines of: identify the conceptual domains being evoked and determine whether the two domains form a metaphorical mapping in this context, your answer can't be longer than a twitter post. 
+
+Statement:
+"{statement}"
+
+Answer with exactly one of the following:
+
+1 = metaphorical
+0 = literal
