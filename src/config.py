@@ -12,10 +12,15 @@ PROMPTS = {
 }
 
 MODELS = {
-    "M1_gemma": "gemma",
-    "M2_quen": "quen",
-    "M3_llama": "llama3.1 instruct",
-    "M4_mistral": "mistral-7b-instruct-v0.1",
+    "Gemma-3-4B": "google/gemma-3-4b-it",
+    "Qwen3-8B": "Qwen/Qwen3-8B",
+    "Llama-3.1-8B": "meta-llama/Llama-3.1-8B-Instruct",
+    "Mistral-7B": "mistralai/Mistral-7B-Instruct-v0.3",
+}
+
+GENERATION_CONFIG = {
+    "max_new_tokens": 15,
+    "do_sample": False,
 }
 
 EXPERIMENTS = {

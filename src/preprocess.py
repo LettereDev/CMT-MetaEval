@@ -16,6 +16,7 @@ from __future__ import annotations
 import csv
 import re
 from pathlib import Path
+import random
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -69,8 +70,7 @@ def iter_sentences(path: Path):
 #Following functions were not generated in the previous conversation    
 def shuffle_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str | int]]:
     """Shuffle the rows of a dataset."""
-    import random
-
+    random.seed(42) 
     random.shuffle(rows)
     return rows
 

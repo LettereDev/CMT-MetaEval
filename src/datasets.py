@@ -4,7 +4,7 @@ import pandas as pd
 def load_dataset(path):
     df = pd.read_csv(path, sep="\t")
 
-    return df[["statement", "label"]]
+    return df[["statement", "isMetaphor"]]
 
 
 def combine_datasets(dataset_paths):
