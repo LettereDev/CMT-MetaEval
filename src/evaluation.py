@@ -28,6 +28,7 @@ def calculate_metrics(df):
             "precision": None,
             "recall": None,
             "f1": None,
+            "valid_count": 0,
             "invalid_count": invalid_count,
             "invalid_rate": 1.0,
         }
@@ -36,6 +37,7 @@ def calculate_metrics(df):
     y_pred = valid_df["prediction"].astype(int)
     
     cm = None
+    valid_count = 0 if len(valid_df) == 0 else len(valid_df)
     
     if len(valid_df) != 0:
         cm = confusion_matrix(
@@ -65,7 +67,7 @@ def calculate_metrics(df):
             zero_division=0
         ),
         
-        "valid_count": len(valid_df),
+        "valid_count": valid_count,
 
         "invalid_count": invalid_count,
 

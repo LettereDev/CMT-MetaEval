@@ -5,8 +5,8 @@ Shuffles the rows of the csv for cometa and mist, that were made by extracting t
 Also converts the csv files to tsv files.
 Converts CoMeta token-level TSV files into one sentence-level dataset.
 
-Usage (from the project root):
-    .\\.venv\\Scripts\\python.exe src\\preprocess.py
+Usage (from the project root with PowerShell):
+    .\\.venv\\Scripts\\python.exe -m src.preprocess
 
 Note: remove second escape character before running the command on Windows.
 """
@@ -88,9 +88,9 @@ def write_tsv(rows: list[dict[str, str | int]], output_path: Path) -> None:
 
 
 def clean_cometa_es_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str | int]]:
-    """Remove empty placeholders and duplicate statement-label pairs."""
+    """Remove empty placeholders and retain only the first instance of a statement."""
     cleaned_rows: list[dict[str, str | int]] = []
-    seen: set[tuple[str, int]] = set()
+    seen_statements: set[str] = set()
 
     for row in rows:
         statement = str(row["statement"]).strip()
@@ -99,11 +99,10 @@ def clean_cometa_es_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str
         if not statement or statement == "-":
             continue
 
-        key = (statement, is_metaphor)
-        if key in seen:
+        if statement in seen_statements:
             continue
 
-        seen.add(key)
+        seen_statements.add(statement)
         cleaned_rows.append({"statement": statement, "isMetaphor": is_metaphor})
 
     return cleaned_rows
