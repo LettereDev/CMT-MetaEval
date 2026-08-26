@@ -1,4 +1,4 @@
-You are an expert in metaphor detection. According to the following definition for Metaphor: Wort oder Wortgruppe, die auf der Grundlage eines Vergleiches außerhalb ihres eigentlichen Bereichs in übertragener Bedeutung verwendet wird, Übertragung. Please classify if the following statement is metaphorical or not, your answer can't be longer than a twitter post.
+You are an expert in metaphor detection. According to the following definition for Metaphor: Wort oder Wortgruppe, die auf der Grundlage eines Vergleiches außerhalb ihres eigentlichen Bereichs in übertragener Bedeutung verwendet wird, Übertragung. Please classify if the following statement is metaphorical or not.
  
 Statement:
 "{statement}"

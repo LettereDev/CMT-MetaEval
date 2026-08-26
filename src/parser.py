@@ -1,64 +1,32 @@
-# src/parser.py
+'''
+Parse model predictions for metaphorical vs. literal classification.
+Code was fixed with CODEX, Chat: https://chatgpt.com/s/cx_6a8ed8033ab88191b216f6771dcd9b40
+'''
 
 import re
 
+_EXPLICIT_PREDICTION = re.compile(
+    r"(?:answer|classification)\s*:\s*([01])\b|^([01])\s*[-=:]"
+)
+_STANDALONE_PREDICTION = re.compile(r"\b([01])\b")
 
-def parse_prediction(response):
-    """
-    Parse the final classification from an LLM response.
 
-    Returns:
-        1    = metaphorical
-        0    = literal
-        None = invalid/unparseable
-    """
-
-    if not response:
+def parse_prediction(response: str) -> int | None:
+    """Return 1 for metaphorical, 0 for literal, or None if ambiguous/invalid."""
+    if not isinstance(response, str):
         return None
 
     response = response.strip().lower()
+    if response in {"0", "1"}:
+        return int(response)
 
-    # --------------------------------
-    # Exact response
-    # --------------------------------
+    explicit = _EXPLICIT_PREDICTION.findall(response)
+    values = {next(value for value in match if value) for match in explicit}
+    if len(values) == 1:
+        return int(values.pop())
+    if len(values) > 1:
+        return None
 
-    if response == "1":
-        return 1
-
-    if response == "0":
-        return 0
-
-    # --------------------------------
-    # Look for explicit answer formats
-    # --------------------------------
-
-    patterns = [
-        (r"answer\s*:\s*1\b", 1),
-        (r"answer\s*:\s*0\b", 0),
-
-        (r"classification\s*:\s*1\b", 1),
-        (r"classification\s*:\s*0\b", 0),
-
-        (r"^1\s*[-=:]", 1),
-        (r"^0\s*[-=:]", 0),
-    ]
-
-    for pattern, prediction in patterns:
-        if re.search(pattern, response):
-            return prediction
-
-    # --------------------------------
-    # Last resort:
-    # look at the first standalone 0/1
-    # --------------------------------
-
-    match = re.search(r"\b([01])\b", response)
-
-    if match:
-        return int(match.group(1))
-
-    # --------------------------------
-    # Invalid response
-    # --------------------------------
-
-    return None
+    # Only use a bare label if it is the sole standalone 0/1 in the response.
+    standalone = set(_STANDALONE_PREDICTION.findall(response))
+    return int(standalone.pop()) if len(standalone) == 1 else None

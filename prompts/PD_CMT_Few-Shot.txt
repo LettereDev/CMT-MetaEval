@@ -7,7 +7,7 @@ monumental example of this. Or TIME IS MONEY: You're wasting my time. This gadge
 Structural: The annual jazz festival enjoyed a full house on its opening night. Or ARGUMENT IS WAR: He attacked every weak point in my argument. His criticisms were right on target. 
 Orientational: Istanbul and Hagia Sophia: A Crossroads of Cultures. Or LOVE IS A JOURNEY: Look how far we've come. We're at a crossroads. 
 
-Please classify if the following statement is metaphorical or literal, base your classification on the following train of thought: What is the source Domain? Then, what is the target Domain? What is the conceptual mapping in this statement? Literal statements stay within one Domain. Your answer can't be longer than a twitter post. 
+Please classify if the following statement is metaphorical or literal, base your classification on the following train of thought: What is the source Domain? Then, what is the target Domain? What is the conceptual mapping in this statement? Literal statements stay within one Domain. 
 
 Statement:
 "{statement}"

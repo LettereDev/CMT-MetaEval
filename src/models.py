@@ -1,6 +1,6 @@
 import gc
 import torch
-from config import MODELS
+from .config import MODELS
 
 from transformers import (
     AutoTokenizer,

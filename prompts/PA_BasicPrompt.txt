@@ -1,4 +1,4 @@
-You are an expert in metaphor detection. Please classify if the following statement is metaphorical or literal, your answer can't be longer than a twitter post.
+You are an expert in metaphor detection. Please classify if the following statement is metaphorical or literal.
  
 Statement:
 "{statement}"

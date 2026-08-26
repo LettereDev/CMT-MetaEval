@@ -17,7 +17,7 @@ def calculate_metrics(df):
 
     total = len(df)
 
-    # Exclude invalid predictions
+    # Exclude empty predictions
     valid_df = df[df["prediction"].notna()].copy()
 
     invalid_count = len(df) - len(valid_df)
@@ -35,11 +35,14 @@ def calculate_metrics(df):
     y_true = valid_df["gold_label"].astype(int)
     y_pred = valid_df["prediction"].astype(int)
     
-    cm = confusion_matrix(
-        y_true,
-        y_pred,
-        labels=[0, 1]
-    )
+    cm = None
+    
+    if len(valid_df) != 0:
+        cm = confusion_matrix(
+            y_true,
+            y_pred,
+            labels=[0, 1]
+        )
 
     return {
         "accuracy": accuracy_score(y_true, y_pred),
@@ -61,12 +64,14 @@ def calculate_metrics(df):
             y_pred,
             zero_division=0
         ),
+        
+        "valid_count": len(valid_df),
 
         "invalid_count": invalid_count,
 
         "invalid_rate": invalid_count / total,
         
-        "confusion_matrix": cm
+        "confusion_matrix": cm,
     }
 
 
@@ -74,7 +79,7 @@ def evaluate_file(
     filepath,
     model_name,
     prompt_name,
-    dataset_name
+    experiment_name
 ):
     """Evaluate one prediction TSV."""
 
@@ -86,9 +91,10 @@ def evaluate_file(
     metrics = calculate_metrics(df)
 
     metrics.update({
-        "dataset": dataset_name,
+        "experiment": experiment_name,
         "prompt": prompt_name,
         "model": model_name,
+        "valid_count": metrics["valid_count"],
         "n": len(df),
     })
 
@@ -147,13 +153,13 @@ def evaluate_all_predictions(
     for metrics in all_metrics:
         print(
             f"Confusion Matrix for {metrics['model']} | "
-            f"{metrics['prompt']} | {metrics['dataset']}:"
+            f"{metrics['prompt']} | {metrics['experiment']}:"
         )
         print(metrics["confusion_matrix"])
 
     metrics_df = metrics_df[
         [
-            "dataset",
+            "experiment",
             "prompt",
             "model",
             "n",
@@ -161,6 +167,7 @@ def evaluate_all_predictions(
             "precision",
             "recall",
             "f1",
+            "valid_count",
             "invalid_count",
             "invalid_rate",
         ]

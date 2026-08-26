@@ -70,7 +70,7 @@ def iter_sentences(path: Path):
 #Following functions were not generated in the previous conversation    
 def shuffle_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str | int]]:
     """Shuffle the rows of a dataset."""
-    random.seed(42) 
+    random.seed(42) #Added seed for reproducibility
     random.shuffle(rows)
     return rows
 
@@ -85,6 +85,28 @@ def write_tsv(rows: list[dict[str, str | int]], output_path: Path) -> None:
         )
         writer.writeheader()
         writer.writerows(rows)
+
+
+def clean_cometa_es_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str | int]]:
+    """Remove empty placeholders and duplicate statement-label pairs."""
+    cleaned_rows: list[dict[str, str | int]] = []
+    seen: set[tuple[str, int]] = set()
+
+    for row in rows:
+        statement = str(row["statement"]).strip()
+        is_metaphor = int(row["isMetaphor"])
+        # CoMeta represents an empty sentence with a lone hyphen.
+        if not statement or statement == "-":
+            continue
+
+        key = (statement, is_metaphor)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        cleaned_rows.append({"statement": statement, "isMetaphor": is_metaphor})
+
+    return cleaned_rows
 
 
 def main() -> None:
@@ -102,6 +124,8 @@ def main() -> None:
                     "isMetaphor": int(any(tag != "O" for tag in tags)),
                 }
             )
+
+    rows = clean_cometa_es_rows(rows)
 
     OUTPUT_PATH_COMETA_ES.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_PATH_COMETA_ES.open("w", encoding="utf-8", newline="") as destination:
