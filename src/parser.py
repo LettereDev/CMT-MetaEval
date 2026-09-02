@@ -1,3 +1,4 @@
+# src/parser.py
 '''
 Parse model predictions for metaphorical vs. literal classification.
 Code was fixed with CODEX, Chat: https://chatgpt.com/s/cx_6a8ed8033ab88191b216f6771dcd9b40

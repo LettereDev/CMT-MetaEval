@@ -5,10 +5,18 @@ DATASETS = {
 }
 
 PROMPTS = {
-    "P1": "prompts/PA_BasicPrompt.txt",
-    "P2": "prompts/PB_DefinitionPrompt.txt",
-    "P3": "prompts/PC_CMT_Basic.txt",
-    "P4": "prompts/PD_CMT_Few-Shot.txt",
+    "P1": {
+        "zero_shot": "prompts/zero_shot/PA_BasicPrompt.txt",
+        "few_shot": "prompts/multi_shot/PA_BasicPrompt.txt",
+    },
+    "P2": {
+        "zero_shot": "prompts/zero_shot/PB_DefinitionPrompt.txt",
+        "few_shot": "prompts/multi_shot/PB_DefinitionPrompt.txt",
+    },
+    "P3": {
+        "zero_shot": "prompts/zero_shot/PC_CMT_Basic.txt",
+        "few_shot": "prompts/multi_shot/PC_CMT_Basic.txt",
+    },
 }
 
 MODELS = {
@@ -23,24 +31,15 @@ GENERATION_CONFIG = {
     "do_sample": False,
 }
 
-EXPERIMENTS = {
-    "COMETA": ["COMETA"],
-    "MIST": ["MIST"],
-    "CoMeta": ["CoMeta"],
-    
-    "COMETA_MIST": [
-        "COMETA", 
-        "MIST"
-    ],
-    
-    "COMETA_CoMeta": [
-        "COMETA",
-        "CoMeta"
-    ],
-    
-    "ALL": [
-        "COMETA",
-        "MIST",
-        "CoMeta"
-    ],
+SPLIT_CONFIG = {
+    "support_fraction": 0.20,
+    "split_seed": 42,
+}
+
+SHOT_COUNTS = [0, 2, 4]
+SUPPORT_SEEDS = [1, 2, 3]
+
+LANGUAGES = {
+    "DE": ["COMETA", "MIST"],
+    "ES": ["CoMeta"],
 }

@@ -1,0 +1,7 @@
+pandas
+torch
+transformers
+scikit-learn
+accelerate
+bitsandbytes
+huggingface_hub

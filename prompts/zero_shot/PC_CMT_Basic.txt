@@ -4,7 +4,6 @@ Lakoff and Johnson classify metaphors into three primary types: structural (one 
 Statement:
 "{statement}"
 
-Answer with exactly one of the following:
-
+Reason internally and answer with exactly one of the following:
 1 = metaphorical
 0 = literal

@@ -37,7 +37,7 @@ def calculate_metrics(df):
     y_pred = valid_df["prediction"].astype(int)
     
     cm = None
-    valid_count = 0 if len(valid_df) == 0 else len(valid_df)
+    valid_count = 0 
     
     if len(valid_df) != 0:
         cm = confusion_matrix(
@@ -45,6 +45,8 @@ def calculate_metrics(df):
             y_pred,
             labels=[0, 1]
         )
+        
+    valid_count = len(valid_df)
 
     return {
         "accuracy": accuracy_score(y_true, y_pred),
@@ -110,6 +112,11 @@ def evaluate_all_predictions(
     """Evaluate every prediction TSV."""
 
     all_metrics = []
+    
+    #Failsafe if no predictions exist
+    if not os.path.exists(predictions_dir):
+        print(f"No predictions found in {predictions_dir}.")
+        return pd.DataFrame()
 
     for dataset_name in os.listdir(predictions_dir):
 
