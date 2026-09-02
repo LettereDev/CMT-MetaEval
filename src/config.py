@@ -20,7 +20,7 @@ PROMPTS = {
 }
 
 MODELS = {
-    "Gemma-3-4B": "google/gemma-3-4b-it",
+    "Gemma-3-4B": "google/gemma-3-4b-it", 
     "Qwen3-8B": "Qwen/Qwen3-8B",
     "Llama-3.1-8B": "meta-llama/Llama-3.1-8B-Instruct",
     "Mistral-7B": "mistralai/Mistral-7B-Instruct-v0.3",

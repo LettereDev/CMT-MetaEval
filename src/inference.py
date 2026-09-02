@@ -5,10 +5,10 @@ import random
 import pandas as pd
 import torch
 
-from .config import GENERATION_CONFIG, SPLIT_CONFIG
+from .config import GENERATION_CONFIG
 from .parser import parse_prediction
-from .prompts import format_examples, build_prompt
-from .datasets import load_lang_dataset
+from .prompts import build_prompt
+from .split import OUTPUT_DIR
 
 
 def generate_response(model, tokenizer, prompt):
@@ -48,28 +48,25 @@ def generate_response(model, tokenizer, prompt):
     return response.strip()
 
 
-def get_support_and_query(test_lang, split_seed):
+def get_support_and_query(test_lang):
     """
-    Loads the full dataset for a language (via load_lang_dataset, which
-    already handles combining COMETA+MIST for DE or using CoMeta for ES)
-    and splits it into:
-      - a support pool, from which few-shot examples are drawn
-      - a query set, which is what gets evaluated
-
-    The split is deterministic given split_seed, so the same query set
-    is used across all shot_count / support_seed conditions for a
-    given language.
+    Loads the static support/query split produced by `python -m src.split`,
+    so every model/prompt/shot_count/support_seed combination is evaluated
+    against exactly the same query rows and draws few-shot examples from
+    exactly the same support pool for a given language.
     """
-    dataset = load_lang_dataset(test_lang)
+    support_path = os.path.join(OUTPUT_DIR, f"{test_lang}_support.tsv")
+    query_path = os.path.join(OUTPUT_DIR, f"{test_lang}_query.tsv")
 
-    support_fraction = SPLIT_CONFIG["support_fraction"]
-    support_size = int(len(dataset) * support_fraction)
+    if not (os.path.exists(support_path) and os.path.exists(query_path)):
+        raise FileNotFoundError(
+            f"Missing split files for '{test_lang}': "
+            f"expected {support_path} and {query_path}. "
+            f"Run `python -m src.split` first to generate them."
+        )
 
-    rng = random.Random(split_seed)
-    support_indices = rng.sample(range(len(dataset)), support_size)
-
-    support_df = dataset.iloc[support_indices].reset_index(drop=True)
-    query_df = dataset.drop(index=support_indices).reset_index(drop=True)
+    support_df = pd.read_csv(support_path, sep="\t")
+    query_df = pd.read_csv(query_path, sep="\t")
 
     return support_df, query_df
 
@@ -101,7 +98,6 @@ def run_experiment(
     model_name,
     test_lang,
     shot_count,
-    split_seed,
     support_seed,
     output_dir="results/predictions"
 ):
@@ -119,8 +115,32 @@ def run_experiment(
         + (f" | seed={support_seed}" if shot_count > 0 else "")
     )
 
+    # One directory per experimental condition, so this lines up with
+    # evaluation.evaluate_all_predictions(), which expects
+    # predictions_dir/<experiment>/<prompt>_<model>.tsv
+    condition_dir = f"{test_lang}_{shot_count}shot"
+    if shot_count > 0:
+        condition_dir += f"_seed{support_seed}"
+
+    output_path = os.path.join(
+        output_dir,
+        condition_dir,
+    )
+
+    filename = f"{prompt_name}_{model_name}.tsv"
+    filepath = os.path.join(output_path, filename)
+
+    # Resume support: if this exact condition already produced a result
+    # file (e.g. a previous run was interrupted partway through), skip
+    # redoing it and just return what's already on disk.
+    if os.path.exists(filepath):
+        print(f"Already exists, skipping: {filepath}")
+        return pd.read_csv(filepath, sep="\t")
+
+    os.makedirs(output_path, exist_ok=True)
+
     # Build the support pool and the held-out query (evaluation) set
-    support_df, query_df = get_support_and_query(test_lang, split_seed)
+    support_df, query_df = get_support_and_query(test_lang)
 
     # Draw few-shot examples from the support pool (empty for zero-shot)
     support_examples = sample_support_examples(
@@ -188,31 +208,7 @@ def run_experiment(
         f"({invalid_count / total_count:.2%})"
     )
 
-    # One directory per experimental condition, so this lines up with
-    # evaluation.evaluate_all_predictions(), which expects
-    # predictions_dir/<experiment>/<prompt>_<model>.tsv
-    condition_dir = f"{test_lang}_{shot_count}shot"
-    if shot_count > 0:
-        condition_dir += f"_seed{support_seed}"
-
-    output_path = os.path.join(
-        output_dir,
-        condition_dir,
-    )
-
-    os.makedirs(
-        output_path,
-        exist_ok=True
-    )
-
-    # Save results
-    filename = f"{prompt_name}_{model_name}.tsv"
-
-    filepath = os.path.join(
-        output_path,
-        filename
-    )
-
+    # One directory per experimental condition
     results_df.to_csv(
         filepath,
         sep="\t",

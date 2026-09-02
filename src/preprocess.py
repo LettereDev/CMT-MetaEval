@@ -153,6 +153,5 @@ def main() -> None:
     print(f"Wrote {len(cometa)} rows to {cometa_output_path}")
     print(f"Wrote {len(mist)} rows to {mist_output_path}")
 
-
 if __name__ == "__main__":
     main()
