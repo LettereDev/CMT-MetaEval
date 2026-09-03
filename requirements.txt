@@ -3,5 +3,6 @@ torch
 transformers
 scikit-learn
 accelerate
-bitsandbytes
+bitsandbytes>=0.46.1
 huggingface_hub
+accelerate

@@ -1,4 +1,11 @@
 # src/inference.py
+
+'''
+Functions for running inference experiments.
+Modified and corrected with Claude, primarily added failsafe in case a run gets interrupted, 
+so that it can be resumed without overwriting previous results.
+'''
+
 import os
 import random
 
@@ -7,7 +14,7 @@ import torch
 
 from .config import GENERATION_CONFIG
 from .parser import parse_prediction
-from .prompts import build_prompt
+from .prompts import format_examples, build_prompt
 from .split import OUTPUT_DIR
 
 
@@ -27,6 +34,7 @@ def generate_response(model, tokenizer, prompt):
         messages,
         add_generation_prompt=True,
         return_tensors="pt",
+        return_dict=True, #for consistency across models
     )
 
     inputs = inputs.to(model.device)
@@ -34,11 +42,11 @@ def generate_response(model, tokenizer, prompt):
     with torch.no_grad():
 
         outputs = model.generate(
-            inputs,
+            **inputs,
             **GENERATION_CONFIG,
         )
 
-    generated_tokens = outputs[0][inputs.shape[1]:]
+    generated_tokens = outputs[0][inputs["input_ids"].shape[1]:]
 
     response = tokenizer.decode(
         generated_tokens,
@@ -208,7 +216,9 @@ def run_experiment(
         f"({invalid_count / total_count:.2%})"
     )
 
-    # One directory per experimental condition
+    # One directory per experimental condition, so this lines up with
+    # evaluation.evaluate_all_predictions(), which expects
+    # predictions_dir/<experiment>/<prompt>_<model>.tsv
     results_df.to_csv(
         filepath,
         sep="\t",

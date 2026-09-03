@@ -109,6 +109,55 @@ def clean_cometa_es_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str
     return cleaned_rows
 
 
+def sample_matching_distribution(
+    rows: list[dict[str, str | int]],
+    target_size: int,
+    label_column: str = "isMetaphor",
+    seed: int = 42,
+) -> list[dict[str, str | int]]:
+    """
+    Draw `target_size` rows out of `rows`, keeping each label value's
+    share of the sample as close as possible to its share in `rows`
+    (i.e. a stratified sample rather than a plain random one).
+
+    Used to size-match CoMeta (ES) to the combined size of COMETA + MIST
+    (DE) while preserving CoMeta's own metaphor/non-metaphor ratio,
+    rather than forcing it to the (different) 50/50 ratio of the DE sets.
+    """
+    if target_size > len(rows):
+        raise ValueError(
+            f"Cannot sample {target_size} rows from a pool of {len(rows)}."
+        )
+
+    rng = random.Random(seed)
+
+    groups: dict[object, list[dict[str, str | int]]] = {}
+    for row in rows:
+        groups.setdefault(row[label_column], []).append(row)
+
+    total = len(rows)
+    labels = list(groups.keys())
+    sampled: list[dict[str, str | int]] = []
+    remaining_target = target_size
+
+    for index, label in enumerate(labels):
+        group = groups[label]
+
+        if index == len(labels) - 1:
+            # Give the last label whatever is left, so rounding never
+            # under- or over-shoots target_size.
+            group_target = remaining_target
+        else:
+            group_target = round(target_size * len(group) / total)
+            group_target = min(group_target, len(group), remaining_target)
+
+        sampled.extend(rng.sample(group, group_target))
+        remaining_target -= group_target
+
+    rng.shuffle(sampled)
+    return sampled
+
+
 def main() -> None:
     rows: list[dict[str, str | int]] = []
 
@@ -152,6 +201,27 @@ def main() -> None:
     write_tsv(mist, mist_output_path)
     print(f"Wrote {len(cometa)} rows to {cometa_output_path}")
     print(f"Wrote {len(mist)} rows to {mist_output_path}")
+
+    # Build a CoMeta (ES) sample the same size as COMETA + MIST (DE)
+    # combined, preserving CoMeta's own metaphor/non-metaphor ratio.
+    # section made by Claude
+    target_size = len(cometa) + len(mist)
+    cometa_es_matched = sample_matching_distribution(rows, target_size)
+
+    matched_output_path = PROJECT_ROOT / "data" / "processed" / "cometa_es_matched.tsv"
+    write_tsv(cometa_es_matched, matched_output_path)
+
+    matched_positives = sum(row["isMetaphor"] for row in cometa_es_matched) # type: ignore
+    print(
+        f"Wrote {len(cometa_es_matched)} sampled CoMeta (ES) rows "
+        f"(matched to |COMETA|+|MIST|={target_size}) to {matched_output_path}"
+    )
+    print(
+        f"Metaphorical: {matched_positives}; "
+        f"non-metaphorical: {len(cometa_es_matched) - matched_positives} "
+        f"(source CoMeta ratio: {positives}/{len(rows) - positives})"
+    )
+
 
 if __name__ == "__main__":
     main()

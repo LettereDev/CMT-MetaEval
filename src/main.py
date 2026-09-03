@@ -20,7 +20,7 @@ def inference(run_id):
     """
     Run every model / prompt / language / shot_count / support_seed
     combination, writing predictions under results/predictions/<run_id>/
-    
+    so separate invocations of main() don't overwrite each other.
     Individual conditions whose result file already exists under this
     run_id are skipped by run_experiment (see inference.run_experiment),
     so re-running with the same run_id resumes an interrupted run.
@@ -73,12 +73,9 @@ def inference(run_id):
                             )
 
         finally:
-
-            # Make absolutely sure model is unloaded
-            unload_model(
-                model,
-                tokenizer
-            )
+            del model
+            del tokenizer
+            unload_model()
 
 
 def main(run_id=None):
