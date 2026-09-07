@@ -9,21 +9,21 @@ import os
 import sys
 from datetime import datetime
 
-from .config import MODELS, PROMPTS, LANGUAGES, SHOT_COUNTS, SUPPORT_SEEDS
+from .config import MODELS, PROMPTS, LANGUAGES
 from .models import load_model, unload_model
-from .inference import run_experiment
+from .inference import run_experiment, build_fewshot_examples
 from .evaluation import evaluate_all_predictions
 from .prompts import load_prompt
 
 
 def inference(run_id):
     """
-    Run every model / prompt / language / shot_count / support_seed
-    combination, writing predictions under results/predictions/<run_id>/
-    so separate invocations of main() don't overwrite each other.
-    Individual conditions whose result file already exists under this
-    run_id are skipped by run_experiment (see inference.run_experiment),
-    so re-running with the same run_id resumes an interrupted run.
+    Run every model / prompt / language / few-shot condition combination,
+    writing predictions under results/predictions/<run_id>/ so separate
+    invocations of main() don't overwrite each other. Individual
+    conditions whose result file already exists under this run_id are
+    skipped by run_experiment (see inference.run_experiment), so
+    re-running with the same run_id resumes an interrupted run.
     """
 
     output_dir = os.path.join("results/predictions", run_id)
@@ -38,6 +38,9 @@ def inference(run_id):
         for prompt_name, shot_paths in PROMPTS.items()
     }
 
+    # Building the few-shot examples is deterministic, so it can be done once and reused for every model/prompt/language combination.
+    shot_conditions = build_fewshot_examples()
+
     for model_name, model_id in MODELS.items():
 
         print("=" * 60)
@@ -49,32 +52,28 @@ def inference(run_id):
 
             for prompt_name, shot_templates in prompts.items():
                 for lang in LANGUAGES:
-                    for shot_count in SHOT_COUNTS:
+                    for shot_count, condition_label, examples in shot_conditions:
 
                         shot_type = "zero_shot" if shot_count == 0 else "few_shot"
                         prompt_template = shot_templates[shot_type]
 
-                        # Zero-shot draws no examples, so looping every
-                        # support seed would just repeat an identical run.
-                        # Run it once, using the first seed as a label.
-                        seeds = SUPPORT_SEEDS if shot_count > 0 else SUPPORT_SEEDS[:1]
-
-                        for support_seed in seeds:
-                            run_experiment(
-                                model=model,
-                                tokenizer=tokenizer,
-                                prompt=prompt_template,
-                                prompt_name=prompt_name,
-                                model_name=model_name,
-                                test_lang=lang,
-                                shot_count=shot_count,
-                                support_seed=support_seed,
-                                output_dir=output_dir
-                            )
+                        run_experiment(
+                            model=model,
+                            tokenizer=tokenizer,
+                            prompt=prompt_template,
+                            prompt_name=prompt_name,
+                            model_name=model_name,
+                            test_lang=lang,
+                            shot_count=shot_count,
+                            condition_label=condition_label,
+                            examples=examples,
+                            output_dir=output_dir
+                        )
 
         finally:
             del model
             del tokenizer
+
             unload_model()
 
 

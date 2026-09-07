@@ -11,10 +11,6 @@ from transformers import (
 
 
 def load_model(model_id):
-    # Unload any previously loaded model to free GPU memory
-    model_to_unload = [name for name in MODELS.values() if name != model_id]
-    if model_to_unload in globals():
-        unload_model()
 
     print(f"Loading {model_id}...")
 

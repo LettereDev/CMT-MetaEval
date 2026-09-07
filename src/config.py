@@ -1,7 +1,7 @@
 DATASETS = {
     "COMETA": "data/processed/cometa.tsv",
     "MIST": "data/processed/mist.tsv",
-    "CoMeta": "data/processed/cometa_es_matched.tsv", #adjusted to match the size of COMETA + MIST
+    "CoMeta": "data/processed/cometa_es_matched.tsv",
 }
 
 PROMPTS = {
@@ -19,16 +19,15 @@ PROMPTS = {
     },
 }
 
-#Switched to smaller models due to hardware limitations
 MODELS = {
-    "Gemma-3-1B": "google/gemma-3-1b-it", 
-    "Qwen2.5-1.5B": "Qwen/Qwen2.5-1.5B-Instruct",
-    "Llama-3.2-1B": "meta-llama/Llama-3.2-1B-Instruct",
-    "Phi-3.5": "microsoft/Phi-3.5-mini-instruct", #replaced mistral with phi-3.5-mini-instruct due to hardware limitations and lack of a stable release for mistralai/Ministral-3-3B-Instruct-2512
+    "Gemma-3-4B": "google/gemma-3-4b-it",
+    "Qwen3-8B": "Qwen/Qwen3-8B",
+    "Llama-3.1-8B": "meta-llama/Llama-3.1-8B-Instruct",
+    "Mistral-7B": "mistralai/Mistral-7B-Instruct-v0.3",
 }
 
 GENERATION_CONFIG = {
-    "max_new_tokens": 5, #modified from 15 to improve performance
+    "max_new_tokens": 15,
     "do_sample": False,
 }
 
@@ -38,7 +37,13 @@ SPLIT_CONFIG = {
 }
 
 SHOT_COUNTS = [0, 2, 4]
-SUPPORT_SEEDS = [1, 2, 3]
+
+# Seeds used to deterministically pick the fixed cross-lingual few-shot
+# examples once (see inference.build_fewshot_examples). Two separate
+# seeds keep the 4-shot examples independent of the 2-shot pairs, rather
+# than being a combination of them.
+FEWSHOT_2SHOT_SEED = 42
+FEWSHOT_4SHOT_SEED = 43
 
 LANGUAGES = {
     "DE": ["COMETA", "MIST"],

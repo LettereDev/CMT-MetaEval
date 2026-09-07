@@ -1,20 +1,13 @@
 # src/inference.py
-
-'''
-Functions for running inference experiments.
-Modified and corrected with Claude, primarily added failsafe in case a run gets interrupted, 
-so that it can be resumed without overwriting previous results.
-'''
-
 import os
 import random
 
 import pandas as pd
 import torch
 
-from .config import GENERATION_CONFIG
+from .config import GENERATION_CONFIG, FEWSHOT_2SHOT_SEED, FEWSHOT_4SHOT_SEED
 from .parser import parse_prediction
-from .prompts import format_examples, build_prompt
+from .prompts import build_prompt
 from .split import OUTPUT_DIR
 
 
@@ -34,7 +27,7 @@ def generate_response(model, tokenizer, prompt):
         messages,
         add_generation_prompt=True,
         return_tensors="pt",
-        return_dict=True, #for consistency across models
+        return_dict=True,
     )
 
     inputs = inputs.to(model.device)
@@ -56,46 +49,100 @@ def generate_response(model, tokenizer, prompt):
     return response.strip()
 
 
-def get_support_and_query(test_lang):
-    """
-    Loads the static support/query split produced by `python -m src.split`,
-    so every model/prompt/shot_count/support_seed combination is evaluated
-    against exactly the same query rows and draws few-shot examples from
-    exactly the same support pool for a given language.
-    """
-    support_path = os.path.join(OUTPUT_DIR, f"{test_lang}_support.tsv")
-    query_path = os.path.join(OUTPUT_DIR, f"{test_lang}_query.tsv")
+def load_support_pool(language):
+    """Loads the static support pool for one language, written by split.py."""
+    support_path = os.path.join(OUTPUT_DIR, f"{language}_support.tsv")
 
-    if not (os.path.exists(support_path) and os.path.exists(query_path)):
+    if not os.path.exists(support_path):
         raise FileNotFoundError(
-            f"Missing split files for '{test_lang}': "
-            f"expected {support_path} and {query_path}. "
-            f"Run `python -m src.split` first to generate them."
+            f"Missing support file for '{language}': expected {support_path}. "
+            f"Run `python -m src.split` first to generate it."
         )
 
-    support_df = pd.read_csv(support_path, sep="\t")
-    query_df = pd.read_csv(query_path, sep="\t")
-
-    return support_df, query_df
+    return pd.read_csv(support_path, sep="\t")
 
 
-def sample_support_examples(support_df, shot_count, support_seed):
+def load_query_set(test_lang):
+    """Loads the static query (evaluation) set for a language, written by split.py."""
+    query_path = os.path.join(OUTPUT_DIR, f"{test_lang}_query.tsv")
+
+    if not os.path.exists(query_path):
+        raise FileNotFoundError(
+            f"Missing query file for '{test_lang}': expected {query_path}. "
+            f"Run `python -m src.split` first to generate it."
+        )
+
+    return pd.read_csv(query_path, sep="\t")
+
+#Function made with Claude
+def build_fewshot_examples(pair_seed=FEWSHOT_2SHOT_SEED, four_shot_seed=FEWSHOT_4SHOT_SEED):
     """
-    Draws `shot_count` examples from the support pool using `support_seed`,
-    so different seeds yield different few-shot example sets for the same
-    shot_count. Returns an empty (but correctly-shaped) DataFrame for
-    zero-shot.
-    """
-    if shot_count == 0 or len(support_df) == 0:
-        return support_df.iloc[0:0]
+    Selects, once and deterministically, the fixed cross-lingual few-shot
+    examples used identically across every model/prompt/language:
 
-    rng = random.Random(support_seed)
-    indices = rng.sample(
-        range(len(support_df)),
-        min(shot_count, len(support_df))
+      - Two DE support examples (de_a, de_b) and two ES support examples
+        (es_a, es_b) are drawn with `pair_seed`, forming the 2-shot pairs:
+          "2shot_DE_ES": [de_a, es_a]  (DE example presented first)
+          "2shot_ES_DE": [es_b, de_b]  (ES example presented first)
+        4 distinct sentences total across the two pairs.
+      - A separate draw of 2 more DE + 2 more ES examples is made with
+        `four_shot_seed`, excluding the four sentences already used
+        above, so the 4-shot condition is fully independent of (shares
+        no sentences with) the 2-shot pairs:
+          "4shot": [de_c1, es_c1, de_c2,  es_c2]  (2 DE + 2 ES)
+      - 0-shot uses no examples.
+
+    Returns a list of (shot_count, condition_label, examples_df) tuples,
+    and prints exactly which sentences were selected for each condition.
+    """
+    de_pool = load_support_pool("DE")
+    es_pool = load_support_pool("ES")
+
+    pair_rng = random.Random(pair_seed)
+    de_pair_indices = pair_rng.sample(range(len(de_pool)), 2)
+    es_pair_indices = pair_rng.sample(range(len(es_pool)), 2)
+
+    de_a = de_pool.iloc[[de_pair_indices[0]]]
+    de_b = de_pool.iloc[[de_pair_indices[1]]]
+    es_a = es_pool.iloc[[es_pair_indices[0]]]
+    es_b = es_pool.iloc[[es_pair_indices[1]]]
+
+    # Independent draw for 4-shot: exclude the indices already used
+    # above so no sentence appears in both the 2-shot and 4-shot
+    # conditions.
+    four_shot_rng = random.Random(four_shot_seed)
+    de_remaining = [i for i in range(len(de_pool)) if i not in de_pair_indices]
+    es_remaining = [i for i in range(len(es_pool)) if i not in es_pair_indices]
+
+    de_four_indices = four_shot_rng.sample(de_remaining, 2)
+    es_four_indices = four_shot_rng.sample(es_remaining, 2)
+
+    de_c1 = de_pool.iloc[[de_four_indices[0]]]
+    de_c2 = de_pool.iloc[[de_four_indices[1]]]
+    es_c1 = es_pool.iloc[[es_four_indices[0]]]
+    es_c2 = es_pool.iloc[[es_four_indices[1]]]
+
+    empty_examples = de_pool.iloc[0:0]
+
+    conditions = [
+        (0, "0shot", empty_examples),
+        (2, "2shot_DE_ES", pd.concat([de_a, es_a], ignore_index=True)),
+        (2, "2shot_ES_DE", pd.concat([es_b, de_b], ignore_index=True)),
+        (4, "4shot", pd.concat([de_c1, es_c1, de_c2,  es_c2], ignore_index=True)),
+    ]
+
+    print(
+        f"Fixed few-shot examples selected "
+        f"(pair_seed={pair_seed}, four_shot_seed={four_shot_seed}):"
+    )
+    print(f"  2shot_DE_ES -> DE: \"{de_a.iloc[0].statement}\" | ES: \"{es_a.iloc[0].statement}\"")
+    print(f"  2shot_ES_DE -> ES: \"{es_b.iloc[0].statement}\" | DE: \"{de_b.iloc[0].statement}\"")
+    print(
+        f"  4shot -> DE: \"{de_c1.iloc[0].statement}\", \"{de_c2.iloc[0].statement}\" | "
+        f"ES: \"{es_c1.iloc[0].statement}\", \"{es_c2.iloc[0].statement}\""
     )
 
-    return support_df.iloc[indices].reset_index(drop=True)
+    return conditions
 
 
 def run_experiment(
@@ -106,12 +153,17 @@ def run_experiment(
     model_name,
     test_lang,
     shot_count,
-    support_seed,
+    condition_label,
+    examples,
     output_dir="results/predictions"
 ):
     """
-    Run one model + one prompt + one shot_count/support_seed condition,
-    for one language (test_lang is a key in config.LANGUAGES, e.g. "DE"/"ES").
+    Run one model + one prompt + one fixed few-shot condition
+    (condition_label, e.g. "0shot", "2shot_DE_ES", "2shot_ES_DE", "4shot"),
+    evaluated against test_lang's query set. `examples` is the fixed
+    DataFrame of few-shot examples to insert into the prompt (empty for
+    zero-shot) -- built once by build_fewshot_examples() and reused
+    identically across every model/prompt/language.
     """
 
     print(
@@ -119,16 +171,13 @@ def run_experiment(
         f"{model_name} | "
         f"{test_lang} | "
         f"{prompt_name} | "
-        f"{shot_count}-shot"
-        + (f" | seed={support_seed}" if shot_count > 0 else "")
+        f"{condition_label}"
     )
 
     # One directory per experimental condition, so this lines up with
     # evaluation.evaluate_all_predictions(), which expects
     # predictions_dir/<experiment>/<prompt>_<model>.tsv
-    condition_dir = f"{test_lang}_{shot_count}shot"
-    if shot_count > 0:
-        condition_dir += f"_seed{support_seed}"
+    condition_dir = f"{test_lang}_{condition_label}"
 
     output_path = os.path.join(
         output_dir,
@@ -147,15 +196,7 @@ def run_experiment(
 
     os.makedirs(output_path, exist_ok=True)
 
-    # Build the support pool and the held-out query (evaluation) set
-    support_df, query_df = get_support_and_query(test_lang)
-
-    # Draw few-shot examples from the support pool (empty for zero-shot)
-    support_examples = sample_support_examples(
-        support_df,
-        shot_count,
-        support_seed
-    )
+    query_df = load_query_set(test_lang)
 
     results = []
 
@@ -174,7 +215,7 @@ def run_experiment(
         # Insert statement (and, for few-shot, examples) into prompt
         formatted_prompt = build_prompt(
             prompt,
-            examples=support_examples,
+            examples=examples,
             statement=statement
         )
 
@@ -194,6 +235,8 @@ def run_experiment(
             "prediction": prediction,
             "gold_label": gold_label,
             "dataset": dataset_name,
+            "shot_count": shot_count,
+            "condition": condition_label,
         })
 
         # Progress information
@@ -216,9 +259,6 @@ def run_experiment(
         f"({invalid_count / total_count:.2%})"
     )
 
-    # One directory per experimental condition, so this lines up with
-    # evaluation.evaluate_all_predictions(), which expects
-    # predictions_dir/<experiment>/<prompt>_<model>.tsv
     results_df.to_csv(
         filepath,
         sep="\t",
