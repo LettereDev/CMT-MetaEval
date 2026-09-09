@@ -10,3 +10,5 @@ Statement:
 Reason internally and answer with exactly one of the following:
 1 = metaphorical
 0 = literal
+
+Label:

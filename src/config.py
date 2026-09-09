@@ -19,15 +19,16 @@ PROMPTS = {
     },
 }
 
+#Changed model back to reduced ones due to hardware limitations.
 MODELS = {
-    "Gemma-3-4B": "google/gemma-3-4b-it",
-    "Qwen3-8B": "Qwen/Qwen3-8B",
-    "Llama-3.1-8B": "meta-llama/Llama-3.1-8B-Instruct",
-    "Mistral-7B": "mistralai/Mistral-7B-Instruct-v0.3",
+    "Gemma-3-1B": "google/gemma-3-1b-it",
+    "Qwen2.5-1.5B": "Qwen/Qwen2.5-1.5B-Instruct",
+    "Phi-3.5-mini": "microsoft/Phi-3.5-mini-instruct",
+    "Llama-3.2-1B": "meta-llama/Llama-3.2-1B-Instruct",
 }
 
 GENERATION_CONFIG = {
-    "max_new_tokens": 15,
+    "max_new_tokens": 5,
     "do_sample": False,
 }
 

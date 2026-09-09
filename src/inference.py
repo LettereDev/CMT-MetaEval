@@ -7,7 +7,7 @@ import torch
 
 from .config import GENERATION_CONFIG, FEWSHOT_2SHOT_SEED, FEWSHOT_4SHOT_SEED
 from .parser import parse_prediction
-from .prompts import build_prompt
+from .prompts import format_examples, build_prompt
 from .split import OUTPUT_DIR
 
 
@@ -74,72 +74,105 @@ def load_query_set(test_lang):
 
     return pd.read_csv(query_path, sep="\t")
 
-#Function made with Claude
+#Added by Claude
+def _draw_one(rng, pool):
+    """
+    Draws one row from `pool` (a DataFrame with a fresh 0..n-1 index)
+    using `rng`. Returns (the row as a 1-row DataFrame, its position),
+    so the caller can exclude that position from a later draw.
+    """
+    if len(pool) == 0:
+        raise ValueError("Cannot draw from an empty pool.")
+
+    position = rng.randrange(len(pool))
+    return pool.iloc[[position]], position
+
+#Modified with Claude and peronal reviews/additions
 def build_fewshot_examples(pair_seed=FEWSHOT_2SHOT_SEED, four_shot_seed=FEWSHOT_4SHOT_SEED):
     """
     Selects, once and deterministically, the fixed cross-lingual few-shot
-    examples used identically across every model/prompt/language:
+    examples used identically across every model/prompt/language.
+    Label-stratified throughout, so every condition shows both classes
+    rather than risking an all-one-label draw (verified possible with
+    unconstrained random sampling on this project's actual data).
 
-      - Two DE support examples (de_a, de_b) and two ES support examples
-        (es_a, es_b) are drawn with `pair_seed`, forming the 2-shot pairs:
-          "2shot_DE_ES": [de_a, es_a]  (DE example presented first)
-          "2shot_ES_DE": [es_b, de_b]  (ES example presented first)
-        4 distinct sentences total across the two pairs.
-      - A separate draw of 2 more DE + 2 more ES examples is made with
-        `four_shot_seed`, excluding the four sentences already used
-        above, so the 4-shot condition is fully independent of (shares
-        no sentences with) the 2-shot pairs:
-          "4shot": [de_c1, es_c1, de_c2,  es_c2]  (2 DE + 2 ES)
+      - 2-shot pairs: the FIRST example presented is always
+        metaphorical, the SECOND is always non-metaphorical, with
+        language and label tied together:
+          "2shot_DE_ES": [DE metaphorical, ES non-metaphorical]
+          "2shot_ES_DE": [ES metaphorical, DE non-metaphorical]
+        4 distinct sentences total (1 DE-pos, 1 DE-neg, 1 ES-pos, 1 ES-neg).
+      - 4-shot: a separate, independent draw (its own seed), stratified
+        the same way (1 more DE-pos, 1 DE-neg, 1 ES-pos, 1 ES-neg),
+        excluding the four sentences already used in the pairs above.
       - 0-shot uses no examples.
 
     Returns a list of (shot_count, condition_label, examples_df) tuples,
-    and prints exactly which sentences were selected for each condition.
+    and prints exactly which sentences (and labels) were selected.
     """
-    de_pool = load_support_pool("DE")
-    es_pool = load_support_pool("ES")
+    de_support = load_support_pool("DE")
+    es_support = load_support_pool("ES")
+
+    de_pos = de_support[de_support["isMetaphor"] == 1].reset_index(drop=True)
+    de_neg = de_support[de_support["isMetaphor"] == 0].reset_index(drop=True)
+    es_pos = es_support[es_support["isMetaphor"] == 1].reset_index(drop=True)
+    es_neg = es_support[es_support["isMetaphor"] == 0].reset_index(drop=True)
 
     pair_rng = random.Random(pair_seed)
-    de_pair_indices = pair_rng.sample(range(len(de_pool)), 2)
-    es_pair_indices = pair_rng.sample(range(len(es_pool)), 2)
 
-    de_a = de_pool.iloc[[de_pair_indices[0]]]
-    de_b = de_pool.iloc[[de_pair_indices[1]]]
-    es_a = es_pool.iloc[[es_pair_indices[0]]]
-    es_b = es_pool.iloc[[es_pair_indices[1]]]
+    de_pos_a, de_pos_a_pos = _draw_one(pair_rng, de_pos)
+    de_neg_a, de_neg_a_pos = _draw_one(pair_rng, de_neg)
+    es_pos_a, es_pos_a_pos = _draw_one(pair_rng, es_pos)
+    es_neg_a, es_neg_a_pos = _draw_one(pair_rng, es_neg)
 
-    # Independent draw for 4-shot: exclude the indices already used
-    # above so no sentence appears in both the 2-shot and 4-shot
-    # conditions.
+    two_shot_de_es = pd.concat([de_pos_a, es_neg_a], ignore_index=True)
+    two_shot_es_de = pd.concat([es_pos_a, de_neg_a], ignore_index=True)
+
+    # Independent 4-shot draw, same stratification, excluding the
+    # sentences already used in the pairs above.
     four_shot_rng = random.Random(four_shot_seed)
-    de_remaining = [i for i in range(len(de_pool)) if i not in de_pair_indices]
-    es_remaining = [i for i in range(len(es_pool)) if i not in es_pair_indices]
 
-    de_four_indices = four_shot_rng.sample(de_remaining, 2)
-    es_four_indices = four_shot_rng.sample(es_remaining, 2)
+    de_pos_remaining = de_pos.drop(index=de_pos_a_pos).reset_index(drop=True)
+    de_neg_remaining = de_neg.drop(index=de_neg_a_pos).reset_index(drop=True)
+    es_pos_remaining = es_pos.drop(index=es_pos_a_pos).reset_index(drop=True)
+    es_neg_remaining = es_neg.drop(index=es_neg_a_pos).reset_index(drop=True)
 
-    de_c1 = de_pool.iloc[[de_four_indices[0]]]
-    de_c2 = de_pool.iloc[[de_four_indices[1]]]
-    es_c1 = es_pool.iloc[[es_four_indices[0]]]
-    es_c2 = es_pool.iloc[[es_four_indices[1]]]
+    de_pos_b, _ = _draw_one(four_shot_rng, de_pos_remaining)
+    de_neg_b, _ = _draw_one(four_shot_rng, de_neg_remaining)
+    es_pos_b, _ = _draw_one(four_shot_rng, es_pos_remaining)
+    es_neg_b, _ = _draw_one(four_shot_rng, es_neg_remaining)
 
-    empty_examples = de_pool.iloc[0:0]
+    four_shot = pd.concat(
+        [de_pos_b, de_neg_b, es_pos_b, es_neg_b],
+        ignore_index=True
+    )
+
+    empty_examples = de_support.iloc[0:0]
 
     conditions = [
         (0, "0shot", empty_examples),
-        (2, "2shot_DE_ES", pd.concat([de_a, es_a], ignore_index=True)),
-        (2, "2shot_ES_DE", pd.concat([es_b, de_b], ignore_index=True)),
-        (4, "4shot", pd.concat([de_c1, es_c1, de_c2,  es_c2], ignore_index=True)),
+        (2, "2shot_DE_ES", two_shot_de_es),
+        (2, "2shot_ES_DE", two_shot_es_de),
+        (4, "4shot", four_shot),
     ]
 
     print(
         f"Fixed few-shot examples selected "
         f"(pair_seed={pair_seed}, four_shot_seed={four_shot_seed}):"
     )
-    print(f"  2shot_DE_ES -> DE: \"{de_a.iloc[0].statement}\" | ES: \"{es_a.iloc[0].statement}\"")
-    print(f"  2shot_ES_DE -> ES: \"{es_b.iloc[0].statement}\" | DE: \"{de_b.iloc[0].statement}\"")
     print(
-        f"  4shot -> DE: \"{de_c1.iloc[0].statement}\", \"{de_c2.iloc[0].statement}\" | "
-        f"ES: \"{es_c1.iloc[0].statement}\", \"{es_c2.iloc[0].statement}\""
+        f"  2shot_DE_ES -> DE [metaphor]: \"{de_pos_a.iloc[0].statement}\" | "
+        f"ES [non-metaphor]: \"{es_neg_a.iloc[0].statement}\""
+    )
+    print(
+        f"  2shot_ES_DE -> ES [metaphor]: \"{es_pos_a.iloc[0].statement}\" | "
+        f"DE [non-metaphor]: \"{de_neg_a.iloc[0].statement}\""
+    )
+    print(
+        f"  4shot -> DE [metaphor]: \"{de_pos_b.iloc[0].statement}\", "
+        f"DE [non-metaphor]: \"{de_neg_b.iloc[0].statement}\" | "
+        f"ES [metaphor]: \"{es_pos_b.iloc[0].statement}\", "
+        f"ES [non-metaphor]: \"{es_neg_b.iloc[0].statement}\""
     )
 
     return conditions

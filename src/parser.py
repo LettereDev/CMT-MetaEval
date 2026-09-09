@@ -14,18 +14,26 @@ _STANDALONE_PREDICTION = re.compile(r"\b([01])\b")
 # Some models (observed with Gemma) append a trailing explanation after
 # the label. Anything from this marker onward is dropped before extraction
 _EXPLANATION_MARKER = re.compile(r"explanation\s*:?")
+_STATEMENT_MARKER = re.compile(r"statement\s*:?")
 
 
 def parse_prediction(response: str) -> int | None:
     """Return 1 for metaphorical, 0 for literal, or None if ambiguous/invalid."""
+    
     if not isinstance(response, str):
         return None
 
     response = response.strip().lower()
 
     explanation_match = _EXPLANATION_MARKER.search(response)
+    statement_match = _STATEMENT_MARKER.search(response)
     if explanation_match:
         response = response[:explanation_match.start()]
+        # Trim markdown/punctuation left dangling before the marker
+        response = response.rstrip("*_#:->\t\n\r ")
+    
+    if statement_match:
+        response = response[:statement_match.start()]
         # Trim markdown/punctuation left dangling before the marker
         response = response.rstrip("*_#:->\t\n\r ")
 

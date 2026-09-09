@@ -164,7 +164,10 @@ def evaluate_all_predictions(
             f"Confusion Matrix for {metrics['model']} | "
             f"{metrics['prompt']} | {metrics['experiment']}:"
         )
-        print(metrics["confusion_matrix"])
+        if metrics["confusion_matrix"] is None:
+            print("  (no valid predictions — confusion matrix unavailable)")
+        else:
+            print(metrics["confusion_matrix"])
 
     metrics_df = metrics_df[
         [

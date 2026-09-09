@@ -1,5 +1,4 @@
 pandas
-torch
 transformers
 scikit-learn
 accelerate
