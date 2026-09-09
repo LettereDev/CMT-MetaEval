@@ -1,0 +1,366 @@
+statement	response	prediction	gold_label	dataset	shot_count
+Der Schauspieler hatte ein zerfurchtes Gesicht voller Narben.	Analyzing die Statement:		1	COMETA	4
+Die Zeitung schreibt heute mal wieder viel Unsinn über die Stars.	Analyzing the statements one		0	COMETA	4
+In einem Kurs verbessert Sina ihre Lateinkenntnisse.	Analyzing die Statement:		0	COMETA	4
+Große Reisproduzenten befinden sich hauptsächlich in China.	Analyzing die Statement:		0	COMETA	4
+Es gibt starke Argumente für Baumwolle statt Polyester.	Analyzing the statements one		1	COMETA	4
+Ihre romantische Hochzeitsfeier gefiel der Braut sehr.	Analyzing the statements one		0	COMETA	4
+Dieses Kind ist echt anhänglich.	Analyzing the statements one		0	COMETA	4
+In Wien habe ich einen sehr leckeren Kaffee getrunken.	Ich werde mich bemü		0	COMETA	4
+Vokabeln verbleiben durch regelmäßiges Üben im Gehirn.	Analyzing the statements one		0	COMETA	4
+Seine Hoffnungen auf Gesundheit hatte der Kranke längst begraben.	Analyzing the statements one		1	COMETA	4
+Die plötzliche Veränderung war sehr unangenehm für Gunda.	Analyzing the statements one		0	COMETA	4
+Die Firma hat sich einen finanziell gut aufgestellten Partner ausgesucht.	Analyzing the statements one		1	COMETA	4
+Jeder Pilot sollte seine Ortskenntnisse immer mal wieder erneuern.	Analyzing the statements one		0	COMETA	4
+Wegen ihres kräftigen Geschmacks werden Oliven von vielen geliebt.	Ich werde mich bemü		1	COMETA	4
+Der wunderbare Ton der Querflöte überraschte alle Zuhörer.	Analyzing the statements one		0	COMETA	4
+Der samtweiche Ton der Querflöte überraschte alle Zuhörer.	Analyzing the statements one		1	COMETA	4
+An ihrer heiseren Stimme konnte ich erkennen dass sie erkältet war.	Analyzing the statements one		0	COMETA	4
+Der Gesang des Opernstars ist köstlich.	Ich werde mich bemü		1	COMETA	4
+An ihrer kratzigen Stimme konnte ich erkennen dass sie erkältet war.	Analyzing the statements one		1	COMETA	4
+Die kleine Familie wollte ihren Hausbau gründlich planen.	Analyzing the statements one		0	COMETA	4
+Der Sieg des Läufers erzeugte riesige Medienaufmerksamkeit.	Analyzing the statements one		0	COMETA	4
+Dieser junge Mann lässt sich nicht verbiegen.	Analyzing the statements one		1	COMETA	4
+Die Schulreform war noch nicht sicher.	Analyzing the statements one		0	COMETA	4
+Die Unternehmerin stand immer unter Druck.	Analyzing the statements one		1	COMETA	4
+Wenn Daniel einen guten Roman liest verfliegt für ihn die Zeit.	Analyzing the statements one		1	COMETA	4
+Meine Freundin schleimt ständig bei unserer Lehrerin.	Analyzing die Statement:		1	COMETA	4
+Während meines Vortrags saß der Professor mit versteinerter Miene da.	Analyzing the statements one		1	COMETA	4
+Der Flugbegleiter heute war wirklich attraktiv!	Analyzing the statements one		0	COMETA	4
+Der Gesang des Opernstars ist wunderschön.	Analyzing the statements one		0	COMETA	4
+Ihre Spanisch-Kenntnisse waren leider eingerostet.	Ich denke, dass		1	COMETA	4
+Ach was für ein einfaches Leben hatten wir während der Schulferien!	Ich werde mich bemü		0	COMETA	4
+Laut und einschneidend schallten die Stimmen der Verkäufer über den Markt.	Analyzing the statements one		1	COMETA	4
+Karina bekam fast jeden Tag eine gesalzene Ohrfeige von ihrer Mutter.	Analyzing the statements one		1	COMETA	4
+Die Firma hat sich einen finanziell gut situierten Partner ausgesucht.	Analyzing die Statement:		0	COMETA	4
+Die Wirtschaft brummte nach langer Zeit wieder.	Analyzing the statements one		1	COMETA	4
+Der Angeklagte machte immer mehr widersprüchliche Aussagen.	Analyzing die Statement:		0	COMETA	4
+Die Worte ihres Freundes trafen die junge Frau sehr.	Analyzing the statements one		1	COMETA	4
+Letzte Nacht hat ein eisiger Wind um die Häuser geblasen.	"Analyzing die statement """		0	COMETA	4
+Die Zeitung schreibt heute mal wieder großen Käse über die Stars.	Analyzing the statements one		1	COMETA	4
+Es gibt gute Argumente für Baumwolle statt Polyester.	Analyzing the statements one		0	COMETA	4
+Die kleine Familie wollte ihren Hausbau vorausschauend planen.	Analyzing the statements one		1	COMETA	4
+Vokabeln verankern sich durch regelmäßiges Üben im Gehirn.	Analyzing the statements one		1	COMETA	4
+Stefanie war nervös aber die Präsentation war absolut perfekt.	Analyzing the statements one		0	COMETA	4
+Das Gespräch beim Finanzamt verlief glücklicherweise reibungslos.	Analyzing the statements one		1	COMETA	4
+Meine Tante hat ein gutes Herz sie kocht ehrenamtlich für Obdachlose.	Analyzing die Statement:		0	COMETA	4
+Der vorbestrafte Mann war diesmal unschuldig.	Analyzing the statements one		0	COMETA	4
+Den Banken muss mit Kapital geholfen werden.	Analyzing the statements one		0	COMETA	4
+In Wien habe ich einen himmlischen Kaffee getrunken.	Ich werde mich bemü		1	COMETA	4
+Jeder Pilot sollte seine Ortskenntnisse immer mal wieder auffrischen.	Analyzing the statements one		1	COMETA	4
+Der Sieg des Läufers zog riesige Medienaufmerksamkeit nach sich.	Analyzing the statements one		1	COMETA	4
+Die Beerdigung ihrer Mutter erinnerte sie an alten Kummer.	Ich werde mich bemü		0	COMETA	4
+Die berühmte Arie wurde von der Sängerin heute wirklich göttlich interpretiert!	Analyzing the statements one		1	COMETA	4
+Corinna war nervös aber die Präsentation lief absolut glatt.	Analyzing the statements one		1	COMETA	4
+Der Angeklagte verstrickte sich immer mehr in widersprüchliche Aussagen.	Analyzing the statements one		1	COMETA	4
+Ihre romantische Hochzeitsfeier bewegte die Braut sehr.	Ich denke, dass		1	COMETA	4
+Nach dem Missverständnis war Laura jetzt in einer haarigen Situation.	Ich werde mich bemü		1	COMETA	4
+Der vorbestrafte Mann war diesmal sauber.	Ich werde mich bemü		1	COMETA	4
+Seine zerbrechliche Seele konnte den Streit nicht länger aushalten.	Analyzing the statements one		1	COMETA	4
+Meine Freundin macht sich ständig bei unserer Lehrerin beliebt.	Ich werde mich bemü		0	COMETA	4
+Während meines Vortrags saß der Professor mit unbewegter Miene da.	Analyzing the statements one		0	COMETA	4
+Ursula wollte alles vergessen und reiste nach Japan.	Analyzing the statements one		0	COMETA	4
+Meine Eltern fühlen sich ihrer Heimat sehr zugehörig.	Analyzing die Statement:		0	COMETA	4
+Diesen Sonntag streiten sich die Kanzlerkandidaten im Fernsehen.	Analyzing die Statement:		0	COMETA	4
+Unglaublich stolz erzählte er von seinen Erfolgen.	Ich denke, dass		0	COMETA	4
+Ach was für ein leichtes Leben hatten wir während der Schulferien!	Ich werde mich bemü		1	COMETA	4
+Beate bekam fast jeden Tag eine heftige Ohrfeige von ihrer Mutter.	Analyzing the statements one		0	COMETA	4
+Nach dem Missverständnis war Ella jetzt in einer komplizierten Situation.	Ich werde mich bemü		0	COMETA	4
+Martins Versicherung schickte ihm eine saftige Rechnung.	Analyzing the statements one		1	COMETA	4
+Wütend schaltete der Langschläfer den nervigen Wecker aus.	Analyzing die Statement:		0	COMETA	4
+Wütend schaltete der Langschläfer den dummen Wecker aus.	Ich werde mich bemü		1	COMETA	4
+Seine Hoffnungen auf Gesundheit hatte der Kranke längst aufgegeben.	Analyzing the statements one		0	COMETA	4
+Endlich war Ruhe zwischen den Streitenden.	Analyzing the statements one		0	COMETA	4
+Die Worte ihres Freundes waren sehr schlimm für die junge Frau.	Analyzing the statements one		0	COMETA	4
+Gestern Abend wurde Renate von einem widerlichen Mann angesprochen.	Analyzing the statements one		0	COMETA	4
+Diesen Sonntag duellieren sich die Kanzlerkandidaten im Fernsehen.	"Analyzing die statement """		1	COMETA	4
+Das Thema des Matheunterrichts ist schwierig.	Analyzing the statements one		0	COMETA	4
+Meine Großeltern hatten ein wirklich schwieriges Leben.	Analyzing die Statement:		0	COMETA	4
+Die Gespräche über seine Kindheit waren schlimm für ihn.	Ich werde mich bemü		0	COMETA	4
+Endlich war Waffenstillstand zwischen den Streitenden.	Analyzing the statements one		1	COMETA	4
+Dieses Kind ist echt eine Klette.	Analyzing the statements one		1	COMETA	4
+Gerds Versicherung schickte ihm eine hohe Rechnung.	Analyzing the statements one		0	COMETA	4
+Das war heute eine bittere Enttäuschung für meinen Vater.	Ich werde mich bemü		1	COMETA	4
+Karsten hörte ständig er habe nichts in der Birne.	Ich werde mich bemü		1	COMETA	4
+Die berühmte Arie wurde von der Sängerin heute wirklich wundervoll interpretiert!	Analyzing the statements one		0	COMETA	4
+Der Stoff des Matheunterrichts ist schwierig.	Analyzing the statements one		1	COMETA	4
+Wegen ihres intensiven Geschmacks werden Oliven von vielen geliebt.	Analyzing die Statement:		0	COMETA	4
+Dieser junge Mann lässt sich nicht beeinflussen.	Analyzing the statements one		0	COMETA	4
+Eine Tänzerin verwickelte den Theaterchef in eine Affäre.	Analyzing die Statement:		1	COMETA	4
+In einem Kurs vertieft Nadine ihre Lateinkenntnisse.	Analyzing die Statement:		1	COMETA	4
+Das war eine unglaublich oberflächliche Reaktion von ihr.	Ich werde mich bemü		1	COMETA	4
+Die Beerdigung ihrer Mutter riss alte Wunden wieder auf.	Ich werde mich bemü		1	COMETA	4
+Die Party ist im Stripclub. Die Stripper sind sexy.	Analyzing the statements one		0	MIST	4
+Sie bemerkt jede Änderung. Sie ist aufmerksam.	Ich werde mich bemü		0	MIST	4
+Das Konzert ist morgen. Sie sind schon ganz aufgekratzt.	Ich werde mich bemü		1	MIST	4
+Gestern war sein Test. Die Note erwartet er aufgeregt.	Analyzing the statements one		0	MIST	4
+Ihr ist viel widerfahren. Man merkt ihre Bitterkeit.	Analyzing the statements one		1	MIST	4
+Sie sind schon lange Rivalen. Ihr Umgang ist frostig.	Ich denke, dass		1	MIST	4
+Der Fehler war schlimm. Für ihre Zukunft ist sie pessimistisch.	Ich werde mich bemü		0	MIST	4
+Es gab eine große Feier. Das Programm war bunt. 	Analyzing the statements one		1	MIST	4
+Er soll sie in Ruhe lassen. Er ist unangenehm.	Analyzing the statements one		0	MIST	4
+Sie ist der Star. Ihre Persönlichkeit ist schillernd.	Analyzing the statements one		1	MIST	4
+Sie tranken eine Flasche Sekt. Danach waren sie betrunken.	Analyzing the statements one		0	MIST	4
+Der Film war traurig und schön. Alle waren berührt.	Ich werde mich bemü		1	MIST	4
+Sie ist selten fröhlich. Ihr Leben ist voller Traurigkeit.	Ich denke, dass		0	MIST	4
+Die Geschichte ist schön. Das Ende ist zum dahinschmelzen.	Ich werde mich bemü		1	MIST	4
+Sie tranken beide zwei Flaschen Wein. Jetzt sind sie betrunken.	Analyzing die Statement:		0	MIST	4
+Sie sind zerstritten. Er begegnet ihr nur mit Teilnahmslosigkeit.	Analyzing the statements one		0	MIST	4
+Seine Firma ist pleite. Die Lage ist aussichtslos.	Analyzing the statements one		1	MIST	4
+Er schaut keinen beim Reden an. Dadurch wirkt er unfreundlich.	Analyzing the statements one		0	MIST	4
+Er ist Investmentbanker. Für Geld hat er ein Näschen.	Ich werde mich bemü		1	MIST	4
+Dies ist sein erstes Date seit langem. Er ist unruhig.	Ich denke, dass		1	MIST	4
+Das Thema ist ihre Leidenschaft. Sie glüht dafür.	Analyzing the statements one		1	MIST	4
+Sie ist schnell beleidigt. Bei ihr benötigt man Einfühlungsvermögen. 	Analyzing the statements one		0	MIST	4
+Man merkt ihr junges Alter. Sie ist noch unerfahren. 	Ich denke, dass		0	MIST	4
+Er hat eine kleine Katze. Sie ist goldig.	Analyzing the statements one		1	MIST	4
+Man merkt ihr junges Alter. Sie ist noch grün hinter den Ohren.	Analyzing the statements one		1	MIST	4
+Sie haben eine Affäre. Die Nacht war feurig.	Ich werde mich bemü		1	MIST	4
+Er wusste nicht viel. Daher galt er nicht als intelligent.	Analyzing die Statement:		0	MIST	4
+Teamarbeit ist gefragt. Dafür müssen sie sich grün sein.	Ich werde mich bemü		1	MIST	4
+Er zeigt kein Interesse an ihr. Das kümmert sie nicht.	Analyzing the statements one		0	MIST	4
+Sie war öfters ängstlich. Sie witterte die Gefahr.	Ich werde mich bemü		1	MIST	4
+Selten hat er mal richtig Spaß. Er ist echt ein Sauertopf.	Analyzing the statements one		1	MIST	4
+Sie langweilt sich nie. Ihr Leben hat genug Würze.	Ich denke, dass		1	MIST	4
+Niemand ist bei ihr willkommen. Auf andere wirkt sie kalt.	Ich werde mich bemü		1	MIST	4
+Die Theorie war gut durchdacht. So fand sie schnell Anklang.	Analyzing the statements one		1	MIST	4
+Alle schauen auf sie. Sie hat eine tolle Präsenz.	Ich werde mich bemü		0	MIST	4
+Ihr Wesen ist sehr aufbrausend. Sie hat Pfeffer.	Ich werde mich bemü		1	MIST	4
+Sie bezahlte sehr wenig. Der Deal erschien ihr zwielichtig.	Analyzing die Statement:		1	MIST	4
+Sie sind frisch verliebt. Er findet alles besser als es eigentlich ist. 	Analyzing the statements one		0	MIST	4
+Sie arbeitet nur. Ihr Leben ist eher fad.	Ich werde mich bemü		1	MIST	4
+Sie gab ihm Tipps. Die Ratschläge waren super.	Analyzing the statements one		0	MIST	4
+Sie ist immer nett. Jedem zeigt sie ihre Wärme.	Analyzing the statements one		1	MIST	4
+Es war ein dummer Vorwurf. Ihre Antwort war spöttisch.	Analyzing the statements one		0	MIST	4
+Er ist ein toller Mann. Sie war schon lange verknallt.	Ich werde mich bemü		1	MIST	4
+Sie bricht schnell in Tränen aus. Ihr Wesen ist sensibel.	Ich denke, dass		0	MIST	4
+Sie wusste nicht Bescheid. Daher fragte sie ins Blaue.	Analyzing the statements one		1	MIST	4
+Bei Krimis kennt er die Mörder. Das verdankt er seinem Instinkt.	Analyzing the statements one		0	MIST	4
+Sie stieg in das fremde Auto. Das war blauäugig.	Ich denke, dass		1	MIST	4
+Sie haben eine Affäre. Die Nacht war leidenschaftlich.	Analyzing the statements one		0	MIST	4
+Den Vorwurf ließ er sich nicht machen. Er wurde stinkig.	Ich denke, dass		1	MIST	4
+Jeder an der Uni kennt ihn. Er ist ein lauter Mensch.	Analyzing the statements one		1	MIST	4
+Die Bemerkung war gemein. Da war die Stimmung versalzen.	Analyzing the statements one		1	MIST	4
+Er denkt an die Vergangenheit. Das Gefühl ist bittersüß.	"Analyzing die statement """		1	MIST	4
+Ihr Vorschlag gefällt niemandem. Die Kritik war heftig. 	Analyzing the statements one		0	MIST	4
+Die Bemerkung war gemein. Da war die Stimmung vermiest.	Analyzing the statements one		0	MIST	4
+Ihr Freund ist Südländer. Man sagt er sei heißblütig.	Analyzing the statements one		1	MIST	4
+Der Film war traurig und schön. Alle waren emotional.	Ich werde mich bemü		0	MIST	4
+Nach außen wirkt sie streng. Doch ihr Inneres ist sanftmütig.	Analyzing the statements one		0	MIST	4
+Sie gründet eine Gang. Ihre Spielchen waren faul.	Ich werde mich bemü		1	MIST	4
+Sie verpassten knapp das Finale. Jetzt ist sie miesgelaunt.	Analyzing the statements one		0	MIST	4
+Bei Krimis kennt er die Mörder. Das verdankt er seinem Riecher.	Analyzing the statements one		1	MIST	4
+Er liebt Motoren. Sein neues Auto ist echt super.	Analyzing the statements one		0	MIST	4
+Sie kümmert sich täglich um kranke Kinder. Sie ist gutmütig.	Analyzing the statements one		0	MIST	4
+Jeder ist bei ihm willkommen. Er ist sehr freundlich.	Analyzing the statements one		0	MIST	4
+Er hat jetzt seinen Traumjob. Die Zukunft wird rosig.	Ich werde mich bemü		1	MIST	4
+Sie bricht schnell in Tränen aus. Ihr Wesen ist zart.	Ich werde mich bemü		1	MIST	4
+Im letzten Urlaub ging vieles schief. Das war nervig.	Ich werde mich bemü		0	MIST	4
+Sie haben sich arg gestritten. Jetzt herrscht dicke Luft.	Analyzing the statements one		1	MIST	4
+Das Buch kam nicht gut an. Die Geschichte war langweilig.	Analyzing the statements one		0	MIST	4
+Endlich naht der Frühling. Die Liebe ist zu spüren.	Ich werde mich bemü		0	MIST	4
+Sie zweifelten noch sehr. Die Sache war nicht einleuchtend.	"Analyzing die statement """		1	MIST	4
+Die Mitarbeiter sind glücklich. Im Büro herrscht Harmonie. 	Ich werde mich bemü		1	MIST	4
+Die Frau hat ein Baby bekommen. Es ist süß.	Ich werde mich bemü		1	MIST	4
+Ihr Team hat heute verloren. Es ist ein schlechter Tag.	Ich werde mich bemü		0	MIST	4
+Sie verließ ihn. Seine Fehler wurden ihm nun bewusst.	Analyzing the statements one		0	MIST	4
+Sie kamen sich langsam näher. Man spürte das Knistern.	Analyzing the statements one		1	MIST	4
+Sie lud sie alle auf ein Eis ein. Das war dufte.	Analyzing the statements one		1	MIST	4
+Die Schülerin will mehr Freizeit. Sie findet Hausaufgaben stinken.	Analyzing die Statement:		1	MIST	4
+Sie tranken beide zwei Flaschen Wein. Jetzt sind sie blau.	Analyzing the statements one		1	MIST	4
+Viele alte Menschen sind einsam. Deshalb sind sie verbittert.	Ich denke, dass		1	MIST	4
+Der Fehler war schlimm. Für ihre Zukunft sieht sie schwarz.	Ich werde mich bemü		1	MIST	4
+Sie hat an sich gearbeitet. Nun ist sie mit sich selbst im Einklang.	Ich werde mich bemü		1	MIST	4
+Sie kennen sich schon lange. Deshalb kommen sie gut zusammen aus.	Analyzing the statements one		0	MIST	4
+Sie verlor wegen eines Formfehlers. Das wird ihr stinken.	Analyzing die Statement:		1	MIST	4
+Heute ist ein super Tag. Er fühlt sich fantastisch.	Analyzing the statements one		0	MIST	4
+Sie hatten auf nichts Lust. Ihre Tage waren trist.	Analyzing the statements one		0	MIST	4
+Sie tranken eine Flasche Sekt. Danach waren sie berauscht.	Analyzing the statements one		1	MIST	4
+Sie holten den ersten Platz. Die Leistung war großartig.	Analyzing the statements one		0	MIST	4
+Das Buch kam nicht gut an. Die Geschichte war eintönig. 	Analyzing the statements one		1	MIST	4
+Sie hat zu wenig gelernt. Im Test hat sie keinen Dunst.	Analyzing the statements one		1	MIST	4
+Die Wahl war manipuliert. Die Nachricht sorgt für Aufregung.	Analyzing die Statement:		0	MIST	4
+Ihr Sohn hatte keine Manieren. Er war sehr vorlaut.	Ich werde mich bemü		1	MIST	4
+Gefühle zeigt sie nicht. Für andere wirkt sie rau.	Ich werde mich bemü		1	MIST	4
+Sie erkennt die Stimmung anderer. Sie ist einfühlsam.	Analyzing the statements one		0	MIST	4
+Sie trafen sich nach langer Zeit. Da war noch ein Funke .	Ich werde mich bemü		1	MIST	4
+Sein neues Buch war ein Flop. Es war einfach nicht sehr gut.	Analyzing the statements one		0	MIST	4
+Alle schauen auf sie. Sie hat eine tolle Ausstrahlung.	Analyzing the statements one		1	MIST	4
+Er ist ihr sympathisch. Sie kann ihn gut leiden.	Analyzing the statements one		0	MIST	4
+Er wird morgen aus der Haft entlassen. Es duftet nach Freiheit.	Analyzing the statements one		1	MIST	4
+Heute ist ein super Tag. Er fühlt sich blendend.	Analyzing the statements one		1	MIST	4
+Sie sind nicht einer Meinung. Der Streit wird emotional.	Analyzing the statements one		0	MIST	4
+Die Party ist im Stripclub. Die Stripper sind heiß.	Ich werde mich bemü		1	MIST	4
+Er macht alles was sie sagt. Er ist ihr ergeben.	Analyzing the statements one		0	MIST	4
+Sie haben sich arg gestritten. Jetzt herrscht Verärgerung.	Analyzing the statements one		0	MIST	4
+Sie verpassten knapp das Finale. Jetzt ist sie verstimmt.	Analyzing the statements one		1	MIST	4
+Seine Firma ist pleite. Die Lage ist hoffnungslos.	Analyzing die Statement:		0	MIST	4
+Das Problem besteht noch immer. Es fehlt ihr die Erleuchtung. 	Analyzing the statements one		1	MIST	4
+Seit der Trennung bleibt er im Bett. Er fühlt sich gammelig.	Ich werde mich bemü		1	MIST	4
+Er hat eine kleine Katze. Sie ist niedlich.	Analyzing the statements one		0	MIST	4
+Er freut sich auf das Date. Da kommt seine neue Geliebte.	Ich werde mich bemü		0	MIST	4
+Das Gespräch dauerte lange. Sie fand es langweilig.	Ich denke, dass		0	MIST	4
+Ihr Team hat heute verloren. Es ist ein schwarzer Tag.	Ich werde mich bemü		1	MIST	4
+Die Sitzung dauerte ewig. Das Ganze war schal.	Ich denke, dass		1	MIST	4
+Er zeigt kein Interesse an ihr. Das kratzt sie nicht.	Analyzing the statements one		1	MIST	4
+Er ist Investmentbanker. Für Geld hat er einen Sinn.	Ich werde mich bemü		0	MIST	4
+Die Familie ist zerstritten. Die Zeiten sind freudlos.	Ich werde mich bemü		0	MIST	4
+Sie tanzte bis tief in die Nacht. Sie war in Ekstase.	Analyzing the statements one		0	MIST	4
+Es wurde viel gelacht. Der Abend war lustig.	Analyzing the statements one		0	MIST	4
+Die Bedeutung war ihm fremd. Er hatte keine Ahnung.	Analyzing the statements one		0	MIST	4
+Etwas geht da vor sich. Die Situation ist verdächtig.	Ich werde mich bemü		0	MIST	4
+Er braucht Aggressionstraining. Häufig verliert er die Kontrolle.	Analyzing the statements one		0	MIST	4
+Er schreibt einen bösen Brief. Den Ärger kann er erahnen.	Analyzing the statements one		0	MIST	4
+Die Trennung ist jetzt lange her. Seine Stimmung wird besser.	Analyzing the statements one		0	MIST	4
+Das Publikum war enttäuscht. Der Vortrag war farblos.	Analyzing the statements one		1	MIST	4
+Er ist ein verurteilter Mörder. Er ist mitleidslos.	Ich werde mich bemü		0	MIST	4
+Sie folgt selten einer Anweisung. Sie ist kratzbürstig. 	Ich werde mich bemü		1	MIST	4
+Sie kamen sich langsam näher. Man spürte die Aufregung.	Analyzing the statements one		0	MIST	4
+Sie fasste neuen Mut. Sie hatte genug von der Schwarzmalerei.	Analyzing the statements one		1	MIST	4
+Viele alte Menschen sind einsam. Deshalb sind sie missmutig.	Ich denke, dass		0	MIST	4
+Dieser Mann ist gefährlich. Sein Blick wirkt finster.	Ich denke, dass		1	MIST	4
+Er ist kein einfacher Mensch. Sein Charakter ist kantig.	Analyzing die Statement:		1	MIST	4
+In ihren Augen macht er nie was falsch. Sie ist verblendet.	Ich denke, dass		1	MIST	4
+Das Kind schummelt gern. Spiele enden oft im Streit.	"Analyzing die statement """		0	MIST	4
+Gestern war sein Test. Die Note erwartet er fieberhaft.	Analyzing the statements one		1	MIST	4
+Die Trennung ist jetzt lange her. Seine Stimmung wird heller.	Analyzing die Statement:		1	MIST	4
+Er hat ihr wehgetan. Nun zeigt er sich zerknirscht.	Ich werde mich bemü		1	MIST	4
+Dies ist sein erstes Date seit langem. Er ist nervös.	Ich werde mich bemü		0	MIST	4
+Sie kann ihm nicht wirklich vertrauen. Er wirkt verlogen.	Analyzing the statements one		0	MIST	4
+Die Frau hat ein Baby bekommen. Es ist niedlich.	Ich werde mich bemü		0	MIST	4
+Sie hat wenig geschlafen. Daher ist sie muffelig.	Analyzing the statements one		1	MIST	4
+Sie hat viel durchgemacht. Dadurch wurde sie eiskalt.	Analyzing the statements one		1	MIST	4
+Etwas stimmt hier nicht. Die ganze Sache ist verdächtig.	Analyzing the statements one		0	MIST	4
+Er ist Kommissar. Er ist bekannt für sein Gespür.	Ich werde mich bemü		0	MIST	4
+Sein neues Buch war ein Flop. Es war einfach nicht das Gelbe vom Ei.	Analyzing the statements one		1	MIST	4
+Endlich naht der Frühling. Die Liebe liegt in der Luft. 	Ich denke, dass		1	MIST	4
+Sie war immer sehr stolz auf ihn. Er war ihr Liebling.	Analyzing the statements one		0	MIST	4
+Sie sieht traurig aus. Sie hatten schon wieder Krach.	Analyzing the statements one		1	MIST	4
+Ihr Leben ist öde. Auf ein Abenteuer brennt sie.	Ich denke, dass		1	MIST	4
+Sie ist der Star. Ihre Persönlichkeit ist auffallend.	Analyzing die Statement:		0	MIST	4
+Etwas stimmt hier nicht. Die ganze Sache ist anrüchig.	Analyzing the statements one		1	MIST	4
+Er hat jetzt seinen Traumjob. Die Zukunft wird schön.	Analyzing the statements one		0	MIST	4
+Sie sind frisch verliebt. Er sieht alles durch eine rosarote Brille.	Analyzing the statements one		1	MIST	4
+Er stimmt ihr bei jeder Möglichkeit zu. Das wirkt schleimig.	Analyzing die Statement:		1	MIST	4
+Neuerdings geht viel schief. Doch er sieht den Silberstreifen am Horizont. 	Analyzing the statements one		1	MIST	4
+Die Bedeutung war ihm fremd. Er hatte keinen Schimmer.	Ich werde mich bemü		1	MIST	4
+Sie hat Geburtstag. Er möchte ihren Tag verschönern.	Analyzing the statements one		0	MIST	4
+Das Publikum war enttäuscht. Der Vortrag war langweilig.	Analyzing the statements one		0	MIST	4
+Die Mannschaft will den Pokal gewinnen. Sie will ihn unbedingt.	Ich denke, dass		0	MIST	4
+Er ist ihr sympathisch. Sie kann ihn gut riechen.	Analyzing the statements one		1	MIST	4
+Die Schülerin will mehr Freizeit. Sie findet Hausaufgaben sind doof.	Ich werde mich bemü		0	MIST	4
+Er legt es oft drauf an. In Clubs fängt er an zu provozieren.	Analyzing the statements one		0	MIST	4
+Sie hat an sich gearbeitet. Nun ist sie mit sich selbst zufrieden.	Analyzing the statements one		0	MIST	4
+Er hat kaum Interessen. Sein Wesen ist langweilig.	Analyzing the statements one		0	MIST	4
+Sie hat ihn verlassen. Jetzt sieht er alles durch einen Grauschleier.	"Analyzing la statement """		1	MIST	4
+Er sitzt im Gefängnis. Das Verbrechen war grausig.	Analyzing die Statement:		0	MIST	4
+Die Familie ist zerstritten. Die Zeiten sind trüb.	Ich werde mich bemü		1	MIST	4
+Sie erkennt die Stimmung anderer. Sie ist feinfühlig. 	Ich denke, dass		1	MIST	4
+Er hat viele Lügen erzählt. Jetzt zeigt er sich kleinlaut.	Analyzing die Statement:		1	MIST	4
+Seine Taten sind heldenhaft. Er ist ein kühner Typ.	Ich werde mich bemü		0	MIST	4
+Seit der Trennung bleibt er im Bett. Er fühlt sich jämmerlich.	Analyzing the statements one		0	MIST	4
+Sie hatten wieder einen Streit. Jetzt ist er sauer.	Analyzing the statements one		1	MIST	4
+Die Sitzung dauerte ewig. Das Ganze war langweilig.	Analyzing die Statement:		0	MIST	4
+Die Mannschaft will den Pokal gewinnen. Sie ist heiß darauf.	Ich werde mich bemü		1	MIST	4
+Man kann ihn von nichts abhalten. Er ist eigensinnig.	Analyzing the statements one		0	MIST	4
+Teamarbeit ist gefragt. Dafür müssen sie sich leiden können.	Ich werde mich bemü		0	MIST	4
+Sie will ihn nicht. Er muss aufhören ihr zu schmeicheln.	Analyzing the statements one		0	MIST	4
+Nach dem Gespräch war er sehr wütend. Nun muss er abkühlen.	Analyzing the statements one		1	MIST	4
+Sie gründet eine Gang. Ihre Spielchen waren unehrlich.	Ich werde mich bemü		0	MIST	4
+Sie sind schon lange Rivalen. Ihr Umgang ist unfreundlich.	Analyzing the statements one		0	MIST	4
+Gefühle zeigt sie nicht. Für andere wirkt sie unfreundlich.	Ich werde mich bemü		0	MIST	4
+Sie langweilt sich nie. Ihr Leben hat genug Abwechslung.	Ich denke, dass		0	MIST	4
+Es war ein dummer Vorwurf. Ihre Antwort war spitz.	Analyzing the statements one		1	MIST	4
+Ihr Wesen ist sehr aufbrausend. Sie hat Temperament.	Ich werde mich bemü		0	MIST	4
+Er findet stets die richtigen Worte. Er ist taktvoll.	Analyzing the statements one		1	MIST	4
+Er ist Kommissar. Er ist bekannt für seine Spürnase.	Analyzing the statements one		1	MIST	4
+Sie lud sie alle auf ein Eis ein. Das war schön.	Analyzing the statements one		0	MIST	4
+Er ist ein Macho. Seine Sprüche sind abgeschmackt.	Analyzing die Statement:		1	MIST	4
+Sie sind geschieden. Ihre Begegnungen sind eisig.	Ich werde mich bemü		1	MIST	4
+Die Polizei stand an der Ecke. Etwas war verdächtig.	Analyzing the statements one		0	MIST	4
+Nach außen wirkt sie streng. Doch ihr Inneres ist weich.	Ich werde mich bemü		1	MIST	4
+Viele haben Angst vor ihm. Sein Umgang ist grob.	Ich werde mich bemü		1	MIST	4
+Sie kann nicht mehr klar denken. Vor Wut ist sie unüberlegt.	Analyzing the statements one		0	MIST	4
+Sie folgt selten einer Anweisung. Sie ist widerspenstig.	Analyzing the statements one		0	MIST	4
+Selten hat er mal richtig Spaß. Er ist echt humorlos.	Analyzing the statements one		0	MIST	4
+Er setzt sein ganzes Geld auf rot. Er ist durchgeknallt.	Ich werde mich bemü		1	MIST	4
+Sie haben das Spiel knapp verloren. Das ist ärgerlich.	Ich denke, dass		0	MIST	4
+Sie war öfters ängstlich. Sie spürte die Gefahr.	Analyzing the statements one		0	MIST	4
+Er ist ein verurteilter Mörder. Er ist kaltblütig.	Analyzing the statements one		1	MIST	4
+Die Theorie war gut durchdacht. So fand sie schnell Zustimmung.	Analyzing the statements one		0	MIST	4
+Sie kennen sich schon lange Zeit. Ihr Umgang ist warm.	Ich werde mich bemü		1	MIST	4
+Für heute bleibt sie im Bett liegen. Sie ist träge.	Ich werde mich bemü		0	MIST	4
+Sie hat zu wenig gelernt. Im Test hat sie keine Ahnung.	Analyzing the statements one		0	MIST	4
+Zu fast allem hat er eine Lösung. Er ist clever.	Analyzing the statements one		0	MIST	4
+Er findet stets die richtigen Worte. Er ist einfühlsam.	Ich werde mich bemü		0	MIST	4
+Sie verlor wegen eines Formfehlers. Das wird sie ärgern. 	Analyzing the statements one		0	MIST	4
+Ihr Sohn hatte keine Manieren. Er war sehr frech.	Ich werde mich bemü		0	MIST	4
+Sie tanzte bis tief in die Nacht. Sie war im Rausch.	Analyzing the statements one		1	MIST	4
+Sie hielt einen Vortrag. Der Inhalt war fantasievoll.	Analyzing the statements one		0	MIST	4
+Sie wurde heute zu früh geweckt. Jetzt ist sie brummig.	Analyzing the statements one		1	MIST	4
+Sie erlebte wieder einen Rückschlag. Er war herb.	Ich werde mich bemü		1	MIST	4
+Der Vortrag ist chaotisch. Zum Verstehen fehlt die Struktur.	Analyzing the statements one		0	MIST	4
+Ihr Leben ist öde. Auf ein Abenteuer hofft sie.	Ich denke, dass		0	MIST	4
+Er liebt Motoren. Sein neues Auto ist echt scharf. 	Ich denke, dass		1	MIST	4
+Er freut sich auf das Date. Da kommt seine neue Flamme.	Ich werde mich bemü		1	MIST	4
+Er schaut keinen beim Reden an. Dadurch wirkt er schroff.	Analyzing the statements one		1	MIST	4
+Er machte einen gemeinen Witz. Das war unangemessen.	Ich denke, dass		0	MIST	4
+Sie wurde heute zu früh geweckt. Jetzt ist sie mürrisch.	Analyzing die Statement:		0	MIST	4
+Sie arbeitet nur. Ihr Leben ist eher langweilig.	Ich werde mich bemü		0	MIST	4
+Sie fuhr sein Auto zu Schrott. Er sah es und war wütend.	Analyzing the statements one		0	MIST	4
+Sie hielt einen Vortrag. Der Inhalt war blumig.	Ich werde mich bemü		1	MIST	4
+Sie kümmert sich täglich um kranke Kinder. Sie hat ein Herz aus Gold.	Analyzing the statements one		1	MIST	4
+Man kann ihn von nichts abhalten. Er ist hartnäckig.	Analyzing the statements one		1	MIST	4
+Die Aufgabe ist komplex. Es ist noch vieles unverständlich.	Analyzing the statements one		0	MIST	4
+Er legt es oft drauf an. In Clubs fängt er an zu stänkern.	Analyzing the statements one		1	MIST	4
+Sie bezahlte sehr wenig. Der Deal erschien ihr fragwürdig.	Analyzing the statements one		0	MIST	4
+Der Lehrer ist selten freundlich. Meistens wirkt er streng.	Analyzing die Statement:		0	MIST	4
+Er stimmt ihr bei jeder Möglichkeit zu. Das wirkt unehrlich.	Analyzing die Statement:		0	MIST	4
+Die Wahl war manipuliert. Die Nachricht sorgt für Lärm.	Analyzing the statements one		1	MIST	4
+Schnell verliert sie die Beherrschung. Sie handelt impulsiv.	"Analyzing die statement """		0	MIST	4
+Sie ist immer nett. Jedem zeigt sie ihre Herzlichkeit.	Analyzing the statements one		0	MIST	4
+Jeder ist bei ihm willkommen. Er ist sehr warmherzig.	Analyzing the statements one		1	MIST	4
+Gestern war er sehr betrunken. Jetzt fühlt er sich ranzig.	Analyzing the statements one		1	MIST	4
+Er macht sie schon lange glücklich. Er ist ihr Sonnenschein.	Analyzing the statements one		1	MIST	4
+Sie gab ihm Tipps. Die Ratschläge waren golden.	Analyzing the statements one		1	MIST	4
+Sie haben das Spiel knapp verloren. Das ist bitter.	Analyzing the statements one		1	MIST	4
+Dieser Mann ist gefährlich. Sein Blick wirkt böse.	Ich denke, dass		0	MIST	4
+Er machte ihr ein Kompliment. Es war sehr schmeichelnd.	Ich werde mich bemü		0	MIST	4
+Er fällt sehr auf. Seine Persönlichkeit ist bunt.	Analyzing the statements one		1	MIST	4
+Sie wusste nicht Bescheid. Daher fragte sie ins Ungewisse.	Analyzing the statements one		0	MIST	4
+Das Gespräch dauerte lange. Sie fand es monoton.	Ich werde mich bemü		1	MIST	4
+Er denkt an die Vergangenheit. Das Gefühl ist schmerzlich-schön.	Analyzing the statements one		0	MIST	4
+Er setzt sein ganzes Geld auf rot. Er ist verrückt.	Ich werde mich bemü		0	MIST	4
+Der Lehrer ist selten freundlich. Meistens wirkt er hart.	Analyzing die Statement:		1	MIST	4
+Überall herrscht schlimmer Krieg. Die Zeiten sind hoffnungslos.	Analyzing the statements one		0	MIST	4
+Er macht alles was sie sagt. Er ist ihr hörig.	Ich werde mich bemü		1	MIST	4
+Sie hat viel durchgemacht. Dadurch wurde sie gefühllos.	Ich denke, dass		0	MIST	4
+Nach dem Gespräch war er sehr wütend. Nun muss er zur Vernunft kommen.	Analyzing the statements one		0	MIST	4
+Ihr Hund war ihr Freund. Sein Verlust macht sie traurig.	Analyzing the statements one		0	MIST	4
+Er schreibt einen bösen Brief. Den Ärger kann er riechen.	Analyzing the statements one		1	MIST	4
+Sie sind geschieden. Ihre Begegnungen sind feindselig.	Ich werde mich bemü		0	MIST	4
+Sie zweifelten noch sehr. Die Sache war nicht verständlich.	"Analyzing die statement """		0	MIST	4
+Das Thema ist ihre Leidenschaft. Sie begeistert sich dafür.	Analyzing the statements one		0	MIST	4
+Für heute bleibt sie im Bett liegen. Sie ist faul.	Ich werde mich bemü		1	MIST	4
+Sie ist schnell beleidigt. Bei ihr benötigt man Fingerspitzengefühl.	Analyzing the statements one		1	MIST	4
+Das Konzert ist morgen. Sie sind schon ganz aufgeregt.	Ich werde mich bemü		0	MIST	4
+Er hat ihr wehgetan. Nun zeigt er sich reuevoll.	Ich denke, dass		0	MIST	4
+Sie hat Geburtstag. Er möchte ihren Tag versüßen.	Analyzing the statements one		1	MIST	4
+Es gab eine große Feier. Das Programm war abwechslungsreich.	Analyzing die Statement:		0	MIST	4
+Sie kennen sich schon lange Zeit. Ihr Umgang ist freundschaftlich.	Ich werde mich bemü		0	MIST	4
+Ihr Vorschlag gefällt niemandem. Die Kritik war scharf.	Analyzing die Statement:		1	MIST	4
+Die Aufgabe ist komplex. Es ist noch vieles unklar.	Ich werde mich bemü		1	MIST	4
+Er wird morgen aus der Haft entlassen. Er spürt schon die Freiheit.	Analyzing the statements one		0	MIST	4
+Der Zeuge macht die Aussage. Die Details sind pikant.	Analyzing the statements one		1	MIST	4
+Sie hatten auf nichts Lust. Ihre Tage waren grau.	Analyzing the statements one		1	MIST	4
+Überall herrscht schlimmer Krieg. Die Zeiten sind dunkel.	Analyzing the statements one		1	MIST	4
+Jeder an der Uni kennt ihn. Er ist ein auffallender Mensch.	Analyzing the statements one		0	MIST	4
+Er schaut gern Horrorfilme. Ihm gefällt die Aufregung.	Ich werde mich bemü		0	MIST	4
+Sie hat zu viele Geheimnisse. Das gefällt ihm nicht.	Analyzing the statements one		0	MIST	4
+Sein Kind kam heile nach Hause. Jetzt ist er beruhigt. 	Ich denke, dass		1	MIST	4
+Sie kennen sich schon lange. Deshalb harmonieren sie gut.	Analyzing the statements one		1	MIST	4
+Er machte ihr ein Kompliment. Es war zuckersüß.	Ich werde mich bemü		1	MIST	4
+Seine Taten sind heldenhaft. Er ist ein schneidiger Typ.	Analyzing die Statement:		1	MIST	4
+Sie verließ ihn. Seine Fehler wurden ihm nun klar.	Analyzing the statements one		1	MIST	4
+Beim Begräbnis war er betrunken. Das war taktlos. 	Ich werde mich bemü		1	MIST	4
+Ihr Freund ist Südländer. Man sagt er sei leidenschaftlich.	Ich werde mich bemü		0	MIST	4

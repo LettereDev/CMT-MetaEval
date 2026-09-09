@@ -1,0 +1,366 @@
+statement	response	prediction	gold_label	dataset	shot_count
+Der Schauspieler hatte ein zerfurchtes Gesicht voller Narben.	1	1	1	COMETA	4
+Die Zeitung schreibt heute mal wieder viel Unsinn über die Stars.	1	1	0	COMETA	4
+In einem Kurs verbessert Sina ihre Lateinkenntnisse.	Label: 1	1	0	COMETA	4
+Große Reisproduzenten befinden sich hauptsächlich in China.	Label: 1	1	0	COMETA	4
+Es gibt starke Argumente für Baumwolle statt Polyester.	Label: 1	1	1	COMETA	4
+Ihre romantische Hochzeitsfeier gefiel der Braut sehr.	Label: 1	1	0	COMETA	4
+Dieses Kind ist echt anhänglich.	Label: 1	1	0	COMETA	4
+In Wien habe ich einen sehr leckeren Kaffee getrunken.	Label: 1	1	0	COMETA	4
+Vokabeln verbleiben durch regelmäßiges Üben im Gehirn.	Label: 1	1	0	COMETA	4
+Seine Hoffnungen auf Gesundheit hatte der Kranke längst begraben.	1	1	1	COMETA	4
+Die plötzliche Veränderung war sehr unangenehm für Gunda.	Label: 1	1	0	COMETA	4
+Die Firma hat sich einen finanziell gut aufgestellten Partner ausgesucht.	Label: 1	1	1	COMETA	4
+Jeder Pilot sollte seine Ortskenntnisse immer mal wieder erneuern.	Label: 1	1	0	COMETA	4
+Wegen ihres kräftigen Geschmacks werden Oliven von vielen geliebt.	Label: 1	1	1	COMETA	4
+Der wunderbare Ton der Querflöte überraschte alle Zuhörer.	1	1	0	COMETA	4
+Der samtweiche Ton der Querflöte überraschte alle Zuhörer.	1	1	1	COMETA	4
+An ihrer heiseren Stimme konnte ich erkennen dass sie erkältet war.	1	1	0	COMETA	4
+Der Gesang des Opernstars ist köstlich.	Label: 1	1	1	COMETA	4
+An ihrer kratzigen Stimme konnte ich erkennen dass sie erkältet war.	1	1	1	COMETA	4
+Die kleine Familie wollte ihren Hausbau gründlich planen.	Label: 1	1	0	COMETA	4
+Der Sieg des Läufers erzeugte riesige Medienaufmerksamkeit.	1	1	0	COMETA	4
+Dieser junge Mann lässt sich nicht verbiegen.	Label: 1	1	1	COMETA	4
+Die Schulreform war noch nicht sicher.	Label: 1	1	0	COMETA	4
+Die Unternehmerin stand immer unter Druck.	Label: 1	1	1	COMETA	4
+Wenn Daniel einen guten Roman liest verfliegt für ihn die Zeit.	Label: 1	1	1	COMETA	4
+Meine Freundin schleimt ständig bei unserer Lehrerin.	Label: 1	1	1	COMETA	4
+Während meines Vortrags saß der Professor mit versteinerter Miene da.	Label: 1	1	1	COMETA	4
+Der Flugbegleiter heute war wirklich attraktiv!	Label: 1	1	0	COMETA	4
+Der Gesang des Opernstars ist wunderschön.	Label: 1	1	0	COMETA	4
+Ihre Spanisch-Kenntnisse waren leider eingerostet.	Label: 1	1	1	COMETA	4
+Ach was für ein einfaches Leben hatten wir während der Schulferien!	1	1	0	COMETA	4
+Laut und einschneidend schallten die Stimmen der Verkäufer über den Markt.	1	1	1	COMETA	4
+Karina bekam fast jeden Tag eine gesalzene Ohrfeige von ihrer Mutter.	1	1	1	COMETA	4
+Die Firma hat sich einen finanziell gut situierten Partner ausgesucht.	Label: 1	1	0	COMETA	4
+Die Wirtschaft brummte nach langer Zeit wieder.	Label: 1	1	1	COMETA	4
+Der Angeklagte machte immer mehr widersprüchliche Aussagen.	Label: 1	1	0	COMETA	4
+Die Worte ihres Freundes trafen die junge Frau sehr.	Label: 1	1	1	COMETA	4
+Letzte Nacht hat ein eisiger Wind um die Häuser geblasen.	1	1	0	COMETA	4
+Die Zeitung schreibt heute mal wieder großen Käse über die Stars.	1	1	1	COMETA	4
+Es gibt gute Argumente für Baumwolle statt Polyester.	Label: 1	1	0	COMETA	4
+Die kleine Familie wollte ihren Hausbau vorausschauend planen.	Label: 1	1	1	COMETA	4
+Vokabeln verankern sich durch regelmäßiges Üben im Gehirn.	Label: 1	1	1	COMETA	4
+Stefanie war nervös aber die Präsentation war absolut perfekt.	Label: 1	1	0	COMETA	4
+Das Gespräch beim Finanzamt verlief glücklicherweise reibungslos.	Label: 1	1	1	COMETA	4
+Meine Tante hat ein gutes Herz sie kocht ehrenamtlich für Obdachlose.	Label: 1	1	0	COMETA	4
+Der vorbestrafte Mann war diesmal unschuldig.	Label: 1	1	0	COMETA	4
+Den Banken muss mit Kapital geholfen werden.	Label: 1	1	0	COMETA	4
+In Wien habe ich einen himmlischen Kaffee getrunken.	Label: 1	1	1	COMETA	4
+Jeder Pilot sollte seine Ortskenntnisse immer mal wieder auffrischen.	Label: 1	1	1	COMETA	4
+Der Sieg des Läufers zog riesige Medienaufmerksamkeit nach sich.	1	1	1	COMETA	4
+Die Beerdigung ihrer Mutter erinnerte sie an alten Kummer.	Label: 1	1	0	COMETA	4
+Die berühmte Arie wurde von der Sängerin heute wirklich göttlich interpretiert!	Label: 1	1	1	COMETA	4
+Corinna war nervös aber die Präsentation lief absolut glatt.	Label: 1	1	1	COMETA	4
+Der Angeklagte verstrickte sich immer mehr in widersprüchliche Aussagen.	Label: 1	1	1	COMETA	4
+Ihre romantische Hochzeitsfeier bewegte die Braut sehr.	1	1	1	COMETA	4
+Nach dem Missverständnis war Laura jetzt in einer haarigen Situation.	Label: 1	1	1	COMETA	4
+Der vorbestrafte Mann war diesmal sauber.	Label: 1	1	1	COMETA	4
+Seine zerbrechliche Seele konnte den Streit nicht länger aushalten.	Label: 1	1	1	COMETA	4
+Meine Freundin macht sich ständig bei unserer Lehrerin beliebt.	Label: 1	1	0	COMETA	4
+Während meines Vortrags saß der Professor mit unbewegter Miene da.	Label: 1	1	0	COMETA	4
+Ursula wollte alles vergessen und reiste nach Japan.	Label: 1	1	0	COMETA	4
+Meine Eltern fühlen sich ihrer Heimat sehr zugehörig.	Label: 1	1	0	COMETA	4
+Diesen Sonntag streiten sich die Kanzlerkandidaten im Fernsehen.	Label: 1	1	0	COMETA	4
+Unglaublich stolz erzählte er von seinen Erfolgen.	1	1	0	COMETA	4
+Ach was für ein leichtes Leben hatten wir während der Schulferien!	1	1	1	COMETA	4
+Beate bekam fast jeden Tag eine heftige Ohrfeige von ihrer Mutter.	1	1	0	COMETA	4
+Nach dem Missverständnis war Ella jetzt in einer komplizierten Situation.	Label: 1	1	0	COMETA	4
+Martins Versicherung schickte ihm eine saftige Rechnung.	Label: 1	1	1	COMETA	4
+Wütend schaltete der Langschläfer den nervigen Wecker aus.	Label: 1	1	0	COMETA	4
+Wütend schaltete der Langschläfer den dummen Wecker aus.	Label: 1	1	1	COMETA	4
+Seine Hoffnungen auf Gesundheit hatte der Kranke längst aufgegeben.	1	1	0	COMETA	4
+Endlich war Ruhe zwischen den Streitenden.	Label: 1	1	0	COMETA	4
+Die Worte ihres Freundes waren sehr schlimm für die junge Frau.	Label: 1	1	0	COMETA	4
+Gestern Abend wurde Renate von einem widerlichen Mann angesprochen.	Label: 1	1	0	COMETA	4
+Diesen Sonntag duellieren sich die Kanzlerkandidaten im Fernsehen.	Label: 1	1	1	COMETA	4
+Das Thema des Matheunterrichts ist schwierig.	Label: 1	1	0	COMETA	4
+Meine Großeltern hatten ein wirklich schwieriges Leben.	Label: 1	1	0	COMETA	4
+Die Gespräche über seine Kindheit waren schlimm für ihn.	Label: 1	1	0	COMETA	4
+Endlich war Waffenstillstand zwischen den Streitenden.	Label: 1	1	1	COMETA	4
+Dieses Kind ist echt eine Klette.	Label: 1	1	1	COMETA	4
+Gerds Versicherung schickte ihm eine hohe Rechnung.	Label: 1	1	0	COMETA	4
+Das war heute eine bittere Enttäuschung für meinen Vater.	Label: 1	1	1	COMETA	4
+Karsten hörte ständig er habe nichts in der Birne.	Label: 1	1	1	COMETA	4
+Die berühmte Arie wurde von der Sängerin heute wirklich wundervoll interpretiert!	Label: 1	1	0	COMETA	4
+Der Stoff des Matheunterrichts ist schwierig.	Label: 1	1	1	COMETA	4
+Wegen ihres intensiven Geschmacks werden Oliven von vielen geliebt.	1	1	0	COMETA	4
+Dieser junge Mann lässt sich nicht beeinflussen.	Label: 1	1	0	COMETA	4
+Eine Tänzerin verwickelte den Theaterchef in eine Affäre.	1	1	1	COMETA	4
+In einem Kurs vertieft Nadine ihre Lateinkenntnisse.	Label: 1	1	1	COMETA	4
+Das war eine unglaublich oberflächliche Reaktion von ihr.	Label: 1	1	1	COMETA	4
+Die Beerdigung ihrer Mutter riss alte Wunden wieder auf.	1	1	1	COMETA	4
+Die Party ist im Stripclub. Die Stripper sind sexy.	Label: 1	1	0	MIST	4
+Sie bemerkt jede Änderung. Sie ist aufmerksam.	Label: 1	1	0	MIST	4
+Das Konzert ist morgen. Sie sind schon ganz aufgekratzt.	Label: 1	1	1	MIST	4
+Gestern war sein Test. Die Note erwartet er aufgeregt.	Label: 1	1	0	MIST	4
+Ihr ist viel widerfahren. Man merkt ihre Bitterkeit.	Label: 1	1	1	MIST	4
+Sie sind schon lange Rivalen. Ihr Umgang ist frostig.	Label: 1	1	1	MIST	4
+Der Fehler war schlimm. Für ihre Zukunft ist sie pessimistisch.	Label: 1	1	0	MIST	4
+Es gab eine große Feier. Das Programm war bunt. 	1	1	1	MIST	4
+Er soll sie in Ruhe lassen. Er ist unangenehm.	Label: 1	1	0	MIST	4
+Sie ist der Star. Ihre Persönlichkeit ist schillernd.	Label: 1	1	1	MIST	4
+Sie tranken eine Flasche Sekt. Danach waren sie betrunken.	Label: 1	1	0	MIST	4
+Der Film war traurig und schön. Alle waren berührt.	1	1	1	MIST	4
+Sie ist selten fröhlich. Ihr Leben ist voller Traurigkeit.	Label: 1	1	0	MIST	4
+Die Geschichte ist schön. Das Ende ist zum dahinschmelzen.	Label: 1	1	1	MIST	4
+Sie tranken beide zwei Flaschen Wein. Jetzt sind sie betrunken.	Label: 1	1	0	MIST	4
+Sie sind zerstritten. Er begegnet ihr nur mit Teilnahmslosigkeit.	Label: 1	1	0	MIST	4
+Seine Firma ist pleite. Die Lage ist aussichtslos.	1	1	1	MIST	4
+Er schaut keinen beim Reden an. Dadurch wirkt er unfreundlich.	Label: 1	1	0	MIST	4
+Er ist Investmentbanker. Für Geld hat er ein Näschen.	Label: 1	1	1	MIST	4
+Dies ist sein erstes Date seit langem. Er ist unruhig.	Label: 1	1	1	MIST	4
+Das Thema ist ihre Leidenschaft. Sie glüht dafür.	Label: 1	1	1	MIST	4
+Sie ist schnell beleidigt. Bei ihr benötigt man Einfühlungsvermögen. 	Label: 1	1	0	MIST	4
+Man merkt ihr junges Alter. Sie ist noch unerfahren. 	Label: 1	1	0	MIST	4
+Er hat eine kleine Katze. Sie ist goldig.	Label: 1	1	1	MIST	4
+Man merkt ihr junges Alter. Sie ist noch grün hinter den Ohren.	Label: 1	1	1	MIST	4
+Sie haben eine Affäre. Die Nacht war feurig.	Label: 1	1	1	MIST	4
+Er wusste nicht viel. Daher galt er nicht als intelligent.	Label: 1	1	0	MIST	4
+Teamarbeit ist gefragt. Dafür müssen sie sich grün sein.	Label: 1	1	1	MIST	4
+Er zeigt kein Interesse an ihr. Das kümmert sie nicht.	Label: 1	1	0	MIST	4
+Sie war öfters ängstlich. Sie witterte die Gefahr.	Label: 1	1	1	MIST	4
+Selten hat er mal richtig Spaß. Er ist echt ein Sauertopf.	Label: 1	1	1	MIST	4
+Sie langweilt sich nie. Ihr Leben hat genug Würze.	1	1	1	MIST	4
+Niemand ist bei ihr willkommen. Auf andere wirkt sie kalt.	Label: 1	1	1	MIST	4
+Die Theorie war gut durchdacht. So fand sie schnell Anklang.	Label: 1	1	1	MIST	4
+Alle schauen auf sie. Sie hat eine tolle Präsenz.	Label: 1	1	0	MIST	4
+Ihr Wesen ist sehr aufbrausend. Sie hat Pfeffer.	Label: 1	1	1	MIST	4
+Sie bezahlte sehr wenig. Der Deal erschien ihr zwielichtig.	Label: 1	1	1	MIST	4
+Sie sind frisch verliebt. Er findet alles besser als es eigentlich ist. 	Label: 1	1	0	MIST	4
+Sie arbeitet nur. Ihr Leben ist eher fad.	Label: 1	1	1	MIST	4
+Sie gab ihm Tipps. Die Ratschläge waren super.	Label: 1	1	0	MIST	4
+Sie ist immer nett. Jedem zeigt sie ihre Wärme.	Label: 1	1	1	MIST	4
+Es war ein dummer Vorwurf. Ihre Antwort war spöttisch.	Label: 1	1	0	MIST	4
+Er ist ein toller Mann. Sie war schon lange verknallt.	Label: 1	1	1	MIST	4
+Sie bricht schnell in Tränen aus. Ihr Wesen ist sensibel.	Label: 1	1	0	MIST	4
+Sie wusste nicht Bescheid. Daher fragte sie ins Blaue.	Label: 1	1	1	MIST	4
+Bei Krimis kennt er die Mörder. Das verdankt er seinem Instinkt.	Label: 1	1	0	MIST	4
+Sie stieg in das fremde Auto. Das war blauäugig.	Label: 1	1	1	MIST	4
+Sie haben eine Affäre. Die Nacht war leidenschaftlich.	Label: 1	1	0	MIST	4
+Den Vorwurf ließ er sich nicht machen. Er wurde stinkig.	Label: 1	1	1	MIST	4
+Jeder an der Uni kennt ihn. Er ist ein lauter Mensch.	Label: 1	1	1	MIST	4
+Die Bemerkung war gemein. Da war die Stimmung versalzen.	Label: 1	1	1	MIST	4
+Er denkt an die Vergangenheit. Das Gefühl ist bittersüß.	Label: 1	1	1	MIST	4
+Ihr Vorschlag gefällt niemandem. Die Kritik war heftig. 	Label: 1	1	0	MIST	4
+Die Bemerkung war gemein. Da war die Stimmung vermiest.	Label: 1	1	0	MIST	4
+Ihr Freund ist Südländer. Man sagt er sei heißblütig.	1	1	1	MIST	4
+Der Film war traurig und schön. Alle waren emotional.	Label: 1	1	0	MIST	4
+Nach außen wirkt sie streng. Doch ihr Inneres ist sanftmütig.	Label: 1	1	0	MIST	4
+Sie gründet eine Gang. Ihre Spielchen waren faul.	Label: 1	1	1	MIST	4
+Sie verpassten knapp das Finale. Jetzt ist sie miesgelaunt.	Label: 1	1	0	MIST	4
+Bei Krimis kennt er die Mörder. Das verdankt er seinem Riecher.	Label: 1	1	1	MIST	4
+Er liebt Motoren. Sein neues Auto ist echt super.	Label: 1	1	0	MIST	4
+Sie kümmert sich täglich um kranke Kinder. Sie ist gutmütig.	Label: 1	1	0	MIST	4
+Jeder ist bei ihm willkommen. Er ist sehr freundlich.	Label: 1	1	0	MIST	4
+Er hat jetzt seinen Traumjob. Die Zukunft wird rosig.	Label: 1	1	1	MIST	4
+Sie bricht schnell in Tränen aus. Ihr Wesen ist zart.	Label: 1	1	1	MIST	4
+Im letzten Urlaub ging vieles schief. Das war nervig.	Label: 1	1	0	MIST	4
+Sie haben sich arg gestritten. Jetzt herrscht dicke Luft.	Label: 1	1	1	MIST	4
+Das Buch kam nicht gut an. Die Geschichte war langweilig.	0	0	0	MIST	4
+Endlich naht der Frühling. Die Liebe ist zu spüren.	Label: 1	1	0	MIST	4
+Sie zweifelten noch sehr. Die Sache war nicht einleuchtend.	Label: 1	1	1	MIST	4
+Die Mitarbeiter sind glücklich. Im Büro herrscht Harmonie. 	Label: 1	1	1	MIST	4
+Die Frau hat ein Baby bekommen. Es ist süß.	Label: 1	1	1	MIST	4
+Ihr Team hat heute verloren. Es ist ein schlechter Tag.	Label: 1	1	0	MIST	4
+Sie verließ ihn. Seine Fehler wurden ihm nun bewusst.	Label: 1	1	0	MIST	4
+Sie kamen sich langsam näher. Man spürte das Knistern.	Label: 1	1	1	MIST	4
+Sie lud sie alle auf ein Eis ein. Das war dufte.	1	1	1	MIST	4
+Die Schülerin will mehr Freizeit. Sie findet Hausaufgaben stinken.	1	1	1	MIST	4
+Sie tranken beide zwei Flaschen Wein. Jetzt sind sie blau.	Label: 1	1	1	MIST	4
+Viele alte Menschen sind einsam. Deshalb sind sie verbittert.	1	1	1	MIST	4
+Der Fehler war schlimm. Für ihre Zukunft sieht sie schwarz.	Label: 1	1	1	MIST	4
+Sie hat an sich gearbeitet. Nun ist sie mit sich selbst im Einklang.	Label: 1	1	1	MIST	4
+Sie kennen sich schon lange. Deshalb kommen sie gut zusammen aus.	Label: 1	1	0	MIST	4
+Sie verlor wegen eines Formfehlers. Das wird ihr stinken.	Label: 1	1	1	MIST	4
+Heute ist ein super Tag. Er fühlt sich fantastisch.	Label: 1	1	0	MIST	4
+Sie hatten auf nichts Lust. Ihre Tage waren trist.	Label: 1	1	0	MIST	4
+Sie tranken eine Flasche Sekt. Danach waren sie berauscht.	Label: 1	1	1	MIST	4
+Sie holten den ersten Platz. Die Leistung war großartig.	Label: 1	1	0	MIST	4
+Das Buch kam nicht gut an. Die Geschichte war eintönig. 	0	0	1	MIST	4
+Sie hat zu wenig gelernt. Im Test hat sie keinen Dunst.	Label: 1	1	1	MIST	4
+Die Wahl war manipuliert. Die Nachricht sorgt für Aufregung.	Label: 1	1	0	MIST	4
+Ihr Sohn hatte keine Manieren. Er war sehr vorlaut.	Label: 1	1	1	MIST	4
+Gefühle zeigt sie nicht. Für andere wirkt sie rau.	Label: 1	1	1	MIST	4
+Sie erkennt die Stimmung anderer. Sie ist einfühlsam.	Label: 1	1	0	MIST	4
+Sie trafen sich nach langer Zeit. Da war noch ein Funke .	Label: 1	1	1	MIST	4
+Sein neues Buch war ein Flop. Es war einfach nicht sehr gut.	1	1	0	MIST	4
+Alle schauen auf sie. Sie hat eine tolle Ausstrahlung.	Label: 1	1	1	MIST	4
+Er ist ihr sympathisch. Sie kann ihn gut leiden.	Label: 1	1	0	MIST	4
+Er wird morgen aus der Haft entlassen. Es duftet nach Freiheit.	Label: 1	1	1	MIST	4
+Heute ist ein super Tag. Er fühlt sich blendend.	Label: 1	1	1	MIST	4
+Sie sind nicht einer Meinung. Der Streit wird emotional.	Label: 1	1	0	MIST	4
+Die Party ist im Stripclub. Die Stripper sind heiß.	Label: 1	1	1	MIST	4
+Er macht alles was sie sagt. Er ist ihr ergeben.	Label: 1	1	0	MIST	4
+Sie haben sich arg gestritten. Jetzt herrscht Verärgerung.	Label: 1	1	0	MIST	4
+Sie verpassten knapp das Finale. Jetzt ist sie verstimmt.	Label: 1	1	1	MIST	4
+Seine Firma ist pleite. Die Lage ist hoffnungslos.	1	1	0	MIST	4
+Das Problem besteht noch immer. Es fehlt ihr die Erleuchtung. 	1	1	1	MIST	4
+Seit der Trennung bleibt er im Bett. Er fühlt sich gammelig.	Label: 1	1	1	MIST	4
+Er hat eine kleine Katze. Sie ist niedlich.	Label: 1	1	0	MIST	4
+Er freut sich auf das Date. Da kommt seine neue Geliebte.	Label: 1	1	0	MIST	4
+Das Gespräch dauerte lange. Sie fand es langweilig.	Label: 1	1	0	MIST	4
+Ihr Team hat heute verloren. Es ist ein schwarzer Tag.	Label: 1	1	1	MIST	4
+Die Sitzung dauerte ewig. Das Ganze war schal.	1	1	1	MIST	4
+Er zeigt kein Interesse an ihr. Das kratzt sie nicht.	Label: 1	1	1	MIST	4
+Er ist Investmentbanker. Für Geld hat er einen Sinn.	Label: 1	1	0	MIST	4
+Die Familie ist zerstritten. Die Zeiten sind freudlos.	Label: 1	1	0	MIST	4
+Sie tanzte bis tief in die Nacht. Sie war in Ekstase.	1	1	0	MIST	4
+Es wurde viel gelacht. Der Abend war lustig.	Label: 1	1	0	MIST	4
+Die Bedeutung war ihm fremd. Er hatte keine Ahnung.	Label: 1	1	0	MIST	4
+Etwas geht da vor sich. Die Situation ist verdächtig.	Label: 1	1	0	MIST	4
+Er braucht Aggressionstraining. Häufig verliert er die Kontrolle.	Label: 1	1	0	MIST	4
+Er schreibt einen bösen Brief. Den Ärger kann er erahnen.	Label: 1	1	0	MIST	4
+Die Trennung ist jetzt lange her. Seine Stimmung wird besser.	Label: 1	1	0	MIST	4
+Das Publikum war enttäuscht. Der Vortrag war farblos.	Label: 1	1	1	MIST	4
+Er ist ein verurteilter Mörder. Er ist mitleidslos.	Label: 1	1	0	MIST	4
+Sie folgt selten einer Anweisung. Sie ist kratzbürstig. 	Label: 1	1	1	MIST	4
+Sie kamen sich langsam näher. Man spürte die Aufregung.	Label: 1	1	0	MIST	4
+Sie fasste neuen Mut. Sie hatte genug von der Schwarzmalerei.	1	1	1	MIST	4
+Viele alte Menschen sind einsam. Deshalb sind sie missmutig.	Label: 1	1	0	MIST	4
+Dieser Mann ist gefährlich. Sein Blick wirkt finster.	Label: 1	1	1	MIST	4
+Er ist kein einfacher Mensch. Sein Charakter ist kantig.	Label: 1	1	1	MIST	4
+In ihren Augen macht er nie was falsch. Sie ist verblendet.	Label: 1	1	1	MIST	4
+Das Kind schummelt gern. Spiele enden oft im Streit.	1	1	0	MIST	4
+Gestern war sein Test. Die Note erwartet er fieberhaft.	Label: 1	1	1	MIST	4
+Die Trennung ist jetzt lange her. Seine Stimmung wird heller.	Label: 1	1	1	MIST	4
+Er hat ihr wehgetan. Nun zeigt er sich zerknirscht.	1	1	1	MIST	4
+Dies ist sein erstes Date seit langem. Er ist nervös.	Label: 1	1	0	MIST	4
+Sie kann ihm nicht wirklich vertrauen. Er wirkt verlogen.	Label: 1	1	0	MIST	4
+Die Frau hat ein Baby bekommen. Es ist niedlich.	Label: 1	1	0	MIST	4
+Sie hat wenig geschlafen. Daher ist sie muffelig.	Label: 1	1	1	MIST	4
+Sie hat viel durchgemacht. Dadurch wurde sie eiskalt.	1	1	1	MIST	4
+Etwas stimmt hier nicht. Die ganze Sache ist verdächtig.	Label: 1	1	0	MIST	4
+Er ist Kommissar. Er ist bekannt für sein Gespür.	Label: 1	1	0	MIST	4
+Sein neues Buch war ein Flop. Es war einfach nicht das Gelbe vom Ei.	1	1	1	MIST	4
+Endlich naht der Frühling. Die Liebe liegt in der Luft. 	1	1	1	MIST	4
+Sie war immer sehr stolz auf ihn. Er war ihr Liebling.	Label: 1	1	0	MIST	4
+Sie sieht traurig aus. Sie hatten schon wieder Krach.	Label: 1	1	1	MIST	4
+Ihr Leben ist öde. Auf ein Abenteuer brennt sie.	1	1	1	MIST	4
+Sie ist der Star. Ihre Persönlichkeit ist auffallend.	Label: 1	1	0	MIST	4
+Etwas stimmt hier nicht. Die ganze Sache ist anrüchig.	Label: 1	1	1	MIST	4
+Er hat jetzt seinen Traumjob. Die Zukunft wird schön.	Label: 1	1	0	MIST	4
+Sie sind frisch verliebt. Er sieht alles durch eine rosarote Brille.	Label: 1	1	1	MIST	4
+Er stimmt ihr bei jeder Möglichkeit zu. Das wirkt schleimig.	Label: 1	1	1	MIST	4
+Neuerdings geht viel schief. Doch er sieht den Silberstreifen am Horizont. 	Label: 1	1	1	MIST	4
+Die Bedeutung war ihm fremd. Er hatte keinen Schimmer.	1	1	1	MIST	4
+Sie hat Geburtstag. Er möchte ihren Tag verschönern.	Label: 1	1	0	MIST	4
+Das Publikum war enttäuscht. Der Vortrag war langweilig.	Label: 1	1	0	MIST	4
+Die Mannschaft will den Pokal gewinnen. Sie will ihn unbedingt.	Label: 1	1	0	MIST	4
+Er ist ihr sympathisch. Sie kann ihn gut riechen.	Label: 1	1	1	MIST	4
+Die Schülerin will mehr Freizeit. Sie findet Hausaufgaben sind doof.	Label: 1	1	0	MIST	4
+Er legt es oft drauf an. In Clubs fängt er an zu provozieren.	Label: 1	1	0	MIST	4
+Sie hat an sich gearbeitet. Nun ist sie mit sich selbst zufrieden.	Label: 1	1	0	MIST	4
+Er hat kaum Interessen. Sein Wesen ist langweilig.	Label: 1	1	0	MIST	4
+Sie hat ihn verlassen. Jetzt sieht er alles durch einen Grauschleier.	Label: 1	1	1	MIST	4
+Er sitzt im Gefängnis. Das Verbrechen war grausig.	1	1	0	MIST	4
+Die Familie ist zerstritten. Die Zeiten sind trüb.	Label: 1	1	1	MIST	4
+Sie erkennt die Stimmung anderer. Sie ist feinfühlig. 	Label: 1	1	1	MIST	4
+Er hat viele Lügen erzählt. Jetzt zeigt er sich kleinlaut.	Label: 1	1	1	MIST	4
+Seine Taten sind heldenhaft. Er ist ein kühner Typ.	Label: 1	1	0	MIST	4
+Seit der Trennung bleibt er im Bett. Er fühlt sich jämmerlich.	Label: 1	1	0	MIST	4
+Sie hatten wieder einen Streit. Jetzt ist er sauer.	Label: 1	1	1	MIST	4
+Die Sitzung dauerte ewig. Das Ganze war langweilig.	1	1	0	MIST	4
+Die Mannschaft will den Pokal gewinnen. Sie ist heiß darauf.	Label: 1	1	1	MIST	4
+Man kann ihn von nichts abhalten. Er ist eigensinnig.	Label: 1	1	0	MIST	4
+Teamarbeit ist gefragt. Dafür müssen sie sich leiden können.	Label: 1	1	0	MIST	4
+Sie will ihn nicht. Er muss aufhören ihr zu schmeicheln.	Label: 1	1	0	MIST	4
+Nach dem Gespräch war er sehr wütend. Nun muss er abkühlen.	Label: 1	1	1	MIST	4
+Sie gründet eine Gang. Ihre Spielchen waren unehrlich.	Label: 1	1	0	MIST	4
+Sie sind schon lange Rivalen. Ihr Umgang ist unfreundlich.	Label: 1	1	0	MIST	4
+Gefühle zeigt sie nicht. Für andere wirkt sie unfreundlich.	Label: 1	1	0	MIST	4
+Sie langweilt sich nie. Ihr Leben hat genug Abwechslung.	1	1	0	MIST	4
+Es war ein dummer Vorwurf. Ihre Antwort war spitz.	Label: 1	1	1	MIST	4
+Ihr Wesen ist sehr aufbrausend. Sie hat Temperament.	Label: 1	1	0	MIST	4
+Er findet stets die richtigen Worte. Er ist taktvoll.	Label: 1	1	1	MIST	4
+Er ist Kommissar. Er ist bekannt für seine Spürnase.	Label: 1	1	1	MIST	4
+Sie lud sie alle auf ein Eis ein. Das war schön.	Label: 1	1	0	MIST	4
+Er ist ein Macho. Seine Sprüche sind abgeschmackt.	1	1	1	MIST	4
+Sie sind geschieden. Ihre Begegnungen sind eisig.	Label: 1	1	1	MIST	4
+Die Polizei stand an der Ecke. Etwas war verdächtig.	Label: 1	1	0	MIST	4
+Nach außen wirkt sie streng. Doch ihr Inneres ist weich.	Label: 1	1	1	MIST	4
+Viele haben Angst vor ihm. Sein Umgang ist grob.	Label: 1	1	1	MIST	4
+Sie kann nicht mehr klar denken. Vor Wut ist sie unüberlegt.	Label: 1	1	0	MIST	4
+Sie folgt selten einer Anweisung. Sie ist widerspenstig.	Label: 1	1	0	MIST	4
+Selten hat er mal richtig Spaß. Er ist echt humorlos.	Label: 1	1	0	MIST	4
+Er setzt sein ganzes Geld auf rot. Er ist durchgeknallt.	1	1	1	MIST	4
+Sie haben das Spiel knapp verloren. Das ist ärgerlich.	Label: 1	1	0	MIST	4
+Sie war öfters ängstlich. Sie spürte die Gefahr.	Label: 1	1	0	MIST	4
+Er ist ein verurteilter Mörder. Er ist kaltblütig.	Label: 1	1	1	MIST	4
+Die Theorie war gut durchdacht. So fand sie schnell Zustimmung.	Label: 1	1	0	MIST	4
+Sie kennen sich schon lange Zeit. Ihr Umgang ist warm.	Label: 1	1	1	MIST	4
+Für heute bleibt sie im Bett liegen. Sie ist träge.	Label: 1	1	0	MIST	4
+Sie hat zu wenig gelernt. Im Test hat sie keine Ahnung.	Label: 1	1	0	MIST	4
+Zu fast allem hat er eine Lösung. Er ist clever.	Label: 1	1	0	MIST	4
+Er findet stets die richtigen Worte. Er ist einfühlsam.	Label: 1	1	0	MIST	4
+Sie verlor wegen eines Formfehlers. Das wird sie ärgern. 	Label: 1	1	0	MIST	4
+Ihr Sohn hatte keine Manieren. Er war sehr frech.	Label: 1	1	0	MIST	4
+Sie tanzte bis tief in die Nacht. Sie war im Rausch.	Label: 1	1	1	MIST	4
+Sie hielt einen Vortrag. Der Inhalt war fantasievoll.	Label: 1	1	0	MIST	4
+Sie wurde heute zu früh geweckt. Jetzt ist sie brummig.	Label: 1	1	1	MIST	4
+Sie erlebte wieder einen Rückschlag. Er war herb.	Label: 1	1	1	MIST	4
+Der Vortrag ist chaotisch. Zum Verstehen fehlt die Struktur.	Label: 1	1	0	MIST	4
+Ihr Leben ist öde. Auf ein Abenteuer hofft sie.	1	1	0	MIST	4
+Er liebt Motoren. Sein neues Auto ist echt scharf. 	Label: 1	1	1	MIST	4
+Er freut sich auf das Date. Da kommt seine neue Flamme.	1	1	1	MIST	4
+Er schaut keinen beim Reden an. Dadurch wirkt er schroff.	Label: 1	1	1	MIST	4
+Er machte einen gemeinen Witz. Das war unangemessen.	Label: 1	1	0	MIST	4
+Sie wurde heute zu früh geweckt. Jetzt ist sie mürrisch.	Label: 1	1	0	MIST	4
+Sie arbeitet nur. Ihr Leben ist eher langweilig.	Label: 1	1	0	MIST	4
+Sie fuhr sein Auto zu Schrott. Er sah es und war wütend.	Label: 1	1	0	MIST	4
+Sie hielt einen Vortrag. Der Inhalt war blumig.	Label: 1	1	1	MIST	4
+Sie kümmert sich täglich um kranke Kinder. Sie hat ein Herz aus Gold.	Label: 1	1	1	MIST	4
+Man kann ihn von nichts abhalten. Er ist hartnäckig.	Label: 1	1	1	MIST	4
+Die Aufgabe ist komplex. Es ist noch vieles unverständlich.	Label: 1	1	0	MIST	4
+Er legt es oft drauf an. In Clubs fängt er an zu stänkern.	Label: 1	1	1	MIST	4
+Sie bezahlte sehr wenig. Der Deal erschien ihr fragwürdig.	Label: 1	1	0	MIST	4
+Der Lehrer ist selten freundlich. Meistens wirkt er streng.	Label: 1	1	0	MIST	4
+Er stimmt ihr bei jeder Möglichkeit zu. Das wirkt unehrlich.	Label: 1	1	0	MIST	4
+Die Wahl war manipuliert. Die Nachricht sorgt für Lärm.	1	1	1	MIST	4
+Schnell verliert sie die Beherrschung. Sie handelt impulsiv.	Label: 1	1	0	MIST	4
+Sie ist immer nett. Jedem zeigt sie ihre Herzlichkeit.	Label: 1	1	0	MIST	4
+Jeder ist bei ihm willkommen. Er ist sehr warmherzig.	Label: 1	1	1	MIST	4
+Gestern war er sehr betrunken. Jetzt fühlt er sich ranzig.	Label: 1	1	1	MIST	4
+Er macht sie schon lange glücklich. Er ist ihr Sonnenschein.	Label: 1	1	1	MIST	4
+Sie gab ihm Tipps. Die Ratschläge waren golden.	Label: 1	1	1	MIST	4
+Sie haben das Spiel knapp verloren. Das ist bitter.	Label: 1	1	1	MIST	4
+Dieser Mann ist gefährlich. Sein Blick wirkt böse.	Label: 1	1	0	MIST	4
+Er machte ihr ein Kompliment. Es war sehr schmeichelnd.	Label: 1	1	0	MIST	4
+Er fällt sehr auf. Seine Persönlichkeit ist bunt.	Label: 1	1	1	MIST	4
+Sie wusste nicht Bescheid. Daher fragte sie ins Ungewisse.	Label: 1	1	0	MIST	4
+Das Gespräch dauerte lange. Sie fand es monoton.	Label: 1	1	1	MIST	4
+Er denkt an die Vergangenheit. Das Gefühl ist schmerzlich-schön.	Label: 1	1	0	MIST	4
+Er setzt sein ganzes Geld auf rot. Er ist verrückt.	1	1	0	MIST	4
+Der Lehrer ist selten freundlich. Meistens wirkt er hart.	Label: 1	1	1	MIST	4
+Überall herrscht schlimmer Krieg. Die Zeiten sind hoffnungslos.	Label: 1	1	0	MIST	4
+Er macht alles was sie sagt. Er ist ihr hörig.	Label: 1	1	1	MIST	4
+Sie hat viel durchgemacht. Dadurch wurde sie gefühllos.	Label: 1	1	0	MIST	4
+Nach dem Gespräch war er sehr wütend. Nun muss er zur Vernunft kommen.	Label: 1	1	0	MIST	4
+Ihr Hund war ihr Freund. Sein Verlust macht sie traurig.	Label: 1	1	0	MIST	4
+Er schreibt einen bösen Brief. Den Ärger kann er riechen.	Label: 1	1	1	MIST	4
+Sie sind geschieden. Ihre Begegnungen sind feindselig.	Label: 1	1	0	MIST	4
+Sie zweifelten noch sehr. Die Sache war nicht verständlich.	Label: 1	1	0	MIST	4
+Das Thema ist ihre Leidenschaft. Sie begeistert sich dafür.	Label: 1	1	0	MIST	4
+Für heute bleibt sie im Bett liegen. Sie ist faul.	Label: 1	1	1	MIST	4
+Sie ist schnell beleidigt. Bei ihr benötigt man Fingerspitzengefühl.	Label: 1	1	1	MIST	4
+Das Konzert ist morgen. Sie sind schon ganz aufgeregt.	Label: 1	1	0	MIST	4
+Er hat ihr wehgetan. Nun zeigt er sich reuevoll.	Label: 1	1	0	MIST	4
+Sie hat Geburtstag. Er möchte ihren Tag versüßen.	Label: 1	1	1	MIST	4
+Es gab eine große Feier. Das Programm war abwechslungsreich.	Label: 1	1	0	MIST	4
+Sie kennen sich schon lange Zeit. Ihr Umgang ist freundschaftlich.	Label: 1	1	0	MIST	4
+Ihr Vorschlag gefällt niemandem. Die Kritik war scharf.	Label: 1	1	1	MIST	4
+Die Aufgabe ist komplex. Es ist noch vieles unklar.	Label: 1	1	1	MIST	4
+Er wird morgen aus der Haft entlassen. Er spürt schon die Freiheit.	Label: 1	1	0	MIST	4
+Der Zeuge macht die Aussage. Die Details sind pikant.	Label: 1	1	1	MIST	4
+Sie hatten auf nichts Lust. Ihre Tage waren grau.	Label: 1	1	1	MIST	4
+Überall herrscht schlimmer Krieg. Die Zeiten sind dunkel.	Label: 1	1	1	MIST	4
+Jeder an der Uni kennt ihn. Er ist ein auffallender Mensch.	Label: 1	1	0	MIST	4
+Er schaut gern Horrorfilme. Ihm gefällt die Aufregung.	Label: 1	1	0	MIST	4
+Sie hat zu viele Geheimnisse. Das gefällt ihm nicht.	Label: 1	1	0	MIST	4
+Sein Kind kam heile nach Hause. Jetzt ist er beruhigt. 	Label: 1	1	1	MIST	4
+Sie kennen sich schon lange. Deshalb harmonieren sie gut.	Label: 1	1	1	MIST	4
+Er machte ihr ein Kompliment. Es war zuckersüß.	1	1	1	MIST	4
+Seine Taten sind heldenhaft. Er ist ein schneidiger Typ.	Label: 1	1	1	MIST	4
+Sie verließ ihn. Seine Fehler wurden ihm nun klar.	Label: 1	1	1	MIST	4
+Beim Begräbnis war er betrunken. Das war taktlos. 	Label: 1	1	1	MIST	4
+Ihr Freund ist Südländer. Man sagt er sei leidenschaftlich.	1	1	0	MIST	4

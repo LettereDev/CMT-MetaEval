@@ -63,15 +63,6 @@ Thumbs.db
 # Experiment outputs
 # =========================
 
-# Raw LLM responses
-results/raw_responses/
-
-# Generated prediction files
-results/predictions/
-
-# Generated evaluation metrics
-results/metrics/
-
 
 # =========================
 # Dataset files

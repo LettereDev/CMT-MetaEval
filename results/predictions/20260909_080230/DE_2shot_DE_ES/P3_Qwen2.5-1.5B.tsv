@@ -1,0 +1,366 @@
+statement	response	prediction	gold_label	dataset	shot_count
+Der Schauspieler hatte ein zerfurchtes Gesicht voller Narben.	Label: 0	0.0	1	COMETA	2
+Die Zeitung schreibt heute mal wieder viel Unsinn über die Stars.	To classify the given statement		0	COMETA	2
+In einem Kurs verbessert Sina ihre Lateinkenntnisse.	Label: 0	0.0	0	COMETA	2
+Große Reisproduzenten befinden sich hauptsächlich in China.	Label: 0	0.0	0	COMETA	2
+Es gibt starke Argumente für Baumwolle statt Polyester.	Label: 0	0.0	1	COMETA	2
+Ihre romantische Hochzeitsfeier gefiel der Braut sehr.	To classify the given statement		0	COMETA	2
+Dieses Kind ist echt anhänglich.	To classify the given statement		0	COMETA	2
+In Wien habe ich einen sehr leckeren Kaffee getrunken.	Label: 0	0.0	0	COMETA	2
+Vokabeln verbleiben durch regelmäßiges Üben im Gehirn.	Label: 0	0.0	0	COMETA	2
+Seine Hoffnungen auf Gesundheit hatte der Kranke längst begraben.	To classify the given statement		1	COMETA	2
+Die plötzliche Veränderung war sehr unangenehm für Gunda.	To classify the given statement		0	COMETA	2
+Die Firma hat sich einen finanziell gut aufgestellten Partner ausgesucht.	To classify the given statement		1	COMETA	2
+Jeder Pilot sollte seine Ortskenntnisse immer mal wieder erneuern.	Let's analyze the given		0	COMETA	2
+Wegen ihres kräftigen Geschmacks werden Oliven von vielen geliebt.	To classify the given statement		1	COMETA	2
+Der wunderbare Ton der Querflöte überraschte alle Zuhörer.	1 = metaphorical	1.0	0	COMETA	2
+Der samtweiche Ton der Querflöte überraschte alle Zuhörer.	To classify the given statement		1	COMETA	2
+An ihrer heiseren Stimme konnte ich erkennen dass sie erkältet war.	To classify the given statement		0	COMETA	2
+Der Gesang des Opernstars ist köstlich.	To classify the given statement		1	COMETA	2
+An ihrer kratzigen Stimme konnte ich erkennen dass sie erkältet war.	To classify the given statement		1	COMETA	2
+Die kleine Familie wollte ihren Hausbau gründlich planen.	To classify the given statement		0	COMETA	2
+Der Sieg des Läufers erzeugte riesige Medienaufmerksamkeit.	To classify the given statement		0	COMETA	2
+Dieser junge Mann lässt sich nicht verbiegen.	To classify the given statement		1	COMETA	2
+Die Schulreform war noch nicht sicher.	To classify the given statement		0	COMETA	2
+Die Unternehmerin stand immer unter Druck.	To classify the given statement		1	COMETA	2
+Wenn Daniel einen guten Roman liest verfliegt für ihn die Zeit.	To classify the given statement		1	COMETA	2
+Meine Freundin schleimt ständig bei unserer Lehrerin.	To classify the given statement		1	COMETA	2
+Während meines Vortrags saß der Professor mit versteinerter Miene da.	1 = metaphorical	1.0	1	COMETA	2
+Der Flugbegleiter heute war wirklich attraktiv!	To classify the given statement		0	COMETA	2
+Der Gesang des Opernstars ist wunderschön.	Label: 0	0.0	0	COMETA	2
+Ihre Spanisch-Kenntnisse waren leider eingerostet.	To classify the given statement		1	COMETA	2
+Ach was für ein einfaches Leben hatten wir während der Schulferien!	Label: 0	0.0	0	COMETA	2
+Laut und einschneidend schallten die Stimmen der Verkäufer über den Markt.	Label: 0	0.0	1	COMETA	2
+Karina bekam fast jeden Tag eine gesalzene Ohrfeige von ihrer Mutter.	To classify the given statement		1	COMETA	2
+Die Firma hat sich einen finanziell gut situierten Partner ausgesucht.	To classify the given statement		0	COMETA	2
+Die Wirtschaft brummte nach langer Zeit wieder.	To classify the given statement		1	COMETA	2
+Der Angeklagte machte immer mehr widersprüchliche Aussagen.	To classify the given statement		0	COMETA	2
+Die Worte ihres Freundes trafen die junge Frau sehr.	To classify the given statement		1	COMETA	2
+Letzte Nacht hat ein eisiger Wind um die Häuser geblasen.	To classify the given statement		0	COMETA	2
+Die Zeitung schreibt heute mal wieder großen Käse über die Stars.	To classify the given statement		1	COMETA	2
+Es gibt gute Argumente für Baumwolle statt Polyester.	Label: 0	0.0	0	COMETA	2
+Die kleine Familie wollte ihren Hausbau vorausschauend planen.	To classify the given statement		1	COMETA	2
+Vokabeln verankern sich durch regelmäßiges Üben im Gehirn.	To classify the given statement		1	COMETA	2
+Stefanie war nervös aber die Präsentation war absolut perfekt.	To classify the given statement		0	COMETA	2
+Das Gespräch beim Finanzamt verlief glücklicherweise reibungslos.	To classify the given statement		1	COMETA	2
+Meine Tante hat ein gutes Herz sie kocht ehrenamtlich für Obdachlose.	Label: 0	0.0	0	COMETA	2
+Der vorbestrafte Mann war diesmal unschuldig.	Label: 0	0.0	0	COMETA	2
+Den Banken muss mit Kapital geholfen werden.	To classify the given statement		0	COMETA	2
+In Wien habe ich einen himmlischen Kaffee getrunken.	To determine if the given		1	COMETA	2
+Jeder Pilot sollte seine Ortskenntnisse immer mal wieder auffrischen.	Let's analyze the given		1	COMETA	2
+Der Sieg des Läufers zog riesige Medienaufmerksamkeit nach sich.	To classify the given statement		1	COMETA	2
+Die Beerdigung ihrer Mutter erinnerte sie an alten Kummer.	To classify the given statement		0	COMETA	2
+Die berühmte Arie wurde von der Sängerin heute wirklich göttlich interpretiert!	To classify the given statement		1	COMETA	2
+Corinna war nervös aber die Präsentation lief absolut glatt.	To determine if the given		1	COMETA	2
+Der Angeklagte verstrickte sich immer mehr in widersprüchliche Aussagen.	To classify the given statement		1	COMETA	2
+Ihre romantische Hochzeitsfeier bewegte die Braut sehr.	To classify the given statement		1	COMETA	2
+Nach dem Missverständnis war Laura jetzt in einer haarigen Situation.	To classify the given statement		1	COMETA	2
+Der vorbestrafte Mann war diesmal sauber.	To classify the given statement		1	COMETA	2
+Seine zerbrechliche Seele konnte den Streit nicht länger aushalten.	To classify the given statement		1	COMETA	2
+Meine Freundin macht sich ständig bei unserer Lehrerin beliebt.	1 = metaphorical	1.0	0	COMETA	2
+Während meines Vortrags saß der Professor mit unbewegter Miene da.	1 = metaphorical	1.0	0	COMETA	2
+Ursula wollte alles vergessen und reiste nach Japan.	To classify the given statement		0	COMETA	2
+Meine Eltern fühlen sich ihrer Heimat sehr zugehörig.	To classify the given statement		0	COMETA	2
+Diesen Sonntag streiten sich die Kanzlerkandidaten im Fernsehen.	To classify the given statement		0	COMETA	2
+Unglaublich stolz erzählte er von seinen Erfolgen.	To classify the given statement		0	COMETA	2
+Ach was für ein leichtes Leben hatten wir während der Schulferien!	1 = metaphorical	1.0	1	COMETA	2
+Beate bekam fast jeden Tag eine heftige Ohrfeige von ihrer Mutter.	To classify the given statement		0	COMETA	2
+Nach dem Missverständnis war Ella jetzt in einer komplizierten Situation.	Label: 0	0.0	0	COMETA	2
+Martins Versicherung schickte ihm eine saftige Rechnung.	To classify the given statement		1	COMETA	2
+Wütend schaltete der Langschläfer den nervigen Wecker aus.	To classify the given statement		0	COMETA	2
+Wütend schaltete der Langschläfer den dummen Wecker aus.	To classify the given statement		1	COMETA	2
+Seine Hoffnungen auf Gesundheit hatte der Kranke längst aufgegeben.	To classify the given statement		0	COMETA	2
+Endlich war Ruhe zwischen den Streitenden.	To classify the given statement		0	COMETA	2
+Die Worte ihres Freundes waren sehr schlimm für die junge Frau.	To classify the given statement		0	COMETA	2
+Gestern Abend wurde Renate von einem widerlichen Mann angesprochen.	To classify the given statement		0	COMETA	2
+Diesen Sonntag duellieren sich die Kanzlerkandidaten im Fernsehen.	To classify the given statement		1	COMETA	2
+Das Thema des Matheunterrichts ist schwierig.	Label: 0	0.0	0	COMETA	2
+Meine Großeltern hatten ein wirklich schwieriges Leben.	Label: 0	0.0	0	COMETA	2
+Die Gespräche über seine Kindheit waren schlimm für ihn.	To classify the given statement		0	COMETA	2
+Endlich war Waffenstillstand zwischen den Streitenden.	1 = metaphorical	1.0	1	COMETA	2
+Dieses Kind ist echt eine Klette.	To classify the given statement		1	COMETA	2
+Gerds Versicherung schickte ihm eine hohe Rechnung.	To classify the given statement		0	COMETA	2
+Das war heute eine bittere Enttäuschung für meinen Vater.	To classify the given statement		1	COMETA	2
+Karsten hörte ständig er habe nichts in der Birne.	To classify the given statement		1	COMETA	2
+Die berühmte Arie wurde von der Sängerin heute wirklich wundervoll interpretiert!	1 = metaphorical	1.0	0	COMETA	2
+Der Stoff des Matheunterrichts ist schwierig.	Label: 0	0.0	1	COMETA	2
+Wegen ihres intensiven Geschmacks werden Oliven von vielen geliebt.	To classify the given statement		0	COMETA	2
+Dieser junge Mann lässt sich nicht beeinflussen.	To classify the given statement		0	COMETA	2
+Eine Tänzerin verwickelte den Theaterchef in eine Affäre.	To classify the given statement		1	COMETA	2
+In einem Kurs vertieft Nadine ihre Lateinkenntnisse.	To classify the given statement		1	COMETA	2
+Das war eine unglaublich oberflächliche Reaktion von ihr.	To classify the given statement		1	COMETA	2
+Die Beerdigung ihrer Mutter riss alte Wunden wieder auf.	To classify the given statement		1	COMETA	2
+Die Party ist im Stripclub. Die Stripper sind sexy.	1 = metaphorical	1.0	0	MIST	2
+Sie bemerkt jede Änderung. Sie ist aufmerksam.	1 = metaphorical	1.0	0	MIST	2
+Das Konzert ist morgen. Sie sind schon ganz aufgekratzt.	To classify the given statement		1	MIST	2
+Gestern war sein Test. Die Note erwartet er aufgeregt.	To classify the given statement		0	MIST	2
+Ihr ist viel widerfahren. Man merkt ihre Bitterkeit.	To classify the given statement		1	MIST	2
+Sie sind schon lange Rivalen. Ihr Umgang ist frostig.	To classify the given statement		1	MIST	2
+Der Fehler war schlimm. Für ihre Zukunft ist sie pessimistisch.	To classify the given statement		0	MIST	2
+Es gab eine große Feier. Das Programm war bunt. 	To classify the given statement		1	MIST	2
+Er soll sie in Ruhe lassen. Er ist unangenehm.	Label: 0	0.0	0	MIST	2
+Sie ist der Star. Ihre Persönlichkeit ist schillernd.	1 = metaphorical	1.0	1	MIST	2
+Sie tranken eine Flasche Sekt. Danach waren sie betrunken.	To classify the given statement		0	MIST	2
+Der Film war traurig und schön. Alle waren berührt.	To classify the given statement		1	MIST	2
+Sie ist selten fröhlich. Ihr Leben ist voller Traurigkeit.	Label: 0	0.0	0	MIST	2
+Die Geschichte ist schön. Das Ende ist zum dahinschmelzen.	To classify the given statement		1	MIST	2
+Sie tranken beide zwei Flaschen Wein. Jetzt sind sie betrunken.	To classify the given statement		0	MIST	2
+Sie sind zerstritten. Er begegnet ihr nur mit Teilnahmslosigkeit.	Let's analyze the given		0	MIST	2
+Seine Firma ist pleite. Die Lage ist aussichtslos.	To classify the given statement		1	MIST	2
+Er schaut keinen beim Reden an. Dadurch wirkt er unfreundlich.	To classify the given statement		0	MIST	2
+Er ist Investmentbanker. Für Geld hat er ein Näschen.	To classify the given statement		1	MIST	2
+Dies ist sein erstes Date seit langem. Er ist unruhig.	To classify the given statement		1	MIST	2
+Das Thema ist ihre Leidenschaft. Sie glüht dafür.	To classify the given statement		1	MIST	2
+Sie ist schnell beleidigt. Bei ihr benötigt man Einfühlungsvermögen. 	Let's analyze the given		0	MIST	2
+Man merkt ihr junges Alter. Sie ist noch unerfahren. 	Let's analyze the given		0	MIST	2
+Er hat eine kleine Katze. Sie ist goldig.	Label: 0	0.0	1	MIST	2
+Man merkt ihr junges Alter. Sie ist noch grün hinter den Ohren.	To classify the given statement		1	MIST	2
+Sie haben eine Affäre. Die Nacht war feurig.	To classify the given statement		1	MIST	2
+Er wusste nicht viel. Daher galt er nicht als intelligent.	Label: 0	0.0	0	MIST	2
+Teamarbeit ist gefragt. Dafür müssen sie sich grün sein.	To classify the given statement		1	MIST	2
+Er zeigt kein Interesse an ihr. Das kümmert sie nicht.	Label: 0	0.0	0	MIST	2
+Sie war öfters ängstlich. Sie witterte die Gefahr.	To classify the given statement		1	MIST	2
+Selten hat er mal richtig Spaß. Er ist echt ein Sauertopf.	To classify the given statement		1	MIST	2
+Sie langweilt sich nie. Ihr Leben hat genug Würze.	To classify the given statement		1	MIST	2
+Niemand ist bei ihr willkommen. Auf andere wirkt sie kalt.	To classify the given statement		1	MIST	2
+Die Theorie war gut durchdacht. So fand sie schnell Anklang.	To classify the given statement		1	MIST	2
+Alle schauen auf sie. Sie hat eine tolle Präsenz.	1 = metaphorical	1.0	0	MIST	2
+Ihr Wesen ist sehr aufbrausend. Sie hat Pfeffer.	To classify the given statement		1	MIST	2
+Sie bezahlte sehr wenig. Der Deal erschien ihr zwielichtig.	To classify the given statement		1	MIST	2
+Sie sind frisch verliebt. Er findet alles besser als es eigentlich ist. 	To classify the given statement		0	MIST	2
+Sie arbeitet nur. Ihr Leben ist eher fad.	To classify the given statement		1	MIST	2
+Sie gab ihm Tipps. Die Ratschläge waren super.	To classify the given statement		0	MIST	2
+Sie ist immer nett. Jedem zeigt sie ihre Wärme.	1 = metaphorical	1.0	1	MIST	2
+Es war ein dummer Vorwurf. Ihre Antwort war spöttisch.	To determine if the given		0	MIST	2
+Er ist ein toller Mann. Sie war schon lange verknallt.	To classify the given statement		1	MIST	2
+Sie bricht schnell in Tränen aus. Ihr Wesen ist sensibel.	To classify the given statement		0	MIST	2
+Sie wusste nicht Bescheid. Daher fragte sie ins Blaue.	To classify the given statement		1	MIST	2
+Bei Krimis kennt er die Mörder. Das verdankt er seinem Instinkt.	Label: 0	0.0	0	MIST	2
+Sie stieg in das fremde Auto. Das war blauäugig.	Let's analyze the given		1	MIST	2
+Sie haben eine Affäre. Die Nacht war leidenschaftlich.	To classify the given statement		0	MIST	2
+Den Vorwurf ließ er sich nicht machen. Er wurde stinkig.	To classify the given statement		1	MIST	2
+Jeder an der Uni kennt ihn. Er ist ein lauter Mensch.	To classify the given statement		1	MIST	2
+Die Bemerkung war gemein. Da war die Stimmung versalzen.	To classify the given statement		1	MIST	2
+Er denkt an die Vergangenheit. Das Gefühl ist bittersüß.	Label: 0	0.0	1	MIST	2
+Ihr Vorschlag gefällt niemandem. Die Kritik war heftig. 	To classify the given statement		0	MIST	2
+Die Bemerkung war gemein. Da war die Stimmung vermiest.	To classify the given statement		0	MIST	2
+Ihr Freund ist Südländer. Man sagt er sei heißblütig.	To classify the given statement		1	MIST	2
+Der Film war traurig und schön. Alle waren emotional.	To classify the given statement		0	MIST	2
+Nach außen wirkt sie streng. Doch ihr Inneres ist sanftmütig.	Let's analyze the given		0	MIST	2
+Sie gründet eine Gang. Ihre Spielchen waren faul.	To classify the given statement		1	MIST	2
+Sie verpassten knapp das Finale. Jetzt ist sie miesgelaunt.	To classify the given statement		0	MIST	2
+Bei Krimis kennt er die Mörder. Das verdankt er seinem Riecher.	To classify the given statement		1	MIST	2
+Er liebt Motoren. Sein neues Auto ist echt super.	Label: 0	0.0	0	MIST	2
+Sie kümmert sich täglich um kranke Kinder. Sie ist gutmütig.	Label: 0	0.0	0	MIST	2
+Jeder ist bei ihm willkommen. Er ist sehr freundlich.	Label: 0	0.0	0	MIST	2
+Er hat jetzt seinen Traumjob. Die Zukunft wird rosig.	To classify the given statement		1	MIST	2
+Sie bricht schnell in Tränen aus. Ihr Wesen ist zart.	To classify the given statement		1	MIST	2
+Im letzten Urlaub ging vieles schief. Das war nervig.	Label: 0	0.0	0	MIST	2
+Sie haben sich arg gestritten. Jetzt herrscht dicke Luft.	To determine if the given		1	MIST	2
+Das Buch kam nicht gut an. Die Geschichte war langweilig.	Label: 0	0.0	0	MIST	2
+Endlich naht der Frühling. Die Liebe ist zu spüren.	Label: 0	0.0	0	MIST	2
+Sie zweifelten noch sehr. Die Sache war nicht einleuchtend.	To classify the given statement		1	MIST	2
+Die Mitarbeiter sind glücklich. Im Büro herrscht Harmonie. 	To classify the given statement		1	MIST	2
+Die Frau hat ein Baby bekommen. Es ist süß.	To classify the given statement		1	MIST	2
+Ihr Team hat heute verloren. Es ist ein schlechter Tag.	Label: 0	0.0	0	MIST	2
+Sie verließ ihn. Seine Fehler wurden ihm nun bewusst.	To classify the given statement		0	MIST	2
+Sie kamen sich langsam näher. Man spürte das Knistern.	To classify the given statement		1	MIST	2
+Sie lud sie alle auf ein Eis ein. Das war dufte.	Let's analyze the given		1	MIST	2
+Die Schülerin will mehr Freizeit. Sie findet Hausaufgaben stinken.	To classify the given statement		1	MIST	2
+Sie tranken beide zwei Flaschen Wein. Jetzt sind sie blau.	To classify the given statement		1	MIST	2
+Viele alte Menschen sind einsam. Deshalb sind sie verbittert.	To classify the given statement		1	MIST	2
+Der Fehler war schlimm. Für ihre Zukunft sieht sie schwarz.	To classify the given statement		1	MIST	2
+Sie hat an sich gearbeitet. Nun ist sie mit sich selbst im Einklang.	The given statement does not		1	MIST	2
+Sie kennen sich schon lange. Deshalb kommen sie gut zusammen aus.	To classify the given statement		0	MIST	2
+Sie verlor wegen eines Formfehlers. Das wird ihr stinken.	To classify the given statement		1	MIST	2
+Heute ist ein super Tag. Er fühlt sich fantastisch.	To classify the given statement		0	MIST	2
+Sie hatten auf nichts Lust. Ihre Tage waren trist.	To classify the given statement		0	MIST	2
+Sie tranken eine Flasche Sekt. Danach waren sie berauscht.	To classify the given statement		1	MIST	2
+Sie holten den ersten Platz. Die Leistung war großartig.	To classify the given statement		0	MIST	2
+Das Buch kam nicht gut an. Die Geschichte war eintönig. 	To classify the given statement		1	MIST	2
+Sie hat zu wenig gelernt. Im Test hat sie keinen Dunst.	To determine if the given		1	MIST	2
+Die Wahl war manipuliert. Die Nachricht sorgt für Aufregung.	To classify the given statement		0	MIST	2
+Ihr Sohn hatte keine Manieren. Er war sehr vorlaut.	To classify the given statement		1	MIST	2
+Gefühle zeigt sie nicht. Für andere wirkt sie rau.	To classify the given statement		1	MIST	2
+Sie erkennt die Stimmung anderer. Sie ist einfühlsam.	To classify the given statement		0	MIST	2
+Sie trafen sich nach langer Zeit. Da war noch ein Funke .	To classify the given statement		1	MIST	2
+Sein neues Buch war ein Flop. Es war einfach nicht sehr gut.	To classify the given statement		0	MIST	2
+Alle schauen auf sie. Sie hat eine tolle Ausstrahlung.	To classify the given statement		1	MIST	2
+Er ist ihr sympathisch. Sie kann ihn gut leiden.	To classify the given statement		0	MIST	2
+Er wird morgen aus der Haft entlassen. Es duftet nach Freiheit.	Label: 0	0.0	1	MIST	2
+Heute ist ein super Tag. Er fühlt sich blendend.	To classify the given statement		1	MIST	2
+Sie sind nicht einer Meinung. Der Streit wird emotional.	To classify the given statement		0	MIST	2
+Die Party ist im Stripclub. Die Stripper sind heiß.	1 = metaphorical	1.0	1	MIST	2
+Er macht alles was sie sagt. Er ist ihr ergeben.	Let's analyze the given		0	MIST	2
+Sie haben sich arg gestritten. Jetzt herrscht Verärgerung.	To classify the given statement		0	MIST	2
+Sie verpassten knapp das Finale. Jetzt ist sie verstimmt.	To classify the given statement		1	MIST	2
+Seine Firma ist pleite. Die Lage ist hoffnungslos.	To classify the given statement		0	MIST	2
+Das Problem besteht noch immer. Es fehlt ihr die Erleuchtung. 	To classify the given statement		1	MIST	2
+Seit der Trennung bleibt er im Bett. Er fühlt sich gammelig.	To classify the given statement		1	MIST	2
+Er hat eine kleine Katze. Sie ist niedlich.	Label: 0	0.0	0	MIST	2
+Er freut sich auf das Date. Da kommt seine neue Geliebte.	To classify the given statement		0	MIST	2
+Das Gespräch dauerte lange. Sie fand es langweilig.	1 = metaphorical	1.0	0	MIST	2
+Ihr Team hat heute verloren. Es ist ein schwarzer Tag.	Label: 0	0.0	1	MIST	2
+Die Sitzung dauerte ewig. Das Ganze war schal.	To classify the given statement		1	MIST	2
+Er zeigt kein Interesse an ihr. Das kratzt sie nicht.	Let's analyze the given		1	MIST	2
+Er ist Investmentbanker. Für Geld hat er einen Sinn.	To classify the given statement		0	MIST	2
+Die Familie ist zerstritten. Die Zeiten sind freudlos.	To classify the given statement		0	MIST	2
+Sie tanzte bis tief in die Nacht. Sie war in Ekstase.	To classify the given statement		0	MIST	2
+Es wurde viel gelacht. Der Abend war lustig.	To classify the given statement		0	MIST	2
+Die Bedeutung war ihm fremd. Er hatte keine Ahnung.	Label: 0	0.0	0	MIST	2
+Etwas geht da vor sich. Die Situation ist verdächtig.	1 = metaphorical	1.0	0	MIST	2
+Er braucht Aggressionstraining. Häufig verliert er die Kontrolle.	Label: 0	0.0	0	MIST	2
+Er schreibt einen bösen Brief. Den Ärger kann er erahnen.	To classify the given statement		0	MIST	2
+Die Trennung ist jetzt lange her. Seine Stimmung wird besser.	To classify the given statement		0	MIST	2
+Das Publikum war enttäuscht. Der Vortrag war farblos.	To classify the given statement		1	MIST	2
+Er ist ein verurteilter Mörder. Er ist mitleidslos.	To classify the given statement		0	MIST	2
+Sie folgt selten einer Anweisung. Sie ist kratzbürstig. 	Let's analyze the given		1	MIST	2
+Sie kamen sich langsam näher. Man spürte die Aufregung.	To classify the given statement		0	MIST	2
+Sie fasste neuen Mut. Sie hatte genug von der Schwarzmalerei.	To classify the given statement		1	MIST	2
+Viele alte Menschen sind einsam. Deshalb sind sie missmutig.	To classify the given statement		0	MIST	2
+Dieser Mann ist gefährlich. Sein Blick wirkt finster.	Let's analyze the given		1	MIST	2
+Er ist kein einfacher Mensch. Sein Charakter ist kantig.	To classify the given statement		1	MIST	2
+In ihren Augen macht er nie was falsch. Sie ist verblendet.	Let's analyze the given		1	MIST	2
+Das Kind schummelt gern. Spiele enden oft im Streit.	To classify the given statement		0	MIST	2
+Gestern war sein Test. Die Note erwartet er fieberhaft.	To classify the given statement		1	MIST	2
+Die Trennung ist jetzt lange her. Seine Stimmung wird heller.	To classify the given statement		1	MIST	2
+Er hat ihr wehgetan. Nun zeigt er sich zerknirscht.	To classify the given statement		1	MIST	2
+Dies ist sein erstes Date seit langem. Er ist nervös.	To classify the given statement		0	MIST	2
+Sie kann ihm nicht wirklich vertrauen. Er wirkt verlogen.	To classify the given statement		0	MIST	2
+Die Frau hat ein Baby bekommen. Es ist niedlich.	To classify the given statement		0	MIST	2
+Sie hat wenig geschlafen. Daher ist sie muffelig.	1 = metaphorical	1.0	1	MIST	2
+Sie hat viel durchgemacht. Dadurch wurde sie eiskalt.	1 = metaphorical	1.0	1	MIST	2
+Etwas stimmt hier nicht. Die ganze Sache ist verdächtig.	Label: 0	0.0	0	MIST	2
+Er ist Kommissar. Er ist bekannt für sein Gespür.	1 = metaphorical	1.0	0	MIST	2
+Sein neues Buch war ein Flop. Es war einfach nicht das Gelbe vom Ei.	To classify the given statement		1	MIST	2
+Endlich naht der Frühling. Die Liebe liegt in der Luft. 	To classify the given statement		1	MIST	2
+Sie war immer sehr stolz auf ihn. Er war ihr Liebling.	To classify the given statement		0	MIST	2
+Sie sieht traurig aus. Sie hatten schon wieder Krach.	Let's analyze the given		1	MIST	2
+Ihr Leben ist öde. Auf ein Abenteuer brennt sie.	To classify the given statement		1	MIST	2
+Sie ist der Star. Ihre Persönlichkeit ist auffallend.	1 = metaphorical	1.0	0	MIST	2
+Etwas stimmt hier nicht. Die ganze Sache ist anrüchig.	Label: 0	0.0	1	MIST	2
+Er hat jetzt seinen Traumjob. Die Zukunft wird schön.	To classify the given statement		0	MIST	2
+Sie sind frisch verliebt. Er sieht alles durch eine rosarote Brille.	To classify the given statement		1	MIST	2
+Er stimmt ihr bei jeder Möglichkeit zu. Das wirkt schleimig.	To classify the given statement		1	MIST	2
+Neuerdings geht viel schief. Doch er sieht den Silberstreifen am Horizont. 	Let's analyze the given		1	MIST	2
+Die Bedeutung war ihm fremd. Er hatte keinen Schimmer.	To classify the given statement		1	MIST	2
+Sie hat Geburtstag. Er möchte ihren Tag verschönern.	To classify the given statement		0	MIST	2
+Das Publikum war enttäuscht. Der Vortrag war langweilig.	Label: 0	0.0	0	MIST	2
+Die Mannschaft will den Pokal gewinnen. Sie will ihn unbedingt.	To classify the given statement		0	MIST	2
+Er ist ihr sympathisch. Sie kann ihn gut riechen.	To classify the given statement		1	MIST	2
+Die Schülerin will mehr Freizeit. Sie findet Hausaufgaben sind doof.	To classify the given statement		0	MIST	2
+Er legt es oft drauf an. In Clubs fängt er an zu provozieren.	Let's analyze the given		0	MIST	2
+Sie hat an sich gearbeitet. Nun ist sie mit sich selbst zufrieden.	To classify the given statement		0	MIST	2
+Er hat kaum Interessen. Sein Wesen ist langweilig.	Label: 0	0.0	0	MIST	2
+Sie hat ihn verlassen. Jetzt sieht er alles durch einen Grauschleier.	To classify the given statement		1	MIST	2
+Er sitzt im Gefängnis. Das Verbrechen war grausig.	Label: 0	0.0	0	MIST	2
+Die Familie ist zerstritten. Die Zeiten sind trüb.	1 = metaphorical	1.0	1	MIST	2
+Sie erkennt die Stimmung anderer. Sie ist feinfühlig. 	Let's analyze the given		1	MIST	2
+Er hat viele Lügen erzählt. Jetzt zeigt er sich kleinlaut.	To classify the given statement		1	MIST	2
+Seine Taten sind heldenhaft. Er ist ein kühner Typ.	To classify the given statement		0	MIST	2
+Seit der Trennung bleibt er im Bett. Er fühlt sich jämmerlich.	To classify the given statement		0	MIST	2
+Sie hatten wieder einen Streit. Jetzt ist er sauer.	To classify the given statement		1	MIST	2
+Die Sitzung dauerte ewig. Das Ganze war langweilig.	Label: 0	0.0	0	MIST	2
+Die Mannschaft will den Pokal gewinnen. Sie ist heiß darauf.	To classify the given statement		1	MIST	2
+Man kann ihn von nichts abhalten. Er ist eigensinnig.	Let's analyze the given		0	MIST	2
+Teamarbeit ist gefragt. Dafür müssen sie sich leiden können.	To classify the given statement		0	MIST	2
+Sie will ihn nicht. Er muss aufhören ihr zu schmeicheln.	To classify the given statement		0	MIST	2
+Nach dem Gespräch war er sehr wütend. Nun muss er abkühlen.	To classify the given statement		1	MIST	2
+Sie gründet eine Gang. Ihre Spielchen waren unehrlich.	To classify the given statement		0	MIST	2
+Sie sind schon lange Rivalen. Ihr Umgang ist unfreundlich.	To classify the given statement		0	MIST	2
+Gefühle zeigt sie nicht. Für andere wirkt sie unfreundlich.	To classify the given statement		0	MIST	2
+Sie langweilt sich nie. Ihr Leben hat genug Abwechslung.	To classify the given statement		0	MIST	2
+Es war ein dummer Vorwurf. Ihre Antwort war spitz.	To classify the given statement		1	MIST	2
+Ihr Wesen ist sehr aufbrausend. Sie hat Temperament.	To classify the given statement		0	MIST	2
+Er findet stets die richtigen Worte. Er ist taktvoll.	To classify the given statement		1	MIST	2
+Er ist Kommissar. Er ist bekannt für seine Spürnase.	1 = metaphorical	1.0	1	MIST	2
+Sie lud sie alle auf ein Eis ein. Das war schön.	To classify the given statement		0	MIST	2
+Er ist ein Macho. Seine Sprüche sind abgeschmackt.	Let's analyze the given		1	MIST	2
+Sie sind geschieden. Ihre Begegnungen sind eisig.	To classify the given statement		1	MIST	2
+Die Polizei stand an der Ecke. Etwas war verdächtig.	To classify the given statement		0	MIST	2
+Nach außen wirkt sie streng. Doch ihr Inneres ist weich.	To classify the given statement		1	MIST	2
+Viele haben Angst vor ihm. Sein Umgang ist grob.	To classify the given statement		1	MIST	2
+Sie kann nicht mehr klar denken. Vor Wut ist sie unüberlegt.	To determine if the given		0	MIST	2
+Sie folgt selten einer Anweisung. Sie ist widerspenstig.	Let's analyze the given		0	MIST	2
+Selten hat er mal richtig Spaß. Er ist echt humorlos.	To classify the given statement		0	MIST	2
+Er setzt sein ganzes Geld auf rot. Er ist durchgeknallt.	To classify the given statement		1	MIST	2
+Sie haben das Spiel knapp verloren. Das ist ärgerlich.	To determine if the given		0	MIST	2
+Sie war öfters ängstlich. Sie spürte die Gefahr.	To classify the given statement		0	MIST	2
+Er ist ein verurteilter Mörder. Er ist kaltblütig.	Label: 0	0.0	1	MIST	2
+Die Theorie war gut durchdacht. So fand sie schnell Zustimmung.	To classify the given statement		0	MIST	2
+Sie kennen sich schon lange Zeit. Ihr Umgang ist warm.	To classify the given statement		1	MIST	2
+Für heute bleibt sie im Bett liegen. Sie ist träge.	To classify the given statement		0	MIST	2
+Sie hat zu wenig gelernt. Im Test hat sie keine Ahnung.	To classify the given statement		0	MIST	2
+Zu fast allem hat er eine Lösung. Er ist clever.	Let's analyze the given		0	MIST	2
+Er findet stets die richtigen Worte. Er ist einfühlsam.	To classify the given statement		0	MIST	2
+Sie verlor wegen eines Formfehlers. Das wird sie ärgern. 	Let's analyze the given		0	MIST	2
+Ihr Sohn hatte keine Manieren. Er war sehr frech.	To determine if the given		0	MIST	2
+Sie tanzte bis tief in die Nacht. Sie war im Rausch.	To classify the given statement		1	MIST	2
+Sie hielt einen Vortrag. Der Inhalt war fantasievoll.	To classify the given statement		0	MIST	2
+Sie wurde heute zu früh geweckt. Jetzt ist sie brummig.	To classify the given statement		1	MIST	2
+Sie erlebte wieder einen Rückschlag. Er war herb.	To classify the given statement		1	MIST	2
+Der Vortrag ist chaotisch. Zum Verstehen fehlt die Struktur.	Label: 0	0.0	0	MIST	2
+Ihr Leben ist öde. Auf ein Abenteuer hofft sie.	To classify the given statement		0	MIST	2
+Er liebt Motoren. Sein neues Auto ist echt scharf. 	"Statement: ""Er lie"		1	MIST	2
+Er freut sich auf das Date. Da kommt seine neue Flamme.	1 = metaphorical	1.0	1	MIST	2
+Er schaut keinen beim Reden an. Dadurch wirkt er schroff.	To classify the given statement		1	MIST	2
+Er machte einen gemeinen Witz. Das war unangemessen.	Label: 0	0.0	0	MIST	2
+Sie wurde heute zu früh geweckt. Jetzt ist sie mürrisch.	To classify the given statement		0	MIST	2
+Sie arbeitet nur. Ihr Leben ist eher langweilig.	To classify the given statement		0	MIST	2
+Sie fuhr sein Auto zu Schrott. Er sah es und war wütend.	To classify the given statement		0	MIST	2
+Sie hielt einen Vortrag. Der Inhalt war blumig.	To classify the given statement		1	MIST	2
+Sie kümmert sich täglich um kranke Kinder. Sie hat ein Herz aus Gold.	To classify the given statement		1	MIST	2
+Man kann ihn von nichts abhalten. Er ist hartnäckig.	Let's analyze the given		1	MIST	2
+Die Aufgabe ist komplex. Es ist noch vieles unverständlich.	1 = metaphorical	1.0	0	MIST	2
+Er legt es oft drauf an. In Clubs fängt er an zu stänkern.	Label: 0	0.0	1	MIST	2
+Sie bezahlte sehr wenig. Der Deal erschien ihr fragwürdig.	To classify the given statement		0	MIST	2
+Der Lehrer ist selten freundlich. Meistens wirkt er streng.	To classify the given statement		0	MIST	2
+Er stimmt ihr bei jeder Möglichkeit zu. Das wirkt unehrlich.	To classify the given statement		0	MIST	2
+Die Wahl war manipuliert. Die Nachricht sorgt für Lärm.	To classify the given statement		1	MIST	2
+Schnell verliert sie die Beherrschung. Sie handelt impulsiv.	Let's analyze the given		0	MIST	2
+Sie ist immer nett. Jedem zeigt sie ihre Herzlichkeit.	To classify the given statement		0	MIST	2
+Jeder ist bei ihm willkommen. Er ist sehr warmherzig.	Label: 0	0.0	1	MIST	2
+Gestern war er sehr betrunken. Jetzt fühlt er sich ranzig.	To classify the given statement		1	MIST	2
+Er macht sie schon lange glücklich. Er ist ihr Sonnenschein.	To classify the given statement		1	MIST	2
+Sie gab ihm Tipps. Die Ratschläge waren golden.	To classify the given statement		1	MIST	2
+Sie haben das Spiel knapp verloren. Das ist bitter.	To classify the given statement		1	MIST	2
+Dieser Mann ist gefährlich. Sein Blick wirkt böse.	Let's analyze the given		0	MIST	2
+Er machte ihr ein Kompliment. Es war sehr schmeichelnd.	To classify the given statement		0	MIST	2
+Er fällt sehr auf. Seine Persönlichkeit ist bunt.	To classify the given statement		1	MIST	2
+Sie wusste nicht Bescheid. Daher fragte sie ins Ungewisse.	To classify the given statement		0	MIST	2
+Das Gespräch dauerte lange. Sie fand es monoton.	To classify the given statement		1	MIST	2
+Er denkt an die Vergangenheit. Das Gefühl ist schmerzlich-schön.	Label: 0	0.0	0	MIST	2
+Er setzt sein ganzes Geld auf rot. Er ist verrückt.	To classify the given statement		0	MIST	2
+Der Lehrer ist selten freundlich. Meistens wirkt er hart.	To classify the given statement		1	MIST	2
+Überall herrscht schlimmer Krieg. Die Zeiten sind hoffnungslos.	Label: 0	0.0	0	MIST	2
+Er macht alles was sie sagt. Er ist ihr hörig.	Let's analyze the given		1	MIST	2
+Sie hat viel durchgemacht. Dadurch wurde sie gefühllos.	To classify the given statement		0	MIST	2
+Nach dem Gespräch war er sehr wütend. Nun muss er zur Vernunft kommen.	To classify the given statement		0	MIST	2
+Ihr Hund war ihr Freund. Sein Verlust macht sie traurig.	To classify the given statement		0	MIST	2
+Er schreibt einen bösen Brief. Den Ärger kann er riechen.	To classify the given statement		1	MIST	2
+Sie sind geschieden. Ihre Begegnungen sind feindselig.	To determine if the given		0	MIST	2
+Sie zweifelten noch sehr. Die Sache war nicht verständlich.	To classify the given statement		0	MIST	2
+Das Thema ist ihre Leidenschaft. Sie begeistert sich dafür.	To determine if the given		0	MIST	2
+Für heute bleibt sie im Bett liegen. Sie ist faul.	To determine if the given		1	MIST	2
+Sie ist schnell beleidigt. Bei ihr benötigt man Fingerspitzengefühl.	Let's analyze the given		1	MIST	2
+Das Konzert ist morgen. Sie sind schon ganz aufgeregt.	To classify the given statement		0	MIST	2
+Er hat ihr wehgetan. Nun zeigt er sich reuevoll.	To classify the given statement		0	MIST	2
+Sie hat Geburtstag. Er möchte ihren Tag versüßen.	To classify the given statement		1	MIST	2
+Es gab eine große Feier. Das Programm war abwechslungsreich.	To classify the given statement		0	MIST	2
+Sie kennen sich schon lange Zeit. Ihr Umgang ist freundschaftlich.	Label: 0	0.0	0	MIST	2
+Ihr Vorschlag gefällt niemandem. Die Kritik war scharf.	To classify the given statement		1	MIST	2
+Die Aufgabe ist komplex. Es ist noch vieles unklar.	Label: 0	0.0	1	MIST	2
+Er wird morgen aus der Haft entlassen. Er spürt schon die Freiheit.	Label: 0	0.0	0	MIST	2
+Der Zeuge macht die Aussage. Die Details sind pikant.	1 = metaphorical	1.0	1	MIST	2
+Sie hatten auf nichts Lust. Ihre Tage waren grau.	To classify the given statement		1	MIST	2
+Überall herrscht schlimmer Krieg. Die Zeiten sind dunkel.	Label: 0	0.0	1	MIST	2
+Jeder an der Uni kennt ihn. Er ist ein auffallender Mensch.	Let's analyze the given		0	MIST	2
+Er schaut gern Horrorfilme. Ihm gefällt die Aufregung.	To classify the given statement		0	MIST	2
+Sie hat zu viele Geheimnisse. Das gefällt ihm nicht.	To classify the given statement		0	MIST	2
+Sein Kind kam heile nach Hause. Jetzt ist er beruhigt. 	To classify the given statement		1	MIST	2
+Sie kennen sich schon lange. Deshalb harmonieren sie gut.	To classify the given statement		1	MIST	2
+Er machte ihr ein Kompliment. Es war zuckersüß.	To classify the given statement		1	MIST	2
+Seine Taten sind heldenhaft. Er ist ein schneidiger Typ.	To classify the given statement		1	MIST	2
+Sie verließ ihn. Seine Fehler wurden ihm nun klar.	To classify the given statement		1	MIST	2
+Beim Begräbnis war er betrunken. Das war taktlos. 	To classify the given statement		1	MIST	2
+Ihr Freund ist Südländer. Man sagt er sei leidenschaftlich.	To classify the given statement		0	MIST	2

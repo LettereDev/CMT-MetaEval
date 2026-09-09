@@ -1,0 +1,5 @@
+Run ID: 20260909_080230
+Fixed few-shot examples selected (pair_seed=42, four_shot_seed=43):
+  2shot_DE_ES -> DE [metaphor]: "Etwas geht da vor sich. Die Situation stinkt." | ES [non-metaphor]: "Pero como he visto a estudiantes, chicos y chicas, destrozar papeleras y hacer fuego, creo que tiene que haber algo más."
+  2shot_ES_DE -> ES [metaphor]: "Tampoco ellos podrán jamás recuperar su antiguo ser, retroceder a ese estadio en que todavía no eran ministro o futbolista, y se saben condenados a formar parte del club vitalicio de los ex: ex bigotudos, ex ministros, ex futbolistas, obstinadas secuelas de su propio pasado, largos epílogos de sí mismos." | DE [non-metaphor]: "Sport ist ihm egal. Die WM scheint ihn nicht zu interessieren. "
+  4shot -> DE [metaphor]: "Gestern Abend wurde Tamara von einem schmierigen Mann angesprochen.", DE [non-metaphor]: "Sie hat einen neuen Partner. Man sieht sie oft fröhlich." | ES [metaphor]: "Y por último, para el ministro Illa, una cuestión que me trasladan los compañeros de deportes.", ES [non-metaphor]: "Cada combate está dividido en 3 periodos independientes de 2 minutos cada uno, con un descanso entre ellos de 30 segundos."
