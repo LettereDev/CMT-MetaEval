@@ -5,3 +5,4 @@ accelerate
 bitsandbytes>=0.46.1
 huggingface_hub
 accelerate
+matplotlib

@@ -1,0 +1,18 @@
+\begin{table}
+\caption{McNemar's test comparing 0shot and 4shot per model and prompt. * p<.05, ** p<.01, *** p<.001.}
+\label{tab:mcnemar}
+\begin{tabular}{llrrrl}
+\toprule
+Prompt & Model & N & Acc. (0shot) & Acc. (4shot) & p-value \\
+\midrule
+P1 & Gemma-3-1B & 365 & 0.496 & 0.603 & 0.0018** \\
+P1 & Qwen2.5-1.5B & 365 & 0.499 & 0.499 & 1.0000 \\
+P1 & Phi-3.5-mini & 365 & 0.644 & 0.619 & 0.3135 \\
+P1 & Llama-3.2-1B & 294 & 0.524 & 0.493 & 0.6151 \\
+P3 & Gemma-3-1B & 365 & 0.499 & 0.512 & 0.2668 \\
+P3 & Qwen2.5-1.5B & 361 & 0.504 & 0.501 & 1.0000 \\
+P3 & Phi-3.5-mini & 365 & 0.611 & 0.570 & 0.1797 \\
+P3 & Llama-3.2-1B & 0 & NaN & NaN & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

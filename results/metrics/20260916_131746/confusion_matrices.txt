@@ -1,0 +1,283 @@
+Confusion Matrix for Gemma-3-1B | P1 | DE_0shot:
+[[  0 183]
+ [  1 181]]
+Confusion Matrix for Llama-3.2-1B | P1 | DE_0shot:
+[[158  25]
+ [155  27]]
+Confusion Matrix for Phi-3.5-mini | P1 | DE_0shot:
+[[132  51]
+ [ 79 103]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | DE_0shot:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Gemma-3-1B | P2 | DE_0shot:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Llama-3.2-1B | P2 | DE_0shot:
+[[179   4]
+ [178   4]]
+Confusion Matrix for Phi-3.5-mini | P2 | DE_0shot:
+[[150  33]
+ [ 83  99]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | DE_0shot:
+[[  0 183]
+ [  1 181]]
+Confusion Matrix for Gemma-3-1B | P3 | DE_0shot:
+[[  1 182]
+ [  1 181]]
+Confusion Matrix for Llama-3.2-1B | P3 | DE_0shot:
+  (no valid predictions — confusion matrix unavailable)
+Confusion Matrix for Phi-3.5-mini | P3 | DE_0shot:
+[[130  53]
+ [ 89  93]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | DE_0shot:
+[[  2 178]
+ [  1 180]]
+Confusion Matrix for Gemma-3-1B | P1 | DE_2shot_DE_ES:
+[[122  61]
+ [ 90  92]]
+Confusion Matrix for Llama-3.2-1B | P1 | DE_2shot_DE_ES:
+[[  0 176]
+ [  0 177]]
+Confusion Matrix for Phi-3.5-mini | P1 | DE_2shot_DE_ES:
+[[120  63]
+ [ 72 110]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | DE_2shot_DE_ES:
+[[ 18 165]
+ [  9 173]]
+Confusion Matrix for Gemma-3-1B | P2 | DE_2shot_DE_ES:
+[[ 81 102]
+ [ 74 108]]
+Confusion Matrix for Llama-3.2-1B | P2 | DE_2shot_DE_ES:
+[[  0 182]
+ [  0 179]]
+Confusion Matrix for Phi-3.5-mini | P2 | DE_2shot_DE_ES:
+[[150  33]
+ [ 89  93]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | DE_2shot_DE_ES:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Gemma-3-1B | P3 | DE_2shot_DE_ES:
+[[137  46]
+ [131  51]]
+Confusion Matrix for Llama-3.2-1B | P3 | DE_2shot_DE_ES:
+  (no valid predictions — confusion matrix unavailable)
+Confusion Matrix for Phi-3.5-mini | P3 | DE_2shot_DE_ES:
+[[ 66 117]
+ [ 42 140]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | DE_2shot_DE_ES:
+[[  6 177]
+ [  3 179]]
+Confusion Matrix for Gemma-3-1B | P1 | DE_2shot_ES_DE:
+[[145  38]
+ [128  54]]
+Confusion Matrix for Llama-3.2-1B | P1 | DE_2shot_ES_DE:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Phi-3.5-mini | P1 | DE_2shot_ES_DE:
+[[168  15]
+ [121  61]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | DE_2shot_ES_DE:
+[[  2 181]
+ [  1 181]]
+Confusion Matrix for Gemma-3-1B | P2 | DE_2shot_ES_DE:
+[[117  66]
+ [ 95  87]]
+Confusion Matrix for Llama-3.2-1B | P2 | DE_2shot_ES_DE:
+[[  0 168]
+ [  0 167]]
+Confusion Matrix for Phi-3.5-mini | P2 | DE_2shot_ES_DE:
+[[174   9]
+ [140  42]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | DE_2shot_ES_DE:
+[[  7 176]
+ [  8 174]]
+Confusion Matrix for Gemma-3-1B | P3 | DE_2shot_ES_DE:
+[[182   1]
+ [177   5]]
+Confusion Matrix for Llama-3.2-1B | P3 | DE_2shot_ES_DE:
+  (no valid predictions — confusion matrix unavailable)
+Confusion Matrix for Phi-3.5-mini | P3 | DE_2shot_ES_DE:
+[[109  74]
+ [ 66 116]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | DE_2shot_ES_DE:
+[[ 39 144]
+ [ 36 146]]
+Confusion Matrix for Gemma-3-1B | P1 | DE_4shot:
+[[ 93  90]
+ [ 55 127]]
+Confusion Matrix for Llama-3.2-1B | P1 | DE_4shot:
+[[  0 149]
+ [  0 145]]
+Confusion Matrix for Phi-3.5-mini | P1 | DE_4shot:
+[[106  77]
+ [ 62 120]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | DE_4shot:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Gemma-3-1B | P2 | DE_4shot:
+[[ 70 113]
+ [ 39 143]]
+Confusion Matrix for Llama-3.2-1B | P2 | DE_4shot:
+[[ 2 84]
+ [ 3 96]]
+Confusion Matrix for Phi-3.5-mini | P2 | DE_4shot:
+[[143  40]
+ [ 88  94]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | DE_4shot:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Gemma-3-1B | P3 | DE_4shot:
+[[  8 175]
+ [  3 179]]
+Confusion Matrix for Llama-3.2-1B | P3 | DE_4shot:
+[[0 5]
+ [0 3]]
+Confusion Matrix for Phi-3.5-mini | P3 | DE_4shot:
+[[ 71 112]
+ [ 45 137]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | DE_4shot:
+[[  0 183]
+ [  0 182]]
+Confusion Matrix for Gemma-3-1B | P1 | ES_0shot:
+[[  0 235]
+ [  0 130]]
+Confusion Matrix for Llama-3.2-1B | P1 | ES_0shot:
+[[112 123]
+ [ 43  87]]
+Confusion Matrix for Phi-3.5-mini | P1 | ES_0shot:
+[[184  51]
+ [ 73  57]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | ES_0shot:
+[[  9 226]
+ [  0 130]]
+Confusion Matrix for Gemma-3-1B | P2 | ES_0shot:
+[[  0 235]
+ [  0 130]]
+Confusion Matrix for Llama-3.2-1B | P2 | ES_0shot:
+[[126  97]
+ [ 63  67]]
+Confusion Matrix for Phi-3.5-mini | P2 | ES_0shot:
+[[202  33]
+ [ 88  42]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | ES_0shot:
+[[  8 227]
+ [  0 130]]
+Confusion Matrix for Gemma-3-1B | P3 | ES_0shot:
+[[  4 231]
+ [  0 130]]
+Confusion Matrix for Llama-3.2-1B | P3 | ES_0shot:
+[[ 0 81]
+ [ 0 65]]
+Confusion Matrix for Phi-3.5-mini | P3 | ES_0shot:
+[[194  41]
+ [ 70  60]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | ES_0shot:
+[[ 21 214]
+ [  2 127]]
+Confusion Matrix for Gemma-3-1B | P1 | ES_2shot_DE_ES:
+[[ 83 152]
+ [ 21 109]]
+Confusion Matrix for Llama-3.2-1B | P1 | ES_2shot_DE_ES:
+[[  0 186]
+ [  0 108]]
+Confusion Matrix for Phi-3.5-mini | P1 | ES_2shot_DE_ES:
+[[192  43]
+ [ 90  40]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | ES_2shot_DE_ES:
+[[ 90 145]
+ [ 19 111]]
+Confusion Matrix for Gemma-3-1B | P2 | ES_2shot_DE_ES:
+[[ 38 197]
+ [  6 124]]
+Confusion Matrix for Llama-3.2-1B | P2 | ES_2shot_DE_ES:
+[[  0 228]
+ [  0 125]]
+Confusion Matrix for Phi-3.5-mini | P2 | ES_2shot_DE_ES:
+[[206  29]
+ [ 94  36]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | ES_2shot_DE_ES:
+[[ 37 198]
+ [  6 124]]
+Confusion Matrix for Gemma-3-1B | P3 | ES_2shot_DE_ES:
+[[148  87]
+ [ 62  68]]
+Confusion Matrix for Llama-3.2-1B | P3 | ES_2shot_DE_ES:
+  (no valid predictions — confusion matrix unavailable)
+Confusion Matrix for Phi-3.5-mini | P3 | ES_2shot_DE_ES:
+[[167  68]
+ [ 53  77]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | ES_2shot_DE_ES:
+[[ 69 166]
+ [ 10 120]]
+Confusion Matrix for Gemma-3-1B | P1 | ES_2shot_ES_DE:
+[[ 75 160]
+ [  9 121]]
+Confusion Matrix for Llama-3.2-1B | P1 | ES_2shot_ES_DE:
+[[  0 225]
+ [  0 115]]
+Confusion Matrix for Phi-3.5-mini | P1 | ES_2shot_ES_DE:
+[[202  33]
+ [ 95  35]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | ES_2shot_ES_DE:
+[[ 27 208]
+ [  6 124]]
+Confusion Matrix for Gemma-3-1B | P2 | ES_2shot_ES_DE:
+[[ 55 180]
+ [  6 124]]
+Confusion Matrix for Llama-3.2-1B | P2 | ES_2shot_ES_DE:
+[[  0 213]
+ [  0 124]]
+Confusion Matrix for Phi-3.5-mini | P2 | ES_2shot_ES_DE:
+[[212  23]
+ [ 97  33]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | ES_2shot_ES_DE:
+[[ 65 170]
+ [  7 123]]
+Confusion Matrix for Gemma-3-1B | P3 | ES_2shot_ES_DE:
+[[144  91]
+ [ 42  88]]
+Confusion Matrix for Llama-3.2-1B | P3 | ES_2shot_ES_DE:
+  (no valid predictions — confusion matrix unavailable)
+Confusion Matrix for Phi-3.5-mini | P3 | ES_2shot_ES_DE:
+[[166  69]
+ [ 55  75]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | ES_2shot_ES_DE:
+[[ 84 151]
+ [ 14 116]]
+Confusion Matrix for Gemma-3-1B | P1 | ES_4shot:
+[[ 54 181]
+ [  6 124]]
+Confusion Matrix for Llama-3.2-1B | P1 | ES_4shot:
+[[  0 161]
+ [  0  81]]
+Confusion Matrix for Phi-3.5-mini | P1 | ES_4shot:
+[[167  68]
+ [ 60  70]]
+Confusion Matrix for Qwen2.5-1.5B | P1 | ES_4shot:
+[[  0 235]
+ [  0 130]]
+Confusion Matrix for Gemma-3-1B | P2 | ES_4shot:
+[[ 26 209]
+ [  1 129]]
+Confusion Matrix for Llama-3.2-1B | P2 | ES_4shot:
+[[  1 170]
+ [  1  99]]
+Confusion Matrix for Phi-3.5-mini | P2 | ES_4shot:
+[[185  50]
+ [ 75  55]]
+Confusion Matrix for Qwen2.5-1.5B | P2 | ES_4shot:
+[[  0 235]
+ [  0 130]]
+Confusion Matrix for Gemma-3-1B | P3 | ES_4shot:
+[[  8 227]
+ [  1 129]]
+Confusion Matrix for Llama-3.2-1B | P3 | ES_4shot:
+[[0 8]
+ [0 1]]
+Confusion Matrix for Phi-3.5-mini | P3 | ES_4shot:
+[[141  94]
+ [ 34  96]]
+Confusion Matrix for Qwen2.5-1.5B | P3 | ES_4shot:
+[[  8 227]
+ [  0 130]]

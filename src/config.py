@@ -28,7 +28,7 @@ MODELS = {
 }
 
 GENERATION_CONFIG = {
-    "max_new_tokens": 5,
+    "max_new_tokens": 5, #Execution reduced to 5 tokens, with a slight modification to PC to view if models improve
     "do_sample": False,
 }
 

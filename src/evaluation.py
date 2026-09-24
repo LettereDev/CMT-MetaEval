@@ -31,6 +31,7 @@ def calculate_metrics(df):
             "valid_count": 0,
             "invalid_count": invalid_count,
             "invalid_rate": 1.0,
+            "confusion_matrix": None,
         }
 
     y_true = valid_df["gold_label"].astype(int)
