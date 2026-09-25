@@ -34,6 +34,7 @@ CSVS = {
 
 #Code generated with CODEX to format the token-level CoMeta dataset into a sentence-level dataset. Each sentence is labeled as 1 if it contains any non-O tags, and 0 otherwise. The token-level tags are also included for optional provenance.
 #Source: https://chatgpt.com/s/cx_6a8853f043c881918a27d822c9a157ee
+#Date:02-08-2026
 def detokenize(tokens: list[str]) -> str:
     """Rejoin CoNLL tokens into readable Spanish text."""
     text = " ".join(tokens)
@@ -108,7 +109,7 @@ def clean_cometa_es_rows(rows: list[dict[str, str | int]]) -> list[dict[str, str
 
     return cleaned_rows
 
-
+#Modified by CODEX, to correct errors and debug
 def sample_matching_distribution(
     rows: list[dict[str, str | int]],
     target_size: int,
@@ -157,7 +158,7 @@ def sample_matching_distribution(
     rng.shuffle(sampled)
     return sampled
 
-
+#Sections in main complemented by CODEX, for debugging and corrections on preprocessing ES dataset
 def main() -> None:
     rows: list[dict[str, str | int]] = []
 

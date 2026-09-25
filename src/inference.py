@@ -48,7 +48,8 @@ def generate_response(model, tokenizer, prompt):
 
     return response.strip()
 
-
+#Added by Claude to debug inference and correctly exxecute the pipeline
+#Date: 15-08-2026
 def load_support_pool(language):
     """Loads the static support pool for one language, written by split.py."""
     support_path = os.path.join(OUTPUT_DIR, f"{language}_support.tsv")
@@ -177,7 +178,7 @@ def build_fewshot_examples(pair_seed=FEWSHOT_2SHOT_SEED, four_shot_seed=FEWSHOT_
 
     return conditions
 
-
+#Comments added by Claude
 def run_experiment(
     model,
     tokenizer,

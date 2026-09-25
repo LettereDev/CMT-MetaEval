@@ -2,6 +2,7 @@
 '''
 Parse model predictions for metaphorical vs. literal classification.
 Code was fixed with CODEX, Chat: https://chatgpt.com/s/cx_6a8ed8033ab88191b216f6771dcd9b40
+Date: 10-08-2026
 '''
 
 import re
@@ -16,7 +17,7 @@ _STANDALONE_PREDICTION = re.compile(r"\b([01])\b")
 _EXPLANATION_MARKER = re.compile(r"explanation\s*:?")
 _STATEMENT_MARKER = re.compile(r"statement\s*:?")
 
-
+#Modified by my person, CODEX and Claude to correctly parse model answers throughout testing
 def parse_prediction(response: str) -> int | None:
     """Return 1 for metaphorical, 0 for literal, or None if ambiguous/invalid."""
     

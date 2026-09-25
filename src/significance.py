@@ -1,6 +1,6 @@
 # src/significance.py
 """
-Created with Claude, revised for consistency and personal modifications: 
+Created with Claude on 20-09-2026, revised for consistency and personal modifications: 
 McNemar's test for comparing two prediction conditions on the SAME
 query set -- e.g. 0-shot vs 4-shot for the same model/prompt/language,
 or Prompt A vs Prompt C for the same model/shot-count/language.
@@ -50,7 +50,7 @@ def build_condition_path(predictions_dir, language, condition, prompt, model):
         predictions_dir, f"{language}_{condition}", f"{prompt}_{model}.tsv"
     )
 
-
+#Created by Claude
 def paired_correctness(df_a, df_b, invalid_as_incorrect=False):
     """
     Aligns two prediction DataFrames on `statement` and returns one row
@@ -97,7 +97,7 @@ def paired_correctness(df_a, df_b, invalid_as_incorrect=False):
 
     return merged
 
-
+#Eddited and corrected by Claude
 def mcnemar_test(merged):
     """
     Runs McNemar's EXACT test (via the binomial distribution) on the
@@ -154,7 +154,7 @@ def compare_conditions(path_a, path_b, invalid_as_incorrect=False, label_a=None,
 
     return result
 
-
+#Added by Claude
 def batch_mcnemar(predictions_dir, language, condition_a, condition_b, models, prompts, invalid_as_incorrect=False):
     """
     Runs McNemar's test for every (prompt, model) combination, all
@@ -232,11 +232,6 @@ def to_latex_table(display_df, condition_a_label, condition_b_label, caption=Non
         caption=caption,
         label=label,
     )
-
-
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
 
 def main():
     parser = argparse.ArgumentParser(

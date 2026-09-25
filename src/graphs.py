@@ -48,7 +48,8 @@ def load_metrics(path="results/metrics/all_metrics.tsv"):
     metrics_df["condition"] = split[1]
     return metrics_df
 
-#Added by Claude
+#Added by Claude: Batch building of graphs and customized creation per language
+#Date: 26-08-2026
 def build_heatmap_matrix(metrics_df, metric="f1", experiment=None):
     """
     Builds a (models x prompts) matrix of one metric.
@@ -124,7 +125,7 @@ def build_invalid_counts(metrics_df):
 
     return invalid_counts
 
-#Fixed with Claude
+#Fixed and debugged with Claude
 def barplot_apr(apr_by_group, title='Accuracy, Precision, Recall', prompt_name="", ax=None):
     """
     Grouped bar chart of Accuracy / Precision / Recall.
@@ -196,7 +197,7 @@ def barplot_apr(apr_by_group, title='Accuracy, Precision, Recall', prompt_name="
 
     return bars_by_metric
 
-#Fixed with Claude
+#Fixed and debugged with Claude
 def model_prompt_heatmap(scores, models, prompts, metric_name='F1', title=None, ax=None):
     """
     Heatmap of one metric across Model (rows) x Prompt (columns).
